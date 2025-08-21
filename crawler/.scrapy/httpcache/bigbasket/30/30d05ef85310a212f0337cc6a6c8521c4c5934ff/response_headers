@@ -1,0 +1,59 @@
+Content-Type: text/html; charset=utf-8
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+Access-Control-Allow-Origin: https://business.bigbasket.com
+Akamai-Origin-Hop: 2
+Bb-Bot-Type: others
+Bb-Channel-Type: bb-fe
+Bb-Is-Bot: 0
+City_Id: 1
+Etag: "vfekwyuy2n8npe"
+Original-Host: www.bigbasket.com
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Traceparent: 00-009213488c2b88b82297fe6c1c104776-c343d173d309a564-01
+True-Client-Ip: 49.37.219.98
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+X-Akamai-Config-Log-Detail: true
+X-Amzn-Trace-Id: Self=1-68a69c04-663b363f4f4c5b871b2de5bc;Root=1-68a69c04-035380d161ba3d756c969963
+X-Content-Type-Options: nosniff
+X-Entry-Context: bb-b2c
+X-Entry-Context-Id: 100
+X-Frame-Options: SAMEORIGIN
+X-Queue-Start: t=1755749380.280
+X-Request-Start: t=1755749380.280
+X-Tcp-Client-Id: BIGBASKET-WEB-DESKTOP-APP
+X-Timestamp: 2025-08-21T04:09:40.279516Z
+X-Tracker: Root=1-68a69c04-035380d161ba3d756c969963
+X-Akamai-Transformed: 0 - 0 -
+Content-Encoding: gzip
+Expires: Thu, 21 Aug 2025 04:09:41 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Thu, 21 Aug 2025 04:09:41 GMT
+Vary: Accept-Encoding
+Set-Cookie: _bb_locSrc=default; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: x-channel=web; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_aid=MjkxMzA4NDUzMA==; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_cid=1; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_vid=ODY3MDgzMTAwODA3Mjk1MjE0; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_nhid=7427; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_dsid=7427; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_dsevid=7427; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_bhid=; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_loid=; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: csrftoken=5eZvHhUlGjPb2apKWIeB4mZJ0TnLSICvzZNsGMR0Yxgws2W01Kh8otzQZ9krHPJF; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Path=/
+Set-Cookie: _bb_bb2.0=1; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: is_global=1; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_addressinfo=; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_pin_code=; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_sa_ids=19226; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _is_tobacco_enabled=0; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _is_bb1.0_supported=0; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: _bb_cda_sa_info=djIuY2RhX3NhLjEwMC4xOTIyNg==; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: is_integrated_sa=1; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: bb2_enabled=true; Expires=Mon, 21 Aug 2045 04:09:40 GMT; Domain=.bigbasket.com; Path=/
+Set-Cookie: bm_ss=ab8e18ef4e; Secure; SameSite=None; Domain=.bigbasket.com; Path=/; HttpOnly; Max-Age=3600
+Set-Cookie: bm_s=YAAQtkLHF20m0siYAQAAoHPRygO9ElOYCMIF6VpWXSpGyzAIxhd8JifZoh0H/IrIn4hYheUNh7lVN171m8yYnEKjgw/wtxVjApWRR80LPPsFQ2HehesvX5p+o5GYF/osdoflRh/6k1gZr/DqHP5tjLnRjCY4SYuRGa9vmHo1X8AjKHTREVkn7SBvQTEKs7T6daF7Dx9WM5jZ0ftbnagPOIxduPJJBy+l6N3rtIprvdCWa7gy0+hjrSU53WVsfdX1rgOb1/e+5P7K7QwBfplceCHGT8MylRIYX3yhzfk+NyQZjBP+h8waU7Q0HO8fxX7bMkcJHgTUFzZP69pT0IkKCPlJ+h8u6871+JMVF8CFyNmLNTGOuvTIxE9CShz0SoDsXSlPHksHw4YQwNaQc3FvcxEEX+A7NO4Ln40u0B11jF2B5nroWxSOT1+Px5yWdiNvALwnWVp+Kmg9lAlFMyEgbkBkQyRs05W/yljMxIyXVI3EjBLixcVNVfuP81xb9/MBVVwUu64E4O8iaPFTvYaVn5NMXt1ujrBukMMjC4dnREQUO/NxNPXGoxE=; Domain=.bigbasket.com; Path=/; Expires=Sun, 21 Sep 2025 04:09:41 GMT; Max-Age=2678400; Secure; HttpOnly
+Set-Cookie: bm_so=DDA56FE9C3F58ECED4EF5699B7BD58CA23DAE2908F1FA20D6FF1BBE7CE390681~YAAQtkLHF24m0siYAQAAoHPRygTqfmsxc35pe7O5jE+W6Lu+XWIhFq/avFN2iACjntslFcYkKn8W4zeu79Y4BOpmtTtSkFtw4KCRnEa8mn2TRnewCSCrdbRisbSDZYoNUJ4xV1r+gLnma3LgINhwMtBRyBiqrx58IvSfSUOXFuNdPnB8e8S3yf/LINXPUKnb7VHorttK9SoFAmQKFbF568KDCsQx8l+WcDaS+PVWzergLqwl804lXTi4SG6TT1Xum4dAHt9eeUHOsEv1Whm0L+Y1vB9LA1uhh5jndPKKQacGA9W+iDeAgJkgQw1eVVstn+K3VsrUlEd+nqcY8v4NzBztk1T0qzeak7iyZxJQp/2hDXnaKXX1WznGNPJBBiftWABOaOtLlsHhTsYbOYdZINiTT4kN96NTB1Sfi6u0teHaN0L38o6ADKDYqTJgcpqjqwnIkRm5qDxFaMThAuxKOQ==; Domain=.bigbasket.com; Path=/; Expires=Fri, 22 Aug 2025 04:09:41 GMT; Max-Age=86400; Secure
+X-Bb-Grn: 0.b642c717.1755749380.13ebbea
+X-Akamai-Cache: NotCacheable from child
