@@ -1,0 +1,1396 @@
+2025-08-21 03:50:09 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:09 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:50:10 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:10 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:50:10 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:10 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:50:10 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:10 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:50:11 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:11 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:50:23 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:23 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:50:42 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:50:42 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:53:36 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:53:36 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:53:36 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:53:36 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:53:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:53:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:53:36 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:53:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:53:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:53:36 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:53:36 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:53:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.JsonWriterPipeline',
+ 'ecommerce_scraper.pipelines.CsvWriterPipeline']
+2025-08-21 03:53:36 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:53:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:53:36 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:53:36 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:53:36 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:53:38 [amazon] INFO: Parsing page 1: https://www.amazon.in/s?k=laptop
+2025-08-21 03:53:39 [amazon] INFO: Parsing page 2: https://www.amazon.in/s?k=laptop&page=2&xpid=yO6NuYMaahm26&qid=1755748417&ref=sr_pg_1
+2025-08-21 03:53:42 [amazon] INFO: Parsing page 3: https://www.amazon.in/s?k=laptop&page=3&qid=1755748418&xpid=yO6NuYMaahm26&ref=sr_pg_2
+2025-08-21 03:53:42 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:53:42 [amazon] INFO: Amazon spider closed: finished
+2025-08-21 03:53:42 [amazon] INFO: Total pages scraped: 3
+2025-08-21 03:53:42 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/products_2025-08-21T03-53-36+00-00.json
+2025-08-21 03:53:42 [scrapy.extensions.feedexport] INFO: Stored csv feed (0 items) in: data/products_2025-08-21T03-53-36+00-00.csv
+2025-08-21 03:53:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1157,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 818779,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 5.72862,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 53, 42, 511445, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 4708117,
+ 'httpcompression/response_count': 3,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 17,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 75194368,
+ 'memusage/startup': 75194368,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'responses_per_minute': 36.0,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 53, 36, 782825, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:53:42 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:53:43 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:53:43 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:53:43 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:53:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:53:43 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:53:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:53:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:53:43 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:53:43 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:53:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.JsonWriterPipeline',
+ 'ecommerce_scraper.pipelines.CsvWriterPipeline']
+2025-08-21 03:53:43 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:53:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:53:43 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:53:43 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:53:43 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:53:44 [amazon] INFO: Parsing page 1: https://www.amazon.in/s?k=smartphone
+2025-08-21 03:53:46 [amazon] INFO: Parsing page 2: https://www.amazon.in/s?k=smartphone&page=2&xpid=mTnFILnKOq2Ev&qid=1755748423&ref=sr_pg_1
+2025-08-21 03:53:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:53:46 [amazon] INFO: Amazon spider closed: finished
+2025-08-21 03:53:46 [amazon] INFO: Total pages scraped: 2
+2025-08-21 03:53:46 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/products_2025-08-21T03-53-43+00-00.json
+2025-08-21 03:53:46 [scrapy.extensions.feedexport] INFO: Stored csv feed (0 items) in: data/products_2025-08-21T03-53-43+00-00.csv
+2025-08-21 03:53:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 716,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 465817,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 2.917201,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 53, 46, 91743, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 2709132,
+ 'httpcompression/response_count': 2,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 71057408,
+ 'memusage/startup': 71057408,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'responses_per_minute': 60.0,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 53, 43, 174542, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:53:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:53:46 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:53:46 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:53:46 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:53:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:53:46 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:53:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:53:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:53:46 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:53:46 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:53:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.JsonWriterPipeline',
+ 'ecommerce_scraper.pipelines.CsvWriterPipeline']
+2025-08-21 03:53:46 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:53:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:53:46 [flipkart] INFO: Spider opened: flipkart
+2025-08-21 03:53:46 [flipkart] INFO: Spider opened: flipkart
+2025-08-21 03:53:46 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:53:47 [flipkart] INFO: Parsing page 1: https://www.flipkart.com/search?q=smartphone
+2025-08-21 03:53:47 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/motorola-g05-forest-green-64-gb/p/itme5ed06a5943b9?pid=MOBH5F3Q2SGMAFHR&lid=LSTMOBH5F3Q2SGMAFHR6YHZS0&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_4&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBH5F3Q2SGMAFHR.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:53:50 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/ai-pulse-purple-64-gb/p/itm64f0502e1d7d7?pid=MOBHDDQXZAC7RVHF&lid=LSTMOBHDDQXZAC7RVHFZOAP8Z&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_3&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHDDQXZAC7RVHF.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:53:53 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/redmi-note-14-se-5g-titan-black-128-gb/p/itmbbe0bfdee707d?pid=MOBHE48SMK9RUZHQ&lid=LSTMOBHE48SMK9RUZHQEJUO1P&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_2&otracker=search&fm=organic&iid=en_TQosYiHdBrf0GGM6q2QkuFJ15QooX7Osx8PYalph0unXTSISWRYFBfmiQCCnEpaCUqhhjV75dPZGX8OZULmFBvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:53:56 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/redmi-note-14-se-5g-mystique-white-128-gb/p/itm3ac3f82a0d665?pid=MOBHE48SHGAUHGTC&lid=LSTMOBHE48SHGAUHGTCENTOS8&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_1&otracker=search&fm=organic&iid=en_TQosYiHdBrf0GGM6q2QkuFJ15QooX7Osx8PYalph0umiLqzjrx_JeC9EV9KVGAaWazYfYsIXG-6tXYeq7nqv6fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:53:58 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/realme-c73-5g-onyx-black-128-gb/p/itm332661213d3ff?pid=MOBHC64GFCKB3RBR&lid=LSTMOBHC64GFCKB3RBR5HBPMR&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_20&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHC64GFCKB3RBR.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:01 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/vivo-t4r-5g-arctic-white-128-gb/p/itm3a5653667cb9c?pid=MOBHE49GDEHE3XZD&lid=LSTMOBHE49GDEHE3XZDXHWSUS&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_19&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHE49GDEHE3XZD.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:04 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/poco-c71-cool-blue-64-gb/p/itm7a3f787718dd8?pid=MOBHAFVJJ7YTUYV8&lid=LSTMOBHAFVJJ7YTUYV8NFU7XU&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_18&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHAFVJJ7YTUYV8.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:06 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/poco-m6-plus-5g-ice-silver-128-gb/p/itm7e794d10838b4?pid=MOBH2M2DTGYS9HPB&lid=LSTMOBH2M2DTGYS9HPB9DDDSP&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_17&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBH2M2DTGYS9HPB.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:08 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/redmi-a3x-midnight-black-64-gb/p/itmae02f9f3f765a?pid=MOBH2YYZES7Y5H8K&lid=LSTMOBH2YYZES7Y5H8KOV8JEN&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_16&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBH2YYZES7Y5H8K.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:11 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/poco-c71-power-black-128-gb/p/itm8096ee52d7013?pid=MOBHAFVJJM8BWNKC&lid=LSTMOBHAFVJJM8BWNKCJY0MRA&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_15&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHAFVJJM8BWNKC.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:13 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/vivo-t4-lite-5g-charger-box-titanium-gold-256-gb/p/itm9886d6e522c4b?pid=MOBHDY9FNTHSYQCV&lid=LSTMOBHDY9FNTHSYQCVKD0GFP&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_14&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHDY9FNTHSYQCV.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:15 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/motorola-g45-5g-brilliant-green-128-gb/p/itm4f3bbebe58a57?pid=MOBH3YKQQN3S9TQQ&lid=LSTMOBH3YKQQN3S9TQQIXCQDO&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_13&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBH3YKQQN3S9TQQ.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:18 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/ai-pulse-green-64-gb/p/itm07bdfc2cf54df?pid=MOBHDDQXFEAF3HZF&lid=LSTMOBHDDQXFEAF3HZFOBCCFF&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_12&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHDDQXFEAF3HZF.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:21 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/vivo-t4r-5g-twilight-blue-256-gb/p/itm3a5653667cb9c?pid=MOBHE49GFMXQ5QEG&lid=LSTMOBHE49GFMXQ5QEGZPB4G9&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_11&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHE49GFMXQ5QEG.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:22 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/vivo-t4-lite-5g-charger-box-titanium-gold-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9FWXVJYCFM&lid=LSTMOBHDY9FWXVJYCFMHXZJVU&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_10&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHDY9FWXVJYCFM.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:25 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/motorola-g45-5g-viva-magenta-128-gb/p/itmab7651d40eb72?pid=MOBH3YKQMPVFBUB5&lid=LSTMOBH3YKQMPVFBUB5BQUMDM&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_9&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBH3YKQMPVFBUB5.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:28 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/samsung-galaxy-f05-twilight-blue-64-gb/p/itm84a914081ab93?pid=MOBH4GTXZ9ZRQ3SU&lid=LSTMOBH4GTXZ9ZRQ3SUVUREKM&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_8&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBH4GTXZ9ZRQ3SU.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:30 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/vivo-t4-lite-5g-charger-box-prism-blue-128-gb/p/itm9886d6e522c4b?pid=MOBHDY9FP7WFPCEE&lid=LSTMOBHDY9FP7WFPCEE9J8DVQ&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_7&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHDY9FP7WFPCEE.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:33 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/motorola-g45-5g-pantone-dahlia-purple-128-gb/p/itm06fcb77d748b2?pid=MOBHC7EW9NWAC5SH&lid=LSTMOBHC7EW9NWAC5SHC81JGK&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_6&otracker=search&fm=organic&iid=65293705-62c8-4c78-a527-94c220f3979c.MOBHC7EW9NWAC5SH.SEARCH&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:36 [flipkart] WARNING: Incomplete product data: https://www.flipkart.com/redmi-note-14-se-5g-crimson-art-128-gb/p/itm10fbd7f3a50f1?pid=MOBHE48SXCFFFTTT&lid=LSTMOBHE48SXCFFFTTTDUVPWS&marketplace=FLIPKART&q=smartphone&store=tyy%2F4io&srno=s_1_5&otracker=search&fm=organic&iid=en_TQosYiHdBrf0GGM6q2QkuFJ15QooX7Osx8PYalph0ul0z3p9LOOZUgXxZ1HjY0n1IMLFszLaxR8IQrUJNdIZHPUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=tjzptc2ls00000001755748427120&qH=1036ba3c4ed2c021
+2025-08-21 03:54:36 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:54:36 [flipkart] INFO: Flipkart spider closed: finished
+2025-08-21 03:54:36 [flipkart] INFO: Total pages scraped: 1
+2025-08-21 03:54:36 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/products_2025-08-21T03-53-46+00-00.json
+2025-08-21 03:54:36 [scrapy.extensions.feedexport] INFO: Stored csv feed (0 items) in: data/products_2025-08-21T03-53-46+00-00.csv
+2025-08-21 03:54:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 14185,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 2969672,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'elapsed_time_seconds': 49.465113,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 54, 36, 59236, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 15033686,
+ 'httpcompression/response_count': 21,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 15,
+ 'log_count/WARNING': 23,
+ 'memusage/max': 71061504,
+ 'memusage/startup': 71061504,
+ 'request_depth_max': 1,
+ 'response_received_count': 21,
+ 'responses_per_minute': 25.714285714285715,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 53, 46, 594123, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:54:36 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:54:36 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:54:36 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:54:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:54:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:54:36 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:54:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:54:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:54:36 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:54:36 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:54:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.JsonWriterPipeline',
+ 'ecommerce_scraper.pipelines.CsvWriterPipeline']
+2025-08-21 03:54:36 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:54:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:54:36 [bigbasket] INFO: Spider opened: bigbasket
+2025-08-21 03:54:36 [bigbasket] INFO: Spider opened: bigbasket
+2025-08-21 03:54:36 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:54:37 [bigbasket] INFO: Parsing page 1: https://www.bigbasket.com/ps/?q=smartphone
+2025-08-21 03:54:38 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40332419/apple-iphone-14-128gb-starlight-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=20&t_s=iPhone%252014%2520%2528128GB%252C%2520Starlight%2529
+2025-08-21 03:54:40 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40332418/apple-iphone-14-128gb-midnight-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=19&t_s=iPhone%252014%2520%2528128GB%252C%2520Midnight%2529
+2025-08-21 03:54:44 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330617/apple-iphone-16-plus-128gb-black-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=18&t_s=iPhone%252016%2520Plus%2520%2528128GB%252C%2520Black%2529
+2025-08-21 03:54:46 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330610/apple-iphone-16-256gb-ultramarine-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=17&t_s=iPhone%252016%2520%2528256GB%252C%2520Ultramarine%2529
+2025-08-21 03:54:48 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330615/apple-iphone-16-512gb-ultramarine-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=16&t_s=iPhone%252016%2520%2528512GB%252C%2520Ultramarine%2529
+2025-08-21 03:54:51 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330614/apple-iphone-16-512gb-pink-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=15&t_s=iPhone%252016%2520%2528512GB%252C%2520Pink%2529
+2025-08-21 03:54:54 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330605/apple-iphone-16-128gb-ultramarine-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=14&t_s=iPhone%252016%2520%2528128GB%252C%2520Ultramarine%2529
+2025-08-21 03:54:56 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330602/apple-iphone-16-128gb-black-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=13&t_s=iPhone%252016%2520%2528128GB%252C%2520Black%2529
+2025-08-21 03:54:58 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330608/apple-iphone-16-256gb-white-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=12&t_s=iPhone%252016%2520%2528256GB%252C%2520White%2529
+2025-08-21 03:55:01 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330646/apple-iphone-16-pro-1tb-desert-titanium-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=11&t_s=iPhone%252016%2520Pro%2520%25281TB%252C%2520Desert%2520Titanium%2529
+2025-08-21 03:55:03 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40329978/nothing-cmf-phone-1-5g-8gb-ram-128gb-black-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=10&t_s=CMF%2520Phone%25201%25205G%2520%25288GB%2520RAM%252C%2520128GB%252C%2520Black%2529
+2025-08-21 03:55:06 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330643/apple-iphone-16-pro-512gb-natural-titanium-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=9&t_s=iPhone%252016%2520Pro%2520%2528512GB%252C%2520Natural%2520Titanium%2529
+2025-08-21 03:55:08 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40332398/nothing-cmf-phone-1-5g-6gb-ram-128gb-blue-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=8&t_s=CMF%2520Phone%25201%25205G%2520%25286GB%2520RAM%252C%2520128GB%252C%2520Blue%2529
+2025-08-21 03:55:11 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40332399/nothing-cmf-phone-1-5g-8gb-ram-128gb-blue-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=7&t_s=CMF%2520Phone%25201%25205G%2520%25288GB%2520RAM%252C%2520128GB%252C%2520Blue%2529
+2025-08-21 03:55:14 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330659/apple-iphone-16-pro-max-1tb-natural-titanium-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=6&t_s=iPhone%252016%2520Pro%2520Max%2520%25281TB%252C%2520Natural%2520Titanium%2529
+2025-08-21 03:55:16 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40330655/apple-iphone-16-pro-max-512gb-natural-titanium-1-n/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=5&t_s=iPhone%252016%2520Pro%2520Max%2520%2528512GB%252C%2520Natural%2520Titanium%2529
+2025-08-21 03:55:18 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40331223/apple-iphone-15-128gb-black/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=4&t_s=iPhone%252015%2520%2528128GB%252C%2520Black%2529
+2025-08-21 03:55:21 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40339343/apple-iphone-16e-128gb-black-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=3&t_s=iPhone%252016e%2520%2528128GB%252C%2520Black%2529
+2025-08-21 03:55:23 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40339344/apple-iphone-16e-128gb-white-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=2&t_s=iPhone%252016e%2520%2528128GB%252C%2520White%2529
+2025-08-21 03:55:26 [bigbasket] WARNING: Incomplete product data: https://www.bigbasket.com/pd/40332362/apple-iphone-15-128gb-green-1-unit/?nc=cl-prod-list&t_pos_sec=1&t_pos_item=1&t_s=iPhone%252015%2520%2528128GB%252C%2520Green%2529
+2025-08-21 03:55:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:55:26 [bigbasket] INFO: BigBasket spider closed: finished
+2025-08-21 03:55:26 [bigbasket] INFO: Total pages scraped: 1
+2025-08-21 03:55:26 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/products_2025-08-21T03-54-36+00-00.json
+2025-08-21 03:55:26 [scrapy.extensions.feedexport] INFO: Stored csv feed (0 items) in: data/products_2025-08-21T03-54-36+00-00.csv
+2025-08-21 03:55:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10497,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 695720,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'elapsed_time_seconds': 49.885967,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 55, 26, 433903, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 4024236,
+ 'httpcompression/response_count': 21,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 15,
+ 'log_count/WARNING': 23,
+ 'memusage/max': 70971392,
+ 'memusage/startup': 70971392,
+ 'request_depth_max': 1,
+ 'response_received_count': 21,
+ 'responses_per_minute': 25.714285714285715,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 54, 36, 547936, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:55:26 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:55:26 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:55:26 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:55:26 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:55:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:55:26 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:55:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:55:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:55:26 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:55:26 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:55:26 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.JsonWriterPipeline',
+ 'ecommerce_scraper.pipelines.CsvWriterPipeline']
+2025-08-21 03:55:26 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:55:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:55:26 [dmart] INFO: Spider opened: dmart
+2025-08-21 03:55:26 [dmart] INFO: Spider opened: dmart
+2025-08-21 03:55:26 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:55:27 [dmart] INFO: Parsing page 1: https://www.dmart.in/search?q=smartphone
+2025-08-21 03:55:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:55:27 [dmart] INFO: DMart spider closed: finished
+2025-08-21 03:55:27 [dmart] INFO: Total pages scraped: 1
+2025-08-21 03:55:27 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/products_2025-08-21T03-55-26+00-00.json
+2025-08-21 03:55:27 [scrapy.extensions.feedexport] INFO: Stored csv feed (0 items) in: data/products_2025-08-21T03-55-26+00-00.csv
+2025-08-21 03:55:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 312,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 3688,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.33412,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 55, 27, 272834, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 34496,
+ 'httpcompression/response_count': 1,
+ 'items_per_minute': None,
+ 'log_count/INFO': 15,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 71188480,
+ 'memusage/startup': 71188480,
+ 'response_received_count': 1,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 55, 26, 938714, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:55:27 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:56:25 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:56:25 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:56:25 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:56:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:56:25 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:56:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:56:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:56:25 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:56:25 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:56:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.DuplicatesPipeline']
+2025-08-21 03:56:25 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:56:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:56:25 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:56:25 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:56:25 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:56:27 [amazon] INFO: Parsing page 1: https://www.amazon.in/s?k=test
+2025-08-21 03:56:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:56:27 [amazon] INFO: Amazon spider closed: finished
+2025-08-21 03:56:27 [amazon] INFO: Total pages scraped: 1
+2025-08-21 03:56:27 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/products_2025-08-21T03-56-25+00-00.json
+2025-08-21 03:56:27 [scrapy.extensions.feedexport] INFO: Stored csv feed (0 items) in: data/products_2025-08-21T03-56-25+00-00.csv
+2025-08-21 03:56:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 302,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 247149,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.629645,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 56, 27, 321457, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 1484720,
+ 'httpcompression/response_count': 1,
+ 'items_per_minute': 0.0,
+ 'log_count/INFO': 15,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 71041024,
+ 'memusage/startup': 71041024,
+ 'response_received_count': 1,
+ 'responses_per_minute': 60.0,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 56, 25, 691812, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:56:27 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:57:24 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:57:24 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:57:24 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:57:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:57:24 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:57:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:57:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:57:24 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:57:24 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:57:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.DuplicatesPipeline']
+2025-08-21 03:57:24 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:57:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:57:24 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:57:24 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:57:24 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:57:24 [amazon] INFO: Parsing page 1: https://www.amazon.in/s?k=test
+2025-08-21 03:57:24 [amazon] INFO: Found 20 product links on page 1
+2025-08-21 03:57:24 [scrapy.spidermiddlewares.urllength] INFO: Ignoring link (url length > 2083): https://aax-eu-zaz.amazon.in/x/c/JAMgovdPN5enDRkC3Hg82A0AAAGYysVTQAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDLAORf/clv1_CEuOPUxokZA0iHrVc_YGwnOIECt_DLETm64j_jGm5dJZ8X872QrmGf018HHz9hvVjq0yzpNb3X7OfU08AmcALllINnDJRpH3TUorSXhVQFaNDrdQhEfB8IkGXCQ8UuW6XJeXalC7rdIQEQQ8kV_3ZVhXLA8QC8x8H15tWbp4Xgyay_2WjkwrSxutOI2vKbYuDzUcfMyagcpNBHhtJZhsefQQh8yliMIIKin6O61_zAYOsoJhkeWuV2gvjBmW5lJBN2PMN-SRnR9AjX0lL9xFahCwdXiTzSjwM7idy763aqUUY2al1aK1xkuNcA7FBIOT3_cq0eVrbNPflqLpCtW9NcZo8s1QRR83iYkjg_pMIcBixWJ8CmSZ1SWr3JYqfnqDdhxLjmOcuEw9_BDYOeutdk4Cf7rJhPBne-wSBml9tlZkUux_rAVrRF9I0bxcInIFH-Gzc_r6mO-bWyVNaReipMUTeUmOk2OYfChiJ4snkeH1E39g8pKg8xPmTmFjVYOMr_VkwTthKoxWmj2Ajw-85x_bWgR-Y2A4Ly61XW_0GbfWKhOMGTd0mEAZAg3OfkfrU_0Pj89oQgyJhpZTgsU3XVSZOi98lgp6zP47jZipuW8Vvb-f_ZYgVnHu5zjScpWFM2scS8o1ABhn481pGpJ6qR8b2Zn7YTB6bWUzvdon4LU_OWswb3-RuU5AhmnkX8Bk4wIS1mV14doT5MkPCHGVPkYZ2qbwJMrd76fxJXwXKS3QkjXPYddX_BAfzfQAVf6Xr7NcMhLTn2TR5RPMYAbeH3RllibLAkpWt8pDeNEBQSWC8nkvH_B8gRhjnKuSSVOtVuWyajNb6VDKpuVsRc5qk4SjjEYnzP6yFOOEm8C7vGmRxFXhynMh-1XVvGCUvTL5rqIvkfwinyTmQ_ALU7ssEdOE4MyY9TJfJi0RDlbZoRTQlDtxI3YcZk9rYym_92iaxW-OX_qaw4_r9MPM_TWKZb4WB9WdILH732KbVCt8Au4VHTFDc1h_SrmO6B_nK1onMyym8LRU1T4ceLAA-aGa8yBrpg1vHcu2iExc4JVvkwxRSWeCdp-NJwb_WatcItx4UViqROCXGjU9HZy6Wseknd39awj93Y9ET8wABFpvN5m-DEf5VvtYiXNSD5uLudDuns4pEML6kGlaFMpIpkUiYng-bODmHnDbKI0EtND4paHG6RCM6GT6w7IZvyZRe_gAKyOFEg6k52esGxQ8uVz6EvSEzOlOtIxM3D2Z775IGETJKWYIXkWExVaggj97f5XIWqEor--2VFLnE5BmcIAc81Qy7LFdjbOHiBWYqU-yM-zUb-swc_zX9PwknhONraESB6AeeBH7wGPqitkUCl0tu7_qy9o5819fQ99kZMpJir8OlkKTGVOFg4u5NEDPdZZgAxTxUEusdiD6WCghB7eKRaLLtDOICVJx54cxn63vnmVGZTVEyKc5Fv0lDzGsJgufzzMOEmiit4bXgAfvN3bAZ33pzA3rbulq6LYV6e8Mzm0woXDJIESqa2BF7okhwuGyqCbAbQgXQcZGLZqGScUMLhT-mJTsPUjbN32wHYIKufem8fDLx7WFOZJ6MNA86MRRYsbYMUj9zqrAVMTEAEQ-Vw1I4b79wrMV-Ib-wnTV__e3MXLDJQCIlSRSigdYH4zkbSnkGX7IyOc3S3GJkyF68_0STQrIaH8GAKh9jJQ9X6u9Mu4bndfleSw15fiCpPTmu6B_KYSFgEFzqVu6kIsdAQn2wSBltCyc9YVAaW_D8Gfy09mC9MM2Qqht9VDtBO0Il5of7Cm8rJtBKP5dfYJy9nN2OfXc2GP4W-uXJDqPpc29Fpaq0rsK4NIcdKeW9_FXrwIUAc1kG7kuot_OF2nKOOuXprhJc8KkesVcVA9viDI-gNzpMaqFuCsmXaqdyeo_qN_ycCpciJCj6zV2ZjfIKu6RrAJRztIHeuz0i68gjnMNaRlBx8ruS4Ul7TWxFTtG_8bsZ2QgN8-y15ewa_quHWDEt_xqOW62eL8PeQH9EbO9YxcpcoSCXZnevEfzgXsWEfd3VjRsVLcypnZNgef7j-qogt41arDF-1juDuPd2G62BFphXPaZxQfgLVlsljZTGzrEAUgGScngfznVU2GhdzJ3R93-iZLVOuZNzFYIF775RNB2Uy_MaaZwgJg2qlukXj1CzS0gNGw6dgmpP0f35ijMGp290Glp3lLAAYYVTKtjNJ3yFcCQXaITCV8qfSczuKGwS4bXnKqDjpVneL95xrOm4tdZnQMR3MvRcmhb2fbUFO_CEUyNoLD3RerAsZBrO2G5SOej5Cs3_XkNY4CfZFT4J1KXd2b90KuFxEM/https://www.amazon.in/ChecckMe-ovulation-women-planning-pregnancy/dp/B09HGMS8LC/ref=sxin_14_sbv_search_btf?content-id=amzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6%3Aamzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6&cv_ct_cx=test&keywords=test&pd_rd_i=B09HGMS8LC&pd_rd_r=7e3cd177-6ca1-40cd-8f59-5a2ca0552957&pd_rd_w=p0P0l&pd_rd_wg=n5r8b&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pf_rd_r=SNFTV6V2C1ZP0QX2SE2K&qid=1755748586&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81 
+2025-08-21 03:57:24 [scrapy.spidermiddlewares.urllength] INFO: Ignoring link (url length > 2083): https://aax-eu-zaz.amazon.in/x/c/JAMgovdPN5enDRkC3Hg82A0AAAGYysVTQAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDEgICDLAORf/clv1_CEuOPUxokZA0iHrVc_YGwnOIECt_DLETm64j_jGm5dJZ8X872QrmGf018HHz9hvVjq0yzpNb3X7OfU08AmcALllINnDJRpH3TUorSXhVQFaNDrdQhEfB8IkGXCQ8UuW6XJeXalC7rdIQEQQ8kV_3ZVhXLA8QC8x8H15tWbp4Xgyay_2WjkwrSxutOI2vKbYuDzUcfMyagcpNBHhtJZhsefQQh8yliMIIKin6O61_zAYOsoJhkeWuV2gvjBmW5lJBN2PMN-SRnR9AjX0lL9xFahCwdXiTzSjwM7idy763aqUUY2al1aK1xkuNcA7FBIOT3_cq0eVrbNPflqLpCtW9NcZo8s1QRR83iYkjg_pMIcBixWJ8CmSZ1SWr3JYqfnqDdhxLjmOcuEw9_BDYOeutdk4Cf7rJhPBne-wSBml9tlZkUux_rAVrRF9I0bxcInIFH-Gzc_r6mO-bWyVNaReipMUTeUmOk2OYfChiJ4snkeH1E39g8pKg8xPmTmFjVYOMr_VkwTthKoxWmj2Ajw-85x_bWgR-Y2A4Ly61XW_0GbfWKhOMGTd0mEAZAg3OfkfrU_0Pj89oQgyJhpZTgsU3XVSZOi98lgp6zP47jZipuW8Vvb-f_ZYgVnHu5zjScpWFM2scS8o1ABhn481pGpJ6qR8b2Zn7YTB6bWUzvdon4LU_OWswb3-RuU5AhmnkX8Bk4wIS1mV14doT5MkPCHGVPkYZ2qbwJMrd76fxJXwXKS3QkjXPYddX_BAfzfQAVf6Xr7NcMhLTn2TR5RPMYAbeH3RllibLAkpWt8pDeNEBQSWC8nkvH_B8gRhjnKuSSVOtVuWyajNb6VDKpuVsRc5qk4SjjEYnzP6yFOOEm8C7vGmRxFXhynMh-1XVvGCUvTL5rqIvkfwinyTmQ_ALU7ssEdOE4MyY9TJfJi0RDlbZoRTQlDtxI3YcZk9rYym_92iaxW-OX_qaw4_r9MPM_TWKZb4WB9WdILH732KbVCt8Au4VHTFDc1h_SrmO6B_nK1onMyym8LRU1T4ceLAA-aGa8yBrpg1vHcu2iExc4JVvkwxRSWeCdp-NJwb_WatcItx4UViqROCXGjU9HZy6Wseknd39awj93Y9ET8wABFpvN5m-DEf5VvtYiXNSD5uLudDuns4pEML6kGlaFMpIpkUiYng-bODmHnDbKI0EtND4paHG6RCM6GT6w7IZvyZRe_gAKyOFEg6k52esGxQ8uVz6EvSEzOlOtIxM3D2Z775IGETJKWYIXkWExVaggj97f5XIWqEor--2VFLnE5BmcIAc81Qy7LFdjbOHiBWYqU-yM-zUb-swc_zX9PwknhONraESB6AeeBH7wGPqitkUCl0tu7_qy9o5819fQ99kZMpJir8OlkKTGVOFg4u5NEDPdZZgAxTxUEusdiD6WCghB7eKRaLLtDOICVJx54cxn63vnmVGZTVEyKc5Fv0lDzGsJgufzzMOEmiit4bXgAfvN3bAZ33pzA3rbulq6LYV6e8Mzm0woXDJIESqa2BF7okhwuGyqCbAbQgXQcZGLZqGScUMLhT-mJTsPUjbN32wHYIKufem8fDLx7WFOZJ6MNA86MRRYsbYMUj9zqrAVMTEAEQ-Vw1I4b79wrMV-Ib-wnTV__e3MXLDJQCIlSRSigdYH4zkbSnkGX7IyOc3S3GJkyF68_0STQrIaH8GAKh9jJQ9X6u9Mu4bndfleSw15fiCpPTmu6B_KYSFgEFzqVu6kIsdAQn2wSBltCyc9YVAaW_D8Gfy09mC9MM2Qqht9VDtBO0Il5of7Cm8rJtBKP5dfYJy9nN2OfXc2GP4W-uXJDqPpc29Fpaq0rsK4NIcdKeW9_FXrwIUAc1kG7kuot_OF2nKOOuXprhJc8KkesVcVA9viDI-gNzpMaqFuCsmXaqdyeo_qN_ycCpciJCj6zV2ZjfIKu6RrAJRztIHeuz0i68gjnMNaRlBx8ruS4Ul7TWxFTtG_8bsZ2QgN8-y15ewa_quHWDEt_xqOW62eL8PeQH9EbO9YxcpcoSCXZnevEfzgXsWEfd3VjRsVLcypnZNgef7j-qogt41arDF-1juDuPd2G62BFphXPaZxQfgLVlsljZTGzrEAUgGScngfznVU2GhdzJ3R93-iZLVOuZNzFYIF775RNB2Uy_MaaZwgJg2qlukXj1CzS0gNGw6dgmpP0f35ijMGp290Glp3lLAAYYVTKtjNJ3yFcCQXaITCV8qfSczuKGwS4bXnKqDjpVneL95xrOm4tdZnQMR3MvRcmhb2fbUFO_CEUyNoLD3RerAsZBrO2G5SOej5Cs3_XkNY4CfZFT4J1KXd2b90KuFxEM/https://www.amazon.in/ChecckMe-ovulation-women-planning-pregnancy/dp/B09HGMS8LC/ref=sxin_14_sbv_search_btf?content-id=amzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6%3Aamzn1.sym.7f127af2-01e9-4e9a-857b-f7f598682cc6&cv_ct_cx=test&keywords=test&pd_rd_i=B09HGMS8LC&pd_rd_r=7e3cd177-6ca1-40cd-8f59-5a2ca0552957&pd_rd_w=p0P0l&pd_rd_wg=n5r8b&pf_rd_p=7f127af2-01e9-4e9a-857b-f7f598682cc6&pf_rd_r=SNFTV6V2C1ZP0QX2SE2K&qid=1755748586&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-9131241a-a358-4619-a7b8-0f5a65d91d81#customerReviews 
+2025-08-21 03:57:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:57:54 [amazon] INFO: Amazon spider closed: finished
+2025-08-21 03:57:54 [amazon] INFO: Total pages scraped: 1
+2025-08-21 03:57:54 [scrapy.extensions.feedexport] INFO: Stored json feed (12 items) in: data/products_2025-08-21T03-57-24+00-00.json
+2025-08-21 03:57:54 [scrapy.extensions.feedexport] INFO: Stored csv feed (12 items) in: data/products_2025-08-21T03-57-24+00-00.csv
+2025-08-21 03:57:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10024,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 3740881,
+ 'downloader/response_count': 13,
+ 'downloader/response_status_count/200': 13,
+ 'dupefilter/filtered': 6,
+ 'elapsed_time_seconds': 30.265598,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 57, 54, 632707, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 1,
+ 'httpcompression/response_bytes': 20115860,
+ 'httpcompression/response_count': 13,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 24.0,
+ 'log_count/INFO': 18,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 71069696,
+ 'memusage/startup': 71069696,
+ 'request_depth_max': 1,
+ 'response_received_count': 13,
+ 'responses_per_minute': 26.0,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 57, 24, 367109, tzinfo=datetime.timezone.utc),
+ 'urllength/request_ignored_count': 2}
+2025-08-21 03:57:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-08-21 03:57:56 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: ecommerce_scraper)
+2025-08-21 03:57:56 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.3 (main, Apr  9 2025, 04:03:52) [Clang 20.1.0 ]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.2 5 Aug 2025)',
+ 'cryptography': '45.0.6',
+ 'Platform': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39'}
+2025-08-21 03:57:56 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-08-21 03:57:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-08-21 03:57:56 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'BOT_NAME': 'ecommerce_scraper',
+ 'CONCURRENT_REQUESTS_PER_IP': 8,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 3600,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ecommerce_scraper.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['ecommerce_scraper.spiders'],
+ 'TELNETCONSOLE_ENABLED': False}
+2025-08-21 03:57:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-08-21 03:57:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-08-21 03:57:56 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/core/spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-08-21 03:57:56 [scrapy.core.spidermw] WARNING: Middleware ecommerce_scraper.middlewares.EcommerceScraperSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2025-08-21 03:57:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce_scraper.pipelines.EcommerceScraperPipeline',
+ 'ecommerce_scraper.pipelines.DuplicatesPipeline']
+2025-08-21 03:57:56 [scrapy.core.engine] INFO: Spider opened
+2025-08-21 03:57:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-08-21 03:57:56 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:57:56 [amazon] INFO: Spider opened: amazon
+2025-08-21 03:57:56 [py.warnings] WARNING: /home/aryaniyaps/web-projects/BasketNa/crawler/.venv/lib/python3.13/site-packages/scrapy/spidermiddlewares/base.py:46: ScrapyDeprecationWarning: The Spider.start_requests() method is deprecated, use Spider.start() instead. If you are calling super().start_requests() from a Spider.start() override, iterate super().start() instead.
+  for o in start:
+
+2025-08-21 03:57:56 [amazon] INFO: Parsing page 1: https://www.amazon.in/s?k=laptop
+2025-08-21 03:57:56 [amazon] INFO: Found 20 product links on page 1
+2025-08-21 03:57:59 [amazon] INFO: Extracted data for https://www.amazon.in/HP-Laptop-15-6-inch-Graphics-fc0154AU/dp/B0D3HG5CMG/ref=sr_1_3?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-3:
+2025-08-21 03:57:59 [amazon] INFO:   Name: HP 15, AMD Ryzen 3 7320U (8GB LPDDR5, 512GB SSD) FHD, Anti-Glare, Micro-Edge, 15.6"/39.6cm, Win 11, Office 21, Silver, 1.59kg, fc0154AU, AMD Radeon Graphics, 1080p FHD Camera Laptop
+2025-08-21 03:57:59 [amazon] INFO:   Price: 29,990
+2025-08-21 03:57:59 [amazon] INFO:   Brand: Visit the HP Store
+2025-08-21 03:57:59 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:00 [amazon] INFO: Extracted data for https://www.amazon.in/Lenovo-Graphics-5500Mhz-Premium-Warranty/dp/B0F7HRM9JX/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-7:
+2025-08-21 03:58:00 [amazon] INFO:   Name: Lenovo V15 G4 AMD Ryzen 5 7520U DOS 15.6 inch FHD Thin & Lite Laptop, AMD Graphics, 16GB DDR5 5500Mhz Ram, 512GB SSD,Dolby Audio,Premium Grey, 1 Year Onsite Brand Warranty
+2025-08-21 03:58:00 [amazon] INFO:   Price: 33,875
+2025-08-21 03:58:00 [amazon] INFO:   Brand: Visit the Lenovo Store
+2025-08-21 03:58:00 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:02 [amazon] INFO: Extracted data for https://www.amazon.in/Lenovo-Graphics-5500Mhz-Premium-Warranty/dp/B0F7HRM9JX/ref=sr_1_7?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-7:
+2025-08-21 03:58:02 [amazon] INFO:   Name: Lenovo V15 G4 AMD Ryzen 5 7520U DOS 15.6 inch FHD Thin & Lite Laptop, AMD Graphics, 16GB DDR5 5500Mhz Ram, 512GB SSD,Dolby Audio,Premium Grey, 1 Year Onsite Brand Warranty
+2025-08-21 03:58:02 [amazon] INFO:   Price: 33,875
+2025-08-21 03:58:02 [amazon] INFO:   Brand: Visit the Lenovo Store
+2025-08-21 03:58:02 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:02 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: Amazon_B0F7HRM9JX
+{'availability': 'In stock',
+ 'brand': 'Visit the Lenovo Store',
+ 'category': '›',
+ 'currency': 'INR',
+ 'current_price': 33875.0,
+ 'description': '',
+ 'discount_percentage': 44.0,
+ 'features': ['Processor: AMD Ryzen 5 7520U processor, base speed 2.8 Ghz, max '
+              'speed 4.3 Ghz, 4 Cores, 4MB L3 cache | Memory: 16GB LPDDR5 RAM '
+              '5500 MHz | Storage: 512GB M.2 PCIe SSD (expandable upto 1TB)',
+              'Display: 15.6" (39.62 cm) FHD (1920x1080) 250 Nits, Antiglare, '
+              'Contrast Ratio: 500:1 | Graphics: Integrated AMD Radeon '
+              'graphics | Monitor Supports: Supports upto 3 independent '
+              'displays',
+              'Ports: 2x USB 3.2 Gen 1 | 1x USB-C 3.2 Gen 1 (support data '
+              'transfer, Power Delivery (20V only) and DisplayPort 1.2) | 1x '
+              'HDMI 1.4b | 1x Ethernet (RJ-45) | 1x Headphone / microphone '
+              'combo jack (3.5mm) | 1x Power connector',
+              'Camera: HD 720p with Privacy Shutter | Keyboard: 6-row, '
+              'spill-resistant, multimedia Fn keys, SMB Service Hot key, '
+              'numeric keypad | Touchpad: Buttonless Mylar surface multi-touch '
+              'touchpad, supports Precision TouchPad',
+              'Camera: HD 720p with Privacy Shutter | Keyboard: 6-row, '
+              'spill-resistant, multimedia Fn keys, SMB Service Hot key, '
+              'numeric keypad | Touchpad: Buttonless Mylar surface multi-touch '
+              'touchpad, supports Precision TouchPad'],
+ 'is_complete': True,
+ 'original_price': 60300.0,
+ 'platform': 'Amazon',
+ 'product_id': 'B0F7HRM9JX',
+ 'product_image_url': 'https://m.media-amazon.com/images/I/41dOpOd2AfL._SY300_SX300_QL70_ML2_.jpg',
+ 'product_name': 'Lenovo V15 G4 AMD Ryzen 5 7520U DOS 15.6 inch FHD Thin & '
+                 'Lite Laptop, AMD Graphics, 16GB DDR5 5500Mhz Ram, 512GB '
+                 'SSD,Dolby Audio,Premium Grey, 1 Year Onsite Brand Warranty',
+ 'product_rating': 3.9,
+ 'product_reviews_count': 153,
+ 'product_url': 'https://www.amazon.in/Lenovo-Graphics-5500Mhz-Premium-Warranty/dp/B0F7HRM9JX/ref=sr_1_7?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-7',
+ 'scraped_at': '2025-08-21T03:58:02.244278',
+ 'specifications': {'Are Batteries Included': '\u200eYes',
+                    'Average Battery Life (in hours)': '\u200e4 Hours',
+                    'Batteries': '\u200e1 12V batteries required. (included)',
+                    'Brand': '\u200eLenovo',
+                    'Colour': '\u200ePremium Grey',
+                    'Computer Memory Type': '\u200eDDR5 RAM',
+                    'Connectivity Type': '\u200eWi-Fi',
+                    'Form Factor': '\u200eClamshell',
+                    'Graphics Card Description': '\u200eIntegrated',
+                    'Graphics Card Interface': '\u200eIntegrated',
+                    'Graphics Chipset Brand': '\u200eAMD',
+                    'Graphics Coprocessor': '\u200eAMD Radeon R5',
+                    'Graphics RAM Type': '\u200eDDR4 SDRAM',
+                    'Hard Disk Description': '\u200eSSD',
+                    'Hard Drive Interface': '\u200eUSB',
+                    'Hard Drive Size': '\u200e512 GB',
+                    'Included Components': '\u200eWebcam',
+                    'Item Weight': '\u200e1 kg 620 g',
+                    'Lithium Battery Energy Content': '\u200e41 Watt Hours',
+                    'Manufacturer': '\u200eLenovo',
+                    'Maximum Memory Supported': '\u200e16 GB',
+                    'Memory Technology': '\u200eDDR4',
+                    'Number of HDMI Ports': '\u200e1',
+                    'Number of Lithium Ion Cells': '\u200e3',
+                    'Number of USB 2.0 Ports': '\u200e2',
+                    'Number of USB 3.0 Ports': '\u200e1',
+                    'Operating System': '\u200eDOS',
+                    'Package Dimensions': '\u200e48.77 x 30.73 x 6.6 cm; 1.62 '
+                                          'kg',
+                    'Processor Brand': '\u200eAMD',
+                    'Processor Count': '\u200e1',
+                    'Processor Speed': '\u200e2.8 GHz',
+                    'Processor Type': '\u200eRyzen 5',
+                    'Resolution': '\u200e\u200e1920 x 1080 Pixels',
+                    'Screen Resolution': '\u200e1920 x 1080 pixels',
+                    'Series': '\u200eV15 G4 AMN',
+                    'Standing screen display size': '\u200e15.6 Inches',
+                    'Wireless Type': '\u200e802.11ax'},
+ 'subcategory': '›'}
+2025-08-21 03:58:05 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0BQJD5P52/ref=cs_sr_dp_5?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6:
+2025-08-21 03:58:05 [amazon] INFO:   Name: Dell G15-5520 Gaming Laptop, Intel i5-12500H/8GB DDR5/512GB SSD/Win 11 + MSO'21/NVIDIA RTX 3050 (4GB GDDR6)/15.6" (39.62cm) FHD WVA AG 120Hz 250 nits/Backlit KB Orange/Dark Shadow Grey/2.81kg
+2025-08-21 03:58:05 [amazon] INFO:   Price: 68,999
+2025-08-21 03:58:05 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:05 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:07 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKX3JRT/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6:
+2025-08-21 03:58:07 [amazon] INFO:   Name: Dell G15-5530, Intel Core i5-13450HX, RTX 3050-6GB, 16GB DDR5, 512GB SSD, FHD, 15.6"/39.62cm, 120Hz, Windows 11, MS Office 21, Dark Shadow Grey, 2.65KG, Backlit KB Orange Gaming Laptop
+2025-08-21 03:58:07 [amazon] INFO:   Price: 76,890
+2025-08-21 03:58:07 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:07 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:09 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0C918JGBM/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6:
+2025-08-21 03:58:09 [amazon] INFO:   Name: Dell G15 5520 Gaming Laptop, Intel i5-12500H/16GB DDR5/1TB SSD/15.6" (39.62cm) FHD WVA AG 120Hz 250 nits/NVIDIA RTX 3050, 4 GB GDDR6/Win 11 + MSO'21/15 Months McAfee/Backlit KB/Dark Shadow Grey/2.81kg
+2025-08-21 03:58:09 [amazon] INFO:   Price: 59,990
+2025-08-21 03:58:09 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:09 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:12 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B09XXM57T2/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6:
+2025-08-21 03:58:12 [amazon] INFO:   Name: Dell Refurbished G15 5520 Gaming Laptop, Intel i5-12500H, 16GB DDR5, 512GB SSD, RTX 3050 (4GB GDDR6), 15.6"(39.62cm) FHD 120Hz 250 nits Display, Backlit KB, Win 11 + MSO'21, Dark Shadow Grey, 2.81kg
+2025-08-21 03:58:12 [amazon] INFO:   Price: 66,990
+2025-08-21 03:58:12 [amazon] INFO:   Brand: Visit the Amazon Renewed Store
+2025-08-21 03:58:12 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:15 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKXDX83/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6:
+2025-08-21 03:58:15 [amazon] INFO:   Name: Dell G-series-15-5530-laptop - 15.6-inch FHD, Intel Core i5-13450HX, 16GB DDR5 RAM, 1TB SSD, NVIDIA GeForce RTX 3050, Orange Backlit Keyboard & G-Key, Windows 11 Home, Dark Shadow Gray, 2.65 Kg
+2025-08-21 03:58:15 [amazon] INFO:   Price: 76,962
+2025-08-21 03:58:15 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:15 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:17 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKXDX83/ref=sr_1_6?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6:
+2025-08-21 03:58:17 [amazon] INFO:   Name: Dell G-series-15-5530-laptop - 15.6-inch FHD, Intel Core i5-13450HX, 16GB DDR5 RAM, 1TB SSD, NVIDIA GeForce RTX 3050, Orange Backlit Keyboard & G-Key, Windows 11 Home, Dark Shadow Gray, 2.65 Kg
+2025-08-21 03:58:17 [amazon] INFO:   Price: 76,962
+2025-08-21 03:58:17 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:17 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:17 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: Amazon_B0CRKXDX83
+{'availability': 'In stock',
+ 'brand': 'Visit the Dell Store',
+ 'category': '›',
+ 'currency': 'INR',
+ 'current_price': 76962.0,
+ 'discount_percentage': 24.0,
+ 'features': ['SMOOTH VISUALS: Experience immersive gaming with the 15.6-inch '
+              'FHD display and 120Hz refresh rate',
+              'POWERFUL PERFORMANCE: Run demanding games with ease with the '
+              '13th Gen Intel Core i5-13450HX processor',
+              'ADVANCED GRAPHICS: Enjoy superior visuals with the NVIDIA '
+              'GeForce RTX 3050 GPU and 6 GB GDDR6 memory',
+              'FAST STORAGE: Store and access your files quickly with the 1 TB '
+              'M2 PCIe NVMe SSD',
+              'PERFORMANCE-BUILT DESIGN: Weighing 2.65 kg, this laptop is '
+              'engineered to deliver high performance in a durable, '
+              'high-capacity form factor',
+              'EXPANSIVE CONNECTIVITY: Includes HDMI 2.1, USB-C with '
+              'DisplayPort 14, RJ45 Ethernet, and three USB 3.2 Gen 1 ports '
+              'for versatile connectivity',
+              'BUILT-IN SECURITY: Comes with McAfee LiveSafe 5-device 12-month '
+              'subscription and Intel Wi-Fi 6 AX201 for secure and reliable '
+              'wireless access',
+              'GAMER-READY KEYBOARD: Includes an English US backlit keyboard '
+              'with numeric keypad and G-Key for enhanced gaming and '
+              'productivity control',
+              'STRIKING DESIGN: Finished in Dark Shadow Gray with a Black '
+              'thermal shelf for a bold and modern aesthetic'],
+ 'is_complete': True,
+ 'original_price': 101709.0,
+ 'platform': 'Amazon',
+ 'product_id': 'B0CRKXDX83',
+ 'product_image_url': 'https://m.media-amazon.com/images/I/411vFmejD6L._SX300_SY300_QL70_ML2_.jpg',
+ 'product_name': 'Dell G-series-15-5530-laptop - 15.6-inch FHD, Intel Core '
+                 'i5-13450HX, 16GB DDR5 RAM, 1TB SSD, NVIDIA GeForce RTX 3050, '
+                 'Orange Backlit Keyboard & G-Key, Windows 11 Home, Dark '
+                 'Shadow Gray, 2.65 Kg',
+ 'product_rating': 4.0,
+ 'product_reviews_count': 1224,
+ 'product_url': 'https://www.amazon.in/Dell-Smartchoice-G15-5530-Gaming-i5-13450HX/dp/B0CRKXDX83/ref=sr_1_6?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-6',
+ 'scraped_at': '2025-08-21T03:58:17.723413',
+ 'specifications': {'Are Batteries Included': '\u200eYes',
+                    'Audio Details': '\u200eHeadphones',
+                    'Average Battery Life (in hours)': '\u200e7 Hours',
+                    'Batteries': '\u200e1 Lithium Ion batteries required. '
+                                 '(included)',
+                    'Brand': '\u200eDell',
+                    'Colour': '\u200eDark Shadow Gray with Black thermal shelf',
+                    'Computer Memory Type': '\u200eDDR5 RAM',
+                    'Connectivity Type': '\u200eBluetooth, Wi-Fi',
+                    'Country of Origin': '\u200eChina',
+                    'Form Factor': '\u200eGaming',
+                    'Graphics Card Description': '\u200eDedicated',
+                    'Graphics Card Interface': '\u200ePCI Express',
+                    'Graphics Card Ram Size': '\u200e6 GB',
+                    'Graphics Chipset Brand': '\u200eNVIDIA',
+                    'Graphics Coprocessor': '\u200eNVIDIA GeForce RTX 3050, 6 '
+                                            'GB GDDR6',
+                    'Graphics RAM Type': '\u200eGDDR6',
+                    'Hard Disk Description': '\u200eSSD',
+                    'Hard Drive Interface': '\u200eSolid State',
+                    'Hard Drive Size': '\u200e1 TB',
+                    'Included Components': '\u200e\u200e\u200eUser Manual, '
+                                           'Laptop, Charger & Adapter',
+                    'Item Height': '\u200e57.9 Centimeters',
+                    'Item Weight': '\u200e2 kg 600 g',
+                    'Item Width': '\u200e35.7 Centimeters',
+                    'Item model number': '\u200eNew Dell Gaming G15',
+                    'Lithium Battery Energy Content': '\u200e56 Watt Hours',
+                    'Manufacturer': '\u200eDell India Pvt Ltd',
+                    'Maximum Memory Supported': '\u200e32 GB',
+                    'Memory Clock Speed': '\u200e4800 MHz',
+                    'Memory Technology': '\u200eDDR5',
+                    'Notebook Display Technology': '\u200eled',
+                    'Number of HDMI Ports': '\u200e1',
+                    'Number of Lithium Ion Cells': '\u200e3',
+                    'Number of USB 3.0 Ports': '\u200e4',
+                    'Operating System': '\u200eWindows 11 Home',
+                    'Optical Drive Type': '\u200eNo Optical Device',
+                    'Processor Brand': '\u200eIntel',
+                    'Processor Count': '\u200e1',
+                    'Processor Speed': '\u200e4.6 GHz',
+                    'Processor Type': '\u200eCore i5',
+                    'Product Dimensions': '\u200e7.7 x 35.7 x 57.9 cm; 2.6 kg',
+                    'RAM Size': '\u200e16',
+                    'Resolution': '\u200e1920 x 1080',
+                    'Screen Resolution': '\u200e1920 x 1080 pixels',
+                    'Series': '\u200eDell Laptop',
+                    'Standing screen display size': '\u200e15.6 Inches',
+                    'Voltage': '\u200e110 Volts',
+                    'Wattage': '\u200e180 Watts',
+                    'Wireless Type': '\u200eBluetooth'},
+ 'subcategory': '›'}
+2025-08-21 03:58:20 [amazon] INFO: Extracted data for https://www.amazon.in/HP-Pavilion-i5-1335U-Laptop-Touchscreen/dp/B0CJ2KWNNQ/ref=sr_1_5?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-5:
+2025-08-21 03:58:20 [amazon] INFO:   Name: HP Pavilion x360, 13th Gen Intel Core i5-1335U (16GB DDR4, 512GB SSD) Touchscreen, 14"/35.6cm, FHD, Win 11, Office 21, Silver, 1.51kg, ek1074tu/1148tu, Iris Xe, FPR, 5MP Camera, Backlit KB Laptop
+2025-08-21 03:58:20 [amazon] INFO:   Price: 66,990
+2025-08-21 03:58:20 [amazon] INFO:   Brand: Visit the HP Store
+2025-08-21 03:58:20 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:23 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Inspiron-5-7530U-Windows-Platinum/dp/B0D839SBQL/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-4:
+2025-08-21 03:58:23 [amazon] INFO:   Name: Dell Inspiron 15 3535 Lightweight Laptop – 15.6" FHD 120Hz Display, AMD Ryzen 3 7320U, 8GB LPDDR5, 512GB SSD, AMD Radeon 610M, Non-Backlit Keyboard, Black, 1.63kg, Win 11 + MSO'21 & 12 Month McAfee
+2025-08-21 03:58:23 [amazon] INFO:   Price: 38,999
+2025-08-21 03:58:23 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:23 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:26 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Inspiron-5-7530U-Windows-Platinum/dp/B0DSFRQTGB/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-4:
+2025-08-21 03:58:26 [amazon] INFO:   Name: Dell Inspiron 3535, AMD Ryzen 5-7530U, 16 GB RAM, 512 GB SSD, FHD IPS 15.6"/39.62 cm, 120Hz, Windows 11, MS Office 2024, Platinum Silver, 1.67 kg, Thin & Light Laptop
+2025-08-21 03:58:26 [amazon] INFO:   Price: 42,840
+2025-08-21 03:58:26 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:26 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:27 [amazon] INFO: Extracted data for https://www.amazon.in/Dell-Inspiron-5-7530U-Windows-Platinum/dp/B0DSFRQTGB/ref=sr_1_4?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-4:
+2025-08-21 03:58:27 [amazon] INFO:   Name: Dell Inspiron 3535, AMD Ryzen 5-7530U, 16 GB RAM, 512 GB SSD, FHD IPS 15.6"/39.62 cm, 120Hz, Windows 11, MS Office 2024, Platinum Silver, 1.67 kg, Thin & Light Laptop
+2025-08-21 03:58:27 [amazon] INFO:   Price: 42,840
+2025-08-21 03:58:27 [amazon] INFO:   Brand: Visit the Dell Store
+2025-08-21 03:58:27 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:27 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: Amazon_B0DSFRQTGB
+{'availability': 'In stock',
+ 'brand': 'Visit the Dell Store',
+ 'category': '›',
+ 'currency': 'INR',
+ 'current_price': 42840.0,
+ 'description': '',
+ 'discount_percentage': 11.0,
+ 'features': ['Processor: AMD Ryzen 5-7530U Series, Speed up to 4.50 GHz (16MB '
+              'L3 Cache, 10 Cores)',
+              'RAM & Storage: 16 GB: 2 x 8 GB, DDR4, 3200 MT/s + 512GB SSD',
+              'Display: 15.6" NT FHD 120Hz WVA IPS AG 250 nit Narrow Border '
+              'LED-Backlit & Graphics: Radeon Graphics',
+              'Keyboard: Standard Keyboard, Warranty- 1 Year Onsite Hardware '
+              'Service',
+              'Software: Pre-Loaded Windows 11 Home with Lifetime Validity | '
+              'MS Office Home and Student 2024 with lifetime validity| McAfee '
+              'Multi Device Security 15-month subscription'],
+ 'is_complete': True,
+ 'original_price': 48322.0,
+ 'platform': 'Amazon',
+ 'product_id': 'B0DSFRQTGB',
+ 'product_image_url': 'https://m.media-amazon.com/images/I/41+NFtQTyOL._SY300_SX300_.jpg',
+ 'product_name': 'Dell Inspiron 3535, AMD Ryzen 5-7530U, 16 GB RAM, 512 GB '
+                 'SSD, FHD IPS 15.6"/39.62 cm, 120Hz, Windows 11, MS Office '
+                 '2024, Platinum Silver, 1.67 kg, Thin & Light Laptop',
+ 'product_rating': 3.9,
+ 'product_reviews_count': 40,
+ 'product_url': 'https://www.amazon.in/Dell-Inspiron-5-7530U-Windows-Platinum/dp/B0DSFRQTGB/ref=sr_1_4?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-4',
+ 'scraped_at': '2025-08-21T03:58:27.492407',
+ 'specifications': {'Are Batteries Included': '\u200eYes',
+                    'Average Battery Life (in hours)': '\u200e3 Hours',
+                    'Average Battery Standby Life (in hours)': '\u200e3 Hours',
+                    'Batteries': '\u200e1 12V batteries required. (included)',
+                    'Brand': '\u200eDell',
+                    'Colour': '\u200eSilver',
+                    'Computer Memory Type': '\u200eDDR4 SDRAM',
+                    'Connectivity Type': '\u200eBluetooth',
+                    'Country of Origin': '\u200eChina',
+                    'Form Factor': '\u200eStandard Laptop',
+                    'Graphics Card Description': '\u200eIntegrated',
+                    'Graphics Card Interface': '\u200eIntegrated',
+                    'Graphics Chipset Brand': '\u200eAMD',
+                    'Graphics Coprocessor': '\u200eRadeon Graphics',
+                    'Graphics RAM Type': '\u200eDDR4 SDRAM',
+                    'Hard Disk Description': '\u200eSSD',
+                    'Hard Drive Interface': '\u200eUSB',
+                    'Hard Drive Size': '\u200e512 GB',
+                    'Included Components': '\u200eLaptop | Power Cable |User '
+                                           'Manual',
+                    'Item Weight': '\u200e1 kg 670 g',
+                    'Lithium Battery Energy Content': '\u200e41 Watt Hours',
+                    'Manufacturer': '\u200eDell India Pvt. Ltd.',
+                    'Maximum Memory Supported': '\u200e16 GB',
+                    'Memory Technology': '\u200eDDR4',
+                    'Number of HDMI Ports': '\u200e1',
+                    'Number of Lithium Ion Cells': '\u200e3',
+                    'Number of USB 2.0 Ports': '\u200e1',
+                    'Number of USB 3.0 Ports': '\u200e2',
+                    'Operating System': '\u200eWindows 11 Home',
+                    'Package Dimensions': '\u200e45.9 x 35.5 x 6.9 cm; 1.67 kg',
+                    'Processor Brand': '\u200eAMD',
+                    'Processor Count': '\u200e1',
+                    'Processor Speed': '\u200e4.5 GHz',
+                    'Processor Type': '\u200eRyzen 5',
+                    'Resolution': '\u200e1920 x 1080 Pixels',
+                    'Screen Resolution': '\u200e1920 x 1080 pixels',
+                    'Series': '\u200eInspiron',
+                    'Standing screen display size': '\u200e15.6 Inches',
+                    'Wireless Type': '\u200e802.11ac'},
+ 'subcategory': '›'}
+2025-08-21 03:58:30 [amazon] INFO: Extracted data for https://www.amazon.in/HP-Laptop-15-6-inch-Graphics-fc0154AU/dp/B09R1MMMTH/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-3:
+2025-08-21 03:58:30 [amazon] INFO:   Name: HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, AMD Radeon Graphics, Thin & Light, Dual Speakers (Win 11, MSO 2019, Silver, 1.69 kg), eq2143AU/eq2212au
+2025-08-21 03:58:30 [amazon] INFO:   Price: 40,690
+2025-08-21 03:58:30 [amazon] INFO:   Brand: Visit the HP Store
+2025-08-21 03:58:30 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:33 [amazon] INFO: Extracted data for https://www.amazon.in/HP-Laptop-15-6-inch-Graphics-fc0154AU/dp/B0D3HG5CMG/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-3:
+2025-08-21 03:58:33 [amazon] INFO:   Name: HP 15, AMD Ryzen 3 7320U (8GB LPDDR5, 512GB SSD) FHD, Anti-Glare, Micro-Edge, 15.6"/39.6cm, Win 11, Office 21, Silver, 1.59kg, fc0154AU, AMD Radeon Graphics, 1080p FHD Camera Laptop
+2025-08-21 03:58:33 [amazon] INFO:   Price: 29,990
+2025-08-21 03:58:33 [amazon] INFO:   Brand: Visit the HP Store
+2025-08-21 03:58:33 [amazon] INFO: ✅ Valid product data extracted
+2025-08-21 03:58:33 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: Amazon_B0D3HG5CMG
+{'availability': 'In stock',
+ 'brand': 'Visit the HP Store',
+ 'category': '›',
+ 'currency': 'INR',
+ 'current_price': 29990.0,
+ 'discount_percentage': 35.0,
+ 'features': ['Processor : AMD Ryzen 3 7320U (up to 4.1 GHz max boost clock, 4 '
+              'MB L3 cache, 4cores, 8 threads)| Storage & Memory : 8 GB '
+              'LPDDR5-5500 MHz RAM , 512 GB PCIe NVMe M.2 SSD',
+              'Display: 39.6 cm (15.6") diagonal, FHD (1920 x 1080), '
+              'micro-edge, anti-glare, 250 nits, 45% NTSC',
+              'Graphics & Networking : AMD Radeon Graphics|Networking: Realtek '
+              'Wi-Fi 6 (2x2) and Bluetooth 5.3 wireless card (supporting '
+              'gigabit data rate)',
+              'Ports: 1 USB Type-C 5Gbps signaling rate (supports data '
+              'transfer only and does not support charging or external '
+              'monitors); 2 USB Type-A 5Gbps signaling rate; 1 AC smart pin; 1 '
+              'HDMI 1.4b; 1 headphone/microphone combo',
+              'Features: Camera: HP True Vision 1080p FHD camera with temporal '
+              'noise reduction and integrated dual array digital microphones| '
+              'Audio: Dual speakers|Keyboard: Full-size, soft grey keyboard '
+              'with numeric keypad'],
+ 'is_complete': True,
+ 'original_price': 45995.0,
+ 'platform': 'Amazon',
+ 'product_id': 'B0D3HG5CMG',
+ 'product_image_url': 'https://m.media-amazon.com/images/I/41VeyHGM0uL._SX300_SY300_QL70_ML2_.jpg',
+ 'product_name': 'HP 15, AMD Ryzen 3 7320U (8GB LPDDR5, 512GB SSD) FHD, '
+                 'Anti-Glare, Micro-Edge, 15.6"/39.6cm, Win 11, Office 21, '
+                 'Silver, 1.59kg, fc0154AU, AMD Radeon Graphics, 1080p FHD '
+                 'Camera Laptop',
+ 'product_rating': 4.0,
+ 'product_reviews_count': 1751,
+ 'product_url': 'https://www.amazon.in/HP-Laptop-15-6-inch-Graphics-fc0154AU/dp/B0D3HG5CMG/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.uGwSCBm8Cxy9SWBJm8UN0s9unZhXPB-lY1uTp5xGZjF87T-r9LyjI8Jtcpv1B4XM1AZzGju8GwWiUtYpAr9hRkxvQ3sTmZ_UIE4o9RQhGLWVsf1PmFXz5dwnBtomGL_KUAmsPDPlO7IEDXFRDUUMRAP3AMqnoYh-o-Grm4Ra3zioeW4dy2WWaBUBy0KcF9qj0m4JG3moZgl6ROEhO-tOXc-wHY0R4ZUtFUt1bDNnyjk.fMD-47SvaDJqs9R5U6qJSoZGPQtxuA-jq7xi3rIf0og&dib_tag=se&keywords=laptop&qid=1755748417&sr=8-3',
+ 'scraped_at': '2025-08-21T03:58:33.271921',
+ 'specifications': {'Are Batteries Included': '\u200eYes',
+                    'Audio Details': '\u200eSpeakers',
+                    'Average Battery Life (in hours)': '\u200e10.5 Hours',
+                    'Batteries': '\u200e1 Lithium Ion batteries required. '
+                                 '(included)',
+                    'Brand': '\u200eHP',
+                    'Colour': '\u200eLight Silver',
+                    'Computer Memory Type': '\u200eDDR5 RAM',
+                    'Connectivity Type': '\u200eBluetooth',
+                    'Country of Origin': '\u200eIndia',
+                    'Form Factor': '\u200eUltra-Portable',
+                    'Graphics Card Description': '\u200eIntegrated',
+                    'Graphics Card Interface': '\u200eIntegrated',
+                    'Graphics Card Ram Size': '\u200e8 GB',
+                    'Graphics Chipset Brand': '\u200eAMD',
+                    'Graphics Coprocessor': '\u200eAMD Radeon Graphics',
+                    'Graphics RAM Type': '\u200eVRAM',
+                    'Hard Disk Description': '\u200eSolid State Hard Drive',
+                    'Hard Drive Interface': '\u200eUSB',
+                    'Hard Drive Size': '\u200e512 GB',
+                    'Included Components': '\u200eLaptop, charger',
+                    'Item Weight': '\u200e1 kg 590 g',
+                    'Item model number': '\u200e9D3M8PA',
+                    'Lithium Battery Energy Content': '\u200e41 Watt Hours',
+                    'Manufacturer': '\u200eHP',
+                    'Maximum Memory Supported': '\u200e8 GB',
+                    'Memory Clock Speed': '\u200e5500 MHz',
+                    'Memory Technology': '\u200eDDR5',
+                    'Number of HDMI Ports': '\u200e1',
+                    'Number of Lithium Ion Cells': '\u200e3',
+                    'Number of USB 2.0 Ports': '\u200e2',
+                    'Number of USB 3.0 Ports': '\u200e1',
+                    'Operating System': '\u200eWindows',
+                    'Package Dimensions': '\u200e52.1 x 31 x 6.9 cm; 1.59 kg',
+                    'Processor Brand': '\u200eAMD',
+                    'Processor Count': '\u200e1',
+                    'Processor Speed': '\u200e4.1 GHz',
+                    'Processor Type': '\u200eRyzen 3',
+                    'Resolution': '\u200e1920 x 1080 Pixels',
+                    'Screen Resolution': '\u200e1366 x 768 pixels',
+                    'Series': '\u200eHP Laptop',
+                    'Standing screen display size': '\u200e39.6 Centimetres',
+                    'Voltage': '\u200e11.1 Volts',
+                    'Wireless Type': '\u200eBluetooth'},
+ 'subcategory': '›'}
+2025-08-21 03:58:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-08-21 03:58:33 [amazon] INFO: Amazon spider closed: finished
+2025-08-21 03:58:33 [amazon] INFO: Total pages scraped: 1
+2025-08-21 03:58:33 [scrapy.extensions.feedexport] INFO: Stored json feed (11 items) in: data/products_2025-08-21T03-57-56+00-00.json
+2025-08-21 03:58:33 [scrapy.extensions.feedexport] INFO: Stored csv feed (11 items) in: data/products_2025-08-21T03-57-56+00-00.csv
+2025-08-21 03:58:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 11566,
+ 'downloader/request_count': 16,
+ 'downloader/request_method_count/GET': 16,
+ 'downloader/response_bytes': 5740222,
+ 'downloader/response_count': 16,
+ 'downloader/response_status_count/200': 16,
+ 'dupefilter/filtered': 5,
+ 'elapsed_time_seconds': 36.898639,
+ 'feedexport/success_count/FileFeedStorage': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 8, 21, 3, 58, 33, 331966, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 1,
+ 'httpcompression/response_bytes': 32822327,
+ 'httpcompression/response_count': 16,
+ 'item_dropped_count': 4,
+ 'item_dropped_reasons_count/DropItem': 4,
+ 'item_scraped_count': 11,
+ 'items_per_minute': 18.333333333333336,
+ 'log_count/INFO': 91,
+ 'log_count/WARNING': 7,
+ 'memusage/max': 71172096,
+ 'memusage/startup': 71172096,
+ 'request_depth_max': 1,
+ 'response_received_count': 16,
+ 'responses_per_minute': 26.666666666666668,
+ 'scheduler/dequeued': 16,
+ 'scheduler/dequeued/memory': 16,
+ 'scheduler/enqueued': 16,
+ 'scheduler/enqueued/memory': 16,
+ 'start_time': datetime.datetime(2025, 8, 21, 3, 57, 56, 433327, tzinfo=datetime.timezone.utc)}
+2025-08-21 03:58:33 [scrapy.core.engine] INFO: Spider closed (finished)

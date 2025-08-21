@@ -1,0 +1,13 @@
+Strict-Transport-Security: max-age=63072000
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+Referrer-Policy: no-referrer
+X-Xss-Protection: 0
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Etag: "ms2nuqoo1rqm8"
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Date: Thu, 21 Aug 2025 03:55:27 GMT
+Via: 1.1 google, 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
