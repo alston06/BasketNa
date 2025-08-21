@@ -1,0 +1,28 @@
+Content-Type: text/html;charset=UTF-8
+Date: Thu, 21 Aug 2025 03:56:26 GMT
+Vary: Content-Type,X-Amazon-Wtm-Tag-OPF-IN-ENV-VAR-LRA-SEARCH,X-Amazon-Wtm-Tag-Search-Route-To-ZAZ-Enabled,Accept-Encoding,User-Agent
+X-Frame-Options: SAMEORIGIN
+Server: Server
+X-Amz-Rid: SNFTV6V2C1ZP0QX2SE2K
+Set-Cookie: session-id=520-5098746-7291667; Domain=.amazon.in; Expires=Fri, 21-Aug-2026 03:56:26 GMT; Path=/; Secure
+Set-Cookie: session-id-time=2082787201l; Domain=.amazon.in; Expires=Fri, 21-Aug-2026 03:56:26 GMT; Path=/; Secure
+Set-Cookie: i18n-prefs=INR; Domain=.amazon.in; Expires=Fri, 21-Aug-2026 03:56:26 GMT; Path=/
+Set-Cookie: lc-acbin=en_IN; Domain=.amazon.in; Expires=Fri, 21-Aug-2026 03:56:26 GMT; Path=/
+Accept-Ch-Lifetime: 86400
+Cache-Control: no-cache
+Cache-Control: no-transform
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Content-Security-Policy-Report-Only: default-src 'self' blob: https: data: mediastream: 'unsafe-eval' 'unsafe-inline';report-uri https://metrics.media-amazon.com/
+Content-Security-Policy: upgrade-insecure-requests;report-uri https://metrics.media-amazon.com/
+X-Xss-Protection: 1;
+Expires: -1
+Content-Language: en-IN
+Accept-Ch: ect,rtt,downlink,device-memory,sec-ch-device-memory,viewport-width,sec-ch-viewport-width,dpr,sec-ch-dpr,sec-ch-ua-platform,sec-ch-ua-platform-version
+Strict-Transport-Security: max-age=47474747; includeSubDomains; preload
+X-Cache: Miss from cloudfront
+Via: 1.1 7b700049431c5ff959540a1d6c8a38b0.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MAA51-P3
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: cn8BHfcSYEQM7EdnI5B3ObP_yaH6Ktzm9sIMCr0DfRtJazCLkql6UA==

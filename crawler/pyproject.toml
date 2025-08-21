@@ -1,0 +1,25 @@
+[project]
+name = "crawler"
+version = "0.1.0"
+description = "E-commerce web scraper for price monitoring and data collection"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scrapy>=2.11.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "requests>=2.31.0",
+    "tabulate>=0.9.0",
+    "lxml>=4.9.0",
+    "cssselect>=1.2.0",
+    "urllib3>=2.0.0",
+    "itemadapter>=0.8.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "ipywidgets>=8.0.0",
+]
