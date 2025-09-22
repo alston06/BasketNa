@@ -45,7 +45,7 @@ except Exception as e:
 	print(f"⚠️ Failed to initialize CopilotKit: {e}")
 	print("💡 Make sure GOOGLE_API_KEY is set and copilotkit is installed")
 
-DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "sample_prices.csv"))
+DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "ecommerce_price_dataset.csv"))
 
 
 def build_site_search_url(site: str, product_name: str) -> str:
@@ -64,9 +64,46 @@ def build_site_search_url(site: str, product_name: str) -> str:
 
 def load_data() -> pd.DataFrame:
 	if not os.path.exists(DATA_PATH):
-		raise HTTPException(status_code=500, detail="Sample dataset not found. Please generate data/sample_prices.csv")
+		raise HTTPException(status_code=500, detail="E-commerce dataset not found. Please generate data/ecommerce_price_dataset.csv")
 	df = pd.read_csv(DATA_PATH)
 	df["date"] = pd.to_datetime(df["date"]).dt.date
+	
+	# Handle new dataset format - create product_id mapping and rename columns for compatibility
+	if "price_inr" in df.columns:
+		# Create product_id mapping for the new dataset
+		product_mapping = {
+			"iPhone 16": "P001",
+			"Samsung Galaxy S26 Ultra": "P002", 
+			"Google Pixel 10 Pro": "P003",
+			"OnePlus 14": "P004",
+			"Dell XPS 15": "P005",
+			"Apple MacBook Air (M4)": "P006",
+			"HP Spectre x360": "P007",
+			"Lenovo Legion 5 Pro": "P008",
+			"Sony WH-1000XM6 Headphones": "P009",
+			"Apple AirPods Pro 3": "P010",
+			"Bose QuietComfort Ultra Earbuds": "P011",
+			"JBL Flip 7 Speaker": "P012",
+			"Apple Watch Series 11": "P013",
+			"Samsung Galaxy Watch 7": "P014",
+			"Samsung 55-inch QLED TV": "P015",
+			"LG C5 65-inch OLED TV": "P016",
+			"Sony PlayStation 5 Pro": "P017",
+			"Canon EOS R7 Camera": "P018",
+			"DJI Mini 5 Pro Drone": "P019",
+			"Logitech MX Master 4 Mouse": "P020"
+		}
+		
+		# Add product_id column
+		df["product_id"] = df["product_name"].map(product_mapping)
+		
+		# Rename columns for compatibility with existing API
+		df["price"] = df["price_inr"]
+		df["site"] = df["retailer"]
+		
+		# Remove rows without product_id mapping (shouldn't happen with our dataset)
+		df = df.dropna(subset=["product_id"])
+	
 	return df
 
 
@@ -95,18 +132,23 @@ def search(query: str):
 	results = df[mask]
 	if results.empty:
 		return {"query": query, "items": [], "best_price": None}
+	
+	# Get latest prices for each product-site combination
 	latest_date = results.groupby(["product_id", "site"])['date'].transform('max')
-	latest_rows = results[results['date'] == latest_date]
+	latest_rows = results[results['date'] == latest_date].copy()
+	
 	items: List[schemas.SearchItem] = []
 	for _, row in latest_rows.iterrows():
 		url = build_site_search_url(str(row['site']), str(row['product_name']))
 		items.append(schemas.SearchItem(
-			product_id=row["product_id"],
-			product_name=row["product_name"],
-			site=row["site"],
+			product_id=str(row["product_id"]),
+			product_name=str(row["product_name"]),
+			site=str(row["site"]),
 			price=float(row["price"]),
 			url=url,
 		))
+	
+	# Find best price
 	best = min(items, key=lambda x: x.price) if items else None
 	return {"query": query, "items": items, "best_price": best}
 
@@ -125,6 +167,11 @@ def track(product_id: str, current_user: models.User = Depends(get_current_user)
 
 # ML/Forecast utilities
 try:
+	from ml.forecast_enhanced import forecast_for_product as forecast_enhanced
+except Exception:
+	forecast_enhanced = None
+
+try:
 	from ml.forecast import forecast_for_product as forecast_baseline
 except Exception:
 	forecast_baseline = None
@@ -136,13 +183,20 @@ except Exception:
 
 
 @app.get("/forecast/{product_id}", response_model=schemas.ForecastResponse)
-def forecast(product_id: str, model: str = "baseline"):
-	# choose model
+def forecast(product_id: str, model: str = "enhanced", retailer: str = None):
+	# Try enhanced model first (preferred for new dataset)
+	if model == "enhanced" and forecast_enhanced is not None:
+		result = forecast_enhanced(product_id, retailer)
+		if result is not None and "error" not in result:
+			return result
+	
+	# Try holidays model
 	if model == "holidays" and forecast_holidays is not None:
 		result = forecast_holidays(product_id)
 		if result is not None:
 			return result
-	# fallback to baseline
+	
+	# Fallback to baseline
 	if forecast_baseline is None:
 		raise HTTPException(status_code=500, detail="Forecasting module not available")
 	result = forecast_baseline(product_id)
@@ -163,6 +217,21 @@ def list_my_tracked(current_user: models.User = Depends(get_current_user), db: S
 		}
 		for r in rows
 	]
+
+
+@app.get("/compare/{product_id}")
+def compare_retailers(product_id: str, date_str: str = None):
+	"""Compare prices across all retailers for a specific product"""
+	try:
+		from ml.forecast_enhanced import get_retailer_comparison
+		result = get_retailer_comparison(product_id, date_str)
+		if "error" in result:
+			raise HTTPException(status_code=404, detail=result["error"])
+		return result
+	except ImportError:
+		raise HTTPException(status_code=500, detail="Retailer comparison not available")
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/forecast/train/{product_id}")

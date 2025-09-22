@@ -11,7 +11,10 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DATA_PATH = os.path.join(PROJECT_ROOT, "data", "sample_prices.csv")
+# Try new dataset first, fallback to old one
+NEW_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "ecommerce_price_dataset.csv")
+OLD_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "sample_prices.csv")
+DATA_PATH = NEW_DATA_PATH if os.path.exists(NEW_DATA_PATH) else OLD_DATA_PATH
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "forecasts")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -27,11 +30,32 @@ class ForecastPoint:
 def _prepare_series(df: pd.DataFrame, product_id: str) -> Optional[pd.DataFrame]:
 	if df.empty:
 		return None
-	df = df[df["product_id"] == product_id].copy()
-	if df.empty:
-		return None
-	# Aggregate by date across sites (mean price)
-	agg = df.groupby("date", as_index=False)["price"].mean()
+	
+	# Handle both old and new dataset formats
+	if "price_inr" in df.columns:
+		# New dataset format
+		df = df[df["product_name"].str.contains("iPhone 16|Samsung Galaxy|Google Pixel|OnePlus|Dell XPS|Apple MacBook|HP Spectre|Lenovo Legion|Sony WH|Apple AirPods|Bose QuietComfort|JBL Flip|Apple Watch|Samsung Galaxy Watch|Samsung 55|LG C5|Sony PlayStation|Canon EOS|DJI Mini|Logitech MX", na=False)]
+		if product_id == "P001":
+			df = df[df["product_name"] == "iPhone 16"]
+		elif product_id == "P002":
+			df = df[df["product_name"] == "Samsung Galaxy S26 Ultra"]
+		# Add more mappings as needed
+		else:
+			return None
+		
+		if df.empty:
+			return None
+		# Aggregate by date across retailers (mean price)
+		agg = df.groupby("date", as_index=False)["price_inr"].mean()
+		agg = agg.rename(columns={"price_inr": "price"})
+	else:
+		# Old dataset format
+		df = df[df["product_id"] == product_id].copy()
+		if df.empty:
+			return None
+		# Aggregate by date across sites (mean price)
+		agg = df.groupby("date", as_index=False)["price"].mean()
+	
 	agg = agg.sort_values("date")
 	return agg
 
@@ -79,7 +103,7 @@ def _fit_and_forecast(series: pd.DataFrame, horizon_days: int = 14) -> Tuple[lis
 	return history, forecast
 
 
-def _great_deal_flags(df: pd.DataFrame, product_id: str, current_price: float, forecast_lower0: Optional[float]) -> (bool, str):
+def _great_deal_flags(df: pd.DataFrame, product_id: str, current_price: float, forecast_lower0: Optional[float]) -> Tuple[bool, str]:
 	prices = df[df["product_id"] == product_id]["price"].values
 	if len(prices) == 0:
 		return False, "No history"
