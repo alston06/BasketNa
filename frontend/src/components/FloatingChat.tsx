@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { CopilotChat } from '@copilotkit/react-ui'
+import './FloatingChat.css'
 
 interface FloatingChatProps {
   productId?: string
@@ -11,118 +12,240 @@ export function FloatingChat({ productId, productName }: FloatingChatProps) {
 
   return (
     <>
-      {/* Floating Chat Button */}
+      {/* Enhanced Floating Chat Button */}
       <button
-        className="floating-chat-button"
+        className="btn position-fixed d-flex align-items-center justify-content-center rounded-circle shadow-lg"
         onClick={() => setIsOpen(!isOpen)}
         style={{
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          width: '60px',
-          height: '60px',
-          borderRadius: '50%',
-          background: 'linear-gradient(135deg, #667eea, #764ba2)',
+          bottom: '24px',
+          right: '24px',
+          width: '64px',
+          height: '64px',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
           border: 'none',
           color: 'white',
-          fontSize: '24px',
-          cursor: 'pointer',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-          zIndex: 1000,
-          transition: 'all 0.3s ease',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
+          fontSize: '28px',
+          zIndex: 1050,
+          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+          animation: isOpen ? 'none' : 'pulse 2s infinite'
         }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.transform = 'scale(1.1)'
-          e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.25)'
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'scale(1.1) rotate(5deg)'
+          e.currentTarget.style.boxShadow = '0 8px 25px rgba(102, 126, 234, 0.4)'
         }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.transform = 'scale(1)'
-          e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)'
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'scale(1) rotate(0deg)'
+          e.currentTarget.style.boxShadow = '0 4px 15px rgba(0,0,0,0.15)'
         }}
+        title={isOpen ? 'Close AI Assistant' : 'Chat with AI Assistant'}
       >
-        {isOpen ? '✕' : '🤖'}
+        <span style={{ 
+          transition: 'transform 0.2s ease',
+          transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'
+        }}>
+          {isOpen ? '✕' : '🤖'}
+        </span>
       </button>
 
-      {/* Chat Panel */}
+      {/* Enhanced Chat Panel */}
       {isOpen && (
         <div
-          className="floating-chat-panel"
+          className="position-fixed card border-0 shadow-lg"
           style={{
-            position: 'fixed',
-            bottom: '90px',
-            right: '20px',
-            width: '350px',
-            height: '500px',
-            backgroundColor: 'white',
-            borderRadius: '12px',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.12)',
-            zIndex: 1000,
+            bottom: '100px',
+            right: '24px',
+            width: '380px',
+            height: '560px',
+            zIndex: 1040,
+            borderRadius: '16px',
             overflow: 'hidden',
-            border: '1px solid #e0e0e0'
+            background: 'rgba(255, 255, 255, 0.98)',
+            backdropFilter: 'blur(10px)',
+            animation: 'slideInFromBottom 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
           }}
         >
+          {/* Chat Header */}
           <div
+            className="card-header border-0 p-0"
             style={{
-              background: 'linear-gradient(135deg, #667eea, #764ba2)',
-              color: 'white',
-              padding: '12px 16px',
-              fontSize: '14px',
-              fontWeight: '600'
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              color: 'white'
             }}
           >
-            <div className="d-flex justify-content-between align-items-center">
-              <span>🛒 BasketNa AI Assistant</span>
+            <div className="d-flex justify-content-between align-items-center p-3">
+              <div className="d-flex align-items-center">
+                <div 
+                  className="rounded-circle d-flex align-items-center justify-content-center me-2"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    fontSize: '16px'
+                  }}
+                >
+                  🤖
+                </div>
+                <div>
+                  <div className="fw-bold" style={{ fontSize: '14px' }}>
+                    BasketNa AI Assistant
+                  </div>
+                  <div className="small opacity-75">
+                    {productName ? `Helping with: ${productName}` : 'Ready to help you find deals!'}
+                  </div>
+                </div>
+              </div>
               <button
+                className="btn btn-sm d-flex align-items-center justify-content-center"
                 onClick={() => setIsOpen(false)}
                 style={{
-                  background: 'none',
+                  background: 'rgba(255, 255, 255, 0.2)',
                   border: 'none',
                   color: 'white',
-                  cursor: 'pointer',
-                  fontSize: '16px'
+                  width: '28px',
+                  height: '28px',
+                  borderRadius: '6px',
+                  fontSize: '14px',
+                  transition: 'all 0.2s ease'
                 }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'
+                }}
+                title="Close chat"
               >
                 ✕
               </button>
             </div>
-            {productName && (
-              <div style={{ fontSize: '12px', opacity: 0.9, marginTop: '4px' }}>
-                Helping with: {productName}
-              </div>
-            )}
           </div>
           
-          <div style={{ height: 'calc(100% - 60px)', overflow: 'hidden' }}>
-            <CopilotChat
-              instructions={`You are helping the user with product "${productName}" (ID: ${productId}). 
-                           Focus on price analysis, deal recommendations, and purchase timing advice for this specific product.
-                           Always provide actionable insights for Indian e-commerce platforms.`}
-              makeSystemMessage={(message) => 
-                `Current context: User is viewing product "${productName}" (${productId}). ${message}`
-              }
-            />
+          {/* Chat Content */}
+          <div 
+            className="card-body p-0 d-flex flex-column"
+            style={{ height: 'calc(100% - 70px)' }}
+          >
+            <div 
+              className="flex-grow-1"
+              style={{ 
+                overflow: 'hidden',
+                background: 'linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%)'
+              }}
+            >
+              <CopilotChat
+                instructions={`You are BasketNa's AI shopping assistant helping users find the best deals in India. 
+                             ${productName ? `Currently assisting with: "${productName}" (ID: ${productId}).` : ''}
+                             
+                             Your expertise includes:
+                             - Price comparison across Amazon.in, Flipkart, BigBasket
+                             - Deal recommendations and timing advice
+                             - Product analysis and value assessment
+                             - Shopping tips for Indian e-commerce
+                             
+                             Always be helpful, concise, and focus on actionable insights. Use emojis to make responses engaging.`}
+                makeSystemMessage={(message) => 
+                  `Context: ${productName ? `User viewing product "${productName}" (${productId})` : 'General shopping assistance'}. ${message}`
+                }
+                className="h-100"
+              />
+            </div>
           </div>
         </div>
       )}
 
-      {/* Mobile Overlay */}
+      {/* Mobile Overlay & Responsive Adjustments */}
       {isOpen && (
-        <div
-          className="d-md-none"
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0,0,0,0.5)',
-            zIndex: 999
-          }}
-          onClick={() => setIsOpen(false)}
-        />
+        <>
+          {/* Mobile Backdrop */}
+          <div
+            className="d-lg-none position-fixed w-100 h-100"
+            style={{
+              top: 0,
+              left: 0,
+              backgroundColor: 'rgba(0,0,0,0.6)',
+              zIndex: 1035,
+              backdropFilter: 'blur(4px)'
+            }}
+            onClick={() => setIsOpen(false)}
+          />
+          
+          {/* Mobile Chat Panel */}
+          <div
+            className="d-lg-none position-fixed card border-0 shadow-lg"
+            style={{
+              bottom: '20px',
+              left: '20px',
+              right: '20px',
+              height: '70vh',
+              zIndex: 1040,
+              borderRadius: '16px',
+              overflow: 'hidden',
+              background: 'rgba(255, 255, 255, 0.98)',
+              backdropFilter: 'blur(10px)',
+              animation: 'slideInFromBottom 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+            }}
+          >
+            {/* Mobile Header */}
+            <div
+              className="card-header border-0 p-0"
+              style={{
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                color: 'white'
+              }}
+            >
+              <div className="d-flex justify-content-between align-items-center p-3">
+                <div className="d-flex align-items-center">
+                  <div 
+                    className="rounded-circle d-flex align-items-center justify-content-center me-2"
+                    style={{
+                      width: '36px',
+                      height: '36px',
+                      background: 'rgba(255, 255, 255, 0.2)',
+                      fontSize: '18px'
+                    }}
+                  >
+                    🤖
+                  </div>
+                  <div>
+                    <div className="fw-bold">BasketNa AI Assistant</div>
+                    {productName && (
+                      <div className="small opacity-75">
+                        Helping with: {productName}
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <button
+                  className="btn btn-sm d-flex align-items-center justify-content-center"
+                  onClick={() => setIsOpen(false)}
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    border: 'none',
+                    color: 'white',
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '8px',
+                    fontSize: '16px'
+                  }}
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+            
+            {/* Mobile Chat Content */}
+            <div className="card-body p-0 h-100">
+              <CopilotChat
+                instructions={`You are BasketNa's AI shopping assistant. ${productName ? `Helping with: "${productName}".` : ''} 
+                             Provide concise, mobile-friendly responses with actionable shopping advice for Indian e-commerce.`}
+                makeSystemMessage={(message) => 
+                  `Mobile context: ${productName ? `Product "${productName}" (${productId})` : 'General assistance'}. ${message}`
+                }
+                className="h-100"
+              />
+            </div>
+          </div>
+        </>
       )}
 
 

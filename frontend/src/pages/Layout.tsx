@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router-dom'
 import { Auth } from '../api/client'
+import { FloatingChat } from '../components/FloatingChat'
 
 export default function Layout() {
 	const [token, setToken] = useState<string | null>(localStorage.getItem('token'))
@@ -234,6 +235,9 @@ export default function Layout() {
 				</div>
 			)}
 
+			{/* Floating Chat Assistant */}
+			<FloatingChat />
+
 			{/* Footer */}
 			<footer className="mt-5 py-4" style={{
 				background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -261,7 +265,7 @@ export default function Layout() {
 				</div>
 			</footer>
 
-			<style jsx>{`
+			<style>{`
 				.btn-loading {
 					opacity: 0.7;
 					transform: scale(0.98);
@@ -273,8 +277,8 @@ export default function Layout() {
 				}
 
 				.form-control:focus {
-					box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-					border-color: #667eea;
+					box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+					border-color: #667eea !important;
 				}
 
 				.card {
