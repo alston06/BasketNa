@@ -23,11 +23,27 @@ app = FastAPI(title="Basketna API", version="0.1.0")
 
 app.add_middleware(
 	CORSMiddleware,
-	allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+	allow_origins=[
+		"http://localhost:5173", 
+		"http://127.0.0.1:5173",
+		"http://localhost:3000",  # React dev server
+		"http://localhost:8081",  # Expo Metro
+	],
 	allow_credentials=True,
 	allow_methods=["*"],
 	allow_headers=["*"]
 )
+
+# Add CopilotKit integration with Gemini
+try:
+	from copilotkit.integrations.fastapi import add_fastapi_endpoint
+	from backend.agents.price_copilot import copilot_kit
+	
+	add_fastapi_endpoint(app, copilot_kit, "/copilotkit")
+	print("✅ CopilotKit endpoint added at /copilotkit with Google Gemini")
+except Exception as e:
+	print(f"⚠️ Failed to initialize CopilotKit: {e}")
+	print("💡 Make sure GOOGLE_API_KEY is set and copilotkit is installed")
 
 DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "sample_prices.csv"))
 

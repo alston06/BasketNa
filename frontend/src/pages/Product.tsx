@@ -11,7 +11,11 @@ import {
 import { useEffect, useState } from 'react'
 import { Line } from 'react-chartjs-2'
 import { useParams } from 'react-router-dom'
+import { useCopilotReadable } from '@copilotkit/react-core'
+import { CopilotSidebar } from '@copilotkit/react-ui'
 import { Products } from '../api/client'
+import { useTrackingActions } from '../hooks/useCopilotActions'
+import { FloatingChat } from '../components/FloatingChat'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend)
 
@@ -29,6 +33,25 @@ type ForecastResponse = {
 export default function Product() {
 	const { productId } = useParams()
 	const [data, setData] = useState<ForecastResponse | null>(null)
+	const [showCopilot, setShowCopilot] = useState(false)
+	
+	// Initialize CopilotKit actions
+	useTrackingActions(productId)
+	
+	// Provide context to CopilotKit
+	useCopilotReadable({
+		description: "Current product information including pricing history and forecasts",
+		value: {
+			productId,
+			productName: data?.product_name || 'Loading...',
+			currentPrices: data ? {
+				history: data.history,
+				forecast: data.forecast,
+				greatDeal: data.great_deal,
+				greatDealReason: data.great_deal_reason
+			} : null
+		}
+	})
 
 	useEffect(() => {
 		if (!productId) return
@@ -60,20 +83,72 @@ export default function Product() {
 	const upper = [...data.history.map(h => h.upper), ...data.forecast.map(f => f.upper)]
 
 	return (
-		<div>
-			<h2>{data.product_name}</h2>
-			{data.great_deal && <div className="alert alert-success">Great Deal! {data.great_deal_reason}</div>}
-			<div className="mb-3">
-				<button className="btn btn-outline-primary" onClick={track}>Track</button>
+		<div className="container-fluid">
+			<div className="row">
+				{/* Main Product Content */}
+				<div className={`${showCopilot ? 'col-md-8' : 'col-12'}`}>
+					<div className="container py-4">
+						<div className="d-flex justify-content-between align-items-center mb-4">
+							<h2 className="mb-0">{data.product_name}</h2>
+							<div className="d-flex gap-2">
+								<button 
+									className="btn btn-outline-primary d-none d-md-flex align-items-center gap-2"
+									onClick={() => setShowCopilot(!showCopilot)}
+								>
+									🤖 AI Assistant
+									{showCopilot ? ' (Close)' : ' (Open)'}
+								</button>
+							</div>
+						</div>
+						
+						{data.great_deal && (
+							<div className="alert alert-success d-flex align-items-center">
+								<strong>🎉 Great Deal!</strong>
+								<span className="ms-2">{data.great_deal_reason}</span>
+							</div>
+						)}
+						
+						<div className="mb-4">
+							<button className="btn btn-primary" onClick={track}>
+								📊 Track This Product
+							</button>
+						</div>
+						
+						<div className="card shadow-sm">
+							<div className="card-header">
+								<h5 className="mb-0">📈 Price History & Forecast</h5>
+							</div>
+							<div className="card-body">
+								<Line data={{
+									labels,
+									datasets: [
+										{ label: 'Price', data: prices, borderColor: 'rgba(13,110,253,1)', backgroundColor: 'rgba(13,110,253,0.2)' },
+										{ label: 'Lower', data: lower, borderColor: 'rgba(220,53,69,0.6)', borderDash: [5,5] },
+										{ label: 'Upper', data: upper, borderColor: 'rgba(25,135,84,0.6)', borderDash: [5,5] },
+									]
+								}} />
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				{/* Desktop CopilotKit Sidebar */}
+				{showCopilot && (
+					<div className="col-md-4 border-start d-none d-md-block" style={{ height: '100vh', overflow: 'hidden' }}>
+						<CopilotSidebar
+							instructions="You are a helpful AI assistant for BasketNa, a price comparison platform. Help users understand price trends, find the best deals, and make informed purchasing decisions. You have access to tools that can scrape current prices from Amazon.in, Flipkart.com, and BigBasket.com, and predict future price trends. Always use Indian Rupees (₹) when discussing prices."
+							defaultOpen={true}
+							clickOutsideToClose={false}
+						/>
+					</div>
+				)}
 			</div>
-			<Line data={{
-				labels,
-				datasets: [
-					{ label: 'Price', data: prices, borderColor: 'rgba(13,110,253,1)', backgroundColor: 'rgba(13,110,253,0.2)' },
-					{ label: 'Lower', data: lower, borderColor: 'rgba(220,53,69,0.6)', borderDash: [5,5] },
-					{ label: 'Upper', data: upper, borderColor: 'rgba(25,135,84,0.6)', borderDash: [5,5] },
-				]
-			}} />
+			
+			{/* Mobile Floating Chat */}
+			<FloatingChat 
+				productId={productId} 
+				productName={data?.product_name}
+			/>
 		</div>
 	)
 } 

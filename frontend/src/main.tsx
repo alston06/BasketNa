@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './copilot-styles.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { CopilotKit } from '@copilotkit/react-core'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import Layout from './pages/Layout'
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<CopilotKit runtimeUrl={import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/copilotkit"}>
+			<RouterProvider router={router} />
+		</CopilotKit>
 	</React.StrictMode>
 ) 
