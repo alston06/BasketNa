@@ -1,14 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './copilot-styles.css'
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { CopilotKit } from '@copilotkit/react-core'
-import Dashboard from './pages/Dashboard'
-import Home from './pages/Home'
-import Layout from './pages/Layout'
-import Product from './pages/Product'
-import Results from './pages/Results'
+import { CopilotKit } from '@copilotkit/react-core';
+import "@copilotkit/react-ui/styles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
+import Layout from './pages/Layout';
+import Product from './pages/Product';
+import Results from './pages/Results';
 
 const router = createBrowserRouter([
 	{

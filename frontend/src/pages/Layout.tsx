@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router-dom'
 import { Auth } from '../api/client'
-import { FloatingChat } from '../components/FloatingChat'
 
 export default function Layout() {
 	const [token, setToken] = useState<string | null>(localStorage.getItem('token'))
@@ -234,9 +233,6 @@ export default function Layout() {
 					</div>
 				</div>
 			)}
-
-			{/* Floating Chat Assistant */}
-			<FloatingChat />
 
 			{/* Footer */}
 			<footer className="mt-5 py-4" style={{
