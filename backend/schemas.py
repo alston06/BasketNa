@@ -72,3 +72,15 @@ class ForecastResponse(BaseModel):
 	forecast: List[ForecastPoint]
 	great_deal: bool
 	great_deal_reason: str 
+
+
+class ProductSummary(BaseModel):
+	product_id: str
+	product_name: str
+	latest_price: Optional[float] = None
+	views: Optional[int] = None
+
+
+class RecommendationResponse(BaseModel):
+	source: str
+	items: List[ProductSummary]

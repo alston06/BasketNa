@@ -18,6 +18,8 @@ export const Products = {
 	forecast: (productId: string) => api.get(`/forecast/${productId}`).then(r => r.data),
 	track: (productId: string) => api.post(`/track/${productId}`).then(r => r.data),
 	tracked: () => api.get('/me/tracked').then(r => r.data),
+	view: (productId: string) => api.post(`/views/${productId}`).then(r => r.data),
+	recommend: (params: { productId?: string, limit?: number }) => api.get('/recommendations', { params: { product_id: params.productId, limit: params.limit } }).then(r => r.data),
 }
 
 export default api 

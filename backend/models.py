@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Date, Float, ForeignKey, DateTime, UniqueConstraint
+from sqlalchemy import Column, Integer, String, Date, Float, ForeignKey, DateTime, UniqueConstraint, Index
 from sqlalchemy.orm import relationship
 from datetime import datetime
 
@@ -55,3 +55,20 @@ class PriceHistory(Base):
 	__table_args__ = (
 		UniqueConstraint("product_id", "date", "site", name="uq_product_date_site"),
 	) 
+
+
+class ProductView(Base):
+	__tablename__ = "product_views"
+
+	id = Column(Integer, primary_key=True, index=True)
+	# Either user_id or session_id will be used to attribute the view
+	user_id = Column(Integer, ForeignKey("users.id"), nullable=True, index=True)
+	session_id = Column(String, nullable=True, index=True)
+	product_id = Column(String, ForeignKey("products.id"), nullable=False, index=True)
+	viewed_at = Column(DateTime, default=datetime.utcnow, index=True)
+
+	# Quick index to query by session or user and product
+	__table_args__ = (
+		Index("ix_views_user_product", "user_id", "product_id"),
+		Index("ix_views_session_product", "session_id", "product_id"),
+	)

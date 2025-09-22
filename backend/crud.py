@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import select
+from sqlalchemy import select, func, desc
 from . import models
 
 
@@ -44,3 +44,28 @@ def list_tracked_with_products(db: Session, user_id: int):
 		.where(models.TrackedItem.user_id == user_id)
 	)
 	return db.execute(stmt).all() 
+
+
+def record_product_view(db: Session, product_id: str, user_id: int | None = None, session_id: str | None = None) -> models.ProductView:
+	view = models.ProductView(user_id=user_id, session_id=session_id, product_id=product_id)
+	db.add(view)
+	db.commit()
+	db.refresh(view)
+	return view
+
+
+def top_viewed_products_for_identity(db: Session, user_id: int | None = None, session_id: str | None = None, limit: int = 5):
+	if user_id is None and session_id is None:
+		return []
+	q = select(models.ProductView.product_id, func.count(models.ProductView.id).label("views"))
+	if user_id is not None:
+		q = q.where(models.ProductView.user_id == user_id)
+	if session_id is not None:
+		q = q.where(models.ProductView.session_id == session_id)
+	q = q.group_by(models.ProductView.product_id).order_by(desc("views")).limit(limit)
+	return db.execute(q).all()
+
+
+def popular_products_overall(db: Session, limit: int = 5):
+	q = select(models.ProductView.product_id, func.count(models.ProductView.id).label("views")).group_by(models.ProductView.product_id).order_by(desc("views")).limit(limit)
+	return db.execute(q).all()
