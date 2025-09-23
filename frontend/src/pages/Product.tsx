@@ -179,6 +179,10 @@ export default function Product() {
 							instructions="You are a helpful AI assistant for BasketNa, a price comparison platform. Help users understand price trends, find the best deals, and make informed purchasing decisions. You have access to tools that can scrape current prices from Amazon.in, Flipkart.com, and BigBasket.com, and predict future price trends. Always use Indian Rupees (₹) when discussing prices."
 							defaultOpen={true}
 							clickOutsideToClose={false}
+							labels={{
+								title: "BasketNa AI Assistant",
+								placeholder: "Ask me about price trends, deals, and more...",
+							}}
 						/>
 				)}
 			</div>
