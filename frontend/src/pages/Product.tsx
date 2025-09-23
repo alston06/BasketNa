@@ -110,7 +110,7 @@ export default function Product() {
 		<div className="container-fluid">
 			<div className="row">
 				{/* Main Product Content */}
-				<div className={`${showCopilot ? "col-md-8" : "col-12"}`}>
+				<div className={`col-12`}>
 					<div className="container py-4">
 						<div className="d-flex justify-content-between align-items-center mb-4">
 							<h2 className="mb-0">{data.product_name}</h2>
@@ -175,16 +175,11 @@ export default function Product() {
 
 				{/* Desktop CopilotKit Sidebar */}
 				{showCopilot && (
-					<div
-						className="col-md-4 border-start d-none d-md-block"
-						style={{ height: "100vh", overflow: "hidden" }}
-					>
 						<CopilotSidebar
 							instructions="You are a helpful AI assistant for BasketNa, a price comparison platform. Help users understand price trends, find the best deals, and make informed purchasing decisions. You have access to tools that can scrape current prices from Amazon.in, Flipkart.com, and BigBasket.com, and predict future price trends. Always use Indian Rupees (₹) when discussing prices."
 							defaultOpen={true}
 							clickOutsideToClose={false}
 						/>
-					</div>
 				)}
 			</div>
 		</div>
