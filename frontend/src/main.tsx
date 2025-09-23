@@ -25,7 +25,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<CopilotKit runtimeUrl={import.meta.env.VITE_BACKEND_URL || "http://localhost:8000/copilotkit"}>
+		<CopilotKit runtimeUrl={"http://localhost:4000/copilotkit"} agent="my_agent">
 			<RouterProvider router={router} />
 		</CopilotKit>
 	</React.StrictMode>

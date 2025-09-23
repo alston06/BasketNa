@@ -9,8 +9,9 @@
     "preview": "vite preview --port 5173"
   },
   "dependencies": {
-    "@copilotkit/react-core": "^1.0.0",
-    "@copilotkit/react-ui": "^1.0.0",
+    "@copilotkit/react-core": "^1.10.4",
+    "@copilotkit/react-ui": "^1.10.4",
+    "@copilotkit/runtime": "^1.10.4",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.3",

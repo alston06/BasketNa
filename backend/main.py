@@ -6,7 +6,7 @@ import crud
 import models
 import pandas as pd
 import schemas
-from agents.price_copilot import copilot_kit
+from agents.price_copilot import copilot_app
 from auth import (
 	create_access_token,
 	get_current_user,
@@ -14,7 +14,6 @@ from auth import (
 	get_password_hash,
 	verify_password,
 )
-from copilotkit.integrations.fastapi import add_fastapi_endpoint
 from db import Base, engine
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,9 +44,8 @@ app.add_middleware(
 	allow_headers=["*"]
 )
 
+app.mount("/copilotkit_remote", copilot_app)
 
-
-add_fastapi_endpoint(app, copilot_kit, "/copilotkit")
 
 
 DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "data", "ecommerce_price_dataset.csv"))
