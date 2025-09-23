@@ -6,17 +6,18 @@ Adapted to work with the synthetic dataset generated for Indian e-commerce price
 import os
 from dataclasses import dataclass
 from datetime import date, timedelta
-from typing import List, Optional, Tuple, Dict
+from typing import Dict, Optional, Tuple
 
 import matplotlib
+
 matplotlib.use('Agg')
+import warnings
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.preprocessing import LabelEncoder
-import warnings
+
 warnings.filterwarnings('ignore')
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -410,10 +411,10 @@ if __name__ == "__main__":
         if "error" in result:
             print(f"Error: {result['error']}")
         else:
-            print(f"\n=== RETAILER PRICE COMPARISON ===")
+            print("\n=== RETAILER PRICE COMPARISON ===")
             print(f"Product: {result['product_name']}")
             print(f"Date: {result['date']}")
-            print(f"\nPrices by Retailer:")
+            print("\nPrices by Retailer:")
             for rp in result["retailer_prices"]:
                 marker = "🏆 BEST DEAL" if rp["is_best_deal"] else f"(Save {rp.get('potential_savings', '₹0')})"
                 print(f"  {rp['retailer']:20} {rp['formatted_price']:>12} {marker}")
@@ -423,11 +424,11 @@ if __name__ == "__main__":
         if "error" in result:
             print(f"Error: {result['error']}")
             if "available_products" in result:
-                print(f"\nAvailable products:")
+                print("\nAvailable products:")
                 for pid, pname in result["available_products"].items():
                     print(f"  {pid}: {pname}")
         else:
-            print(f"\n=== PRICE FORECAST RESULTS ===")
+            print("\n=== PRICE FORECAST RESULTS ===")
             print(f"Product: {result['product_name']} ({result['product_id']})")
             print(f"Retailer: {result['retailer']}")
             print(f"Current Price: ₹{result['current_price']:,.2f}")
@@ -435,7 +436,7 @@ if __name__ == "__main__":
             print(f"Data Points: {result['data_points']}")
             
             if result['great_deal']:
-                print(f"\n🔥 GREAT DEAL DETECTED!")
+                print("\n🔥 GREAT DEAL DETECTED!")
                 print(f"Reason: {result['great_deal_reason']}")
             
             print(f"\nForecast saved to: {result['forecast_plot']}")

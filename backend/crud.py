@@ -1,6 +1,6 @@
+import models
+from sqlalchemy import desc, func, select
 from sqlalchemy.orm import Session
-from sqlalchemy import select, func, desc
-from . import models
 
 
 def get_user_by_email(db: Session, email: str):

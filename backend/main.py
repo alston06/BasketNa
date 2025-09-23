@@ -1,20 +1,30 @@
 import os
-import sys
-from datetime import date, timedelta
 from typing import List
-
-from fastapi import FastAPI, Depends, HTTPException, status, Query
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import OAuth2PasswordRequestForm
-from sqlalchemy.orm import Session
-import pandas as pd
 from urllib.parse import quote_plus
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from backend.db import Base, engine
-from backend import models, schemas, crud
-from backend.auth import get_db, get_password_hash, verify_password, create_access_token, get_current_user
+import crud
+import models
+import pandas as pd
+import schemas
+from agents.price_copilot import copilot_kit
+from auth import (
+	create_access_token,
+	get_current_user,
+	get_db,
+	get_password_hash,
+	verify_password,
+)
+from copilotkit.integrations.fastapi import add_fastapi_endpoint
+from db import Base, engine
+from fastapi import Depends, FastAPI, HTTPException, Query, status
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import OAuth2PasswordRequestForm
+from ml.forecast import forecast_for_product as forecast_baseline
+from ml.forecast_enhanced import forecast_for_product as forecast_enhanced
+from ml.forecast_enhanced import get_retailer_comparison
+from ml.forecast_holidays import forecast_for_product as forecast_holidays
+from ml.forecast_holidays import load_and_forecast, train_and_export
+from sqlalchemy.orm import Session
 
 # Create tables
 Base.metadata.create_all(bind=engine)
@@ -25,6 +35,7 @@ app.add_middleware(
 	CORSMiddleware,
 	allow_origins=[
 		"http://localhost:5173", 
+  "http://localhost:5174",
 		"http://127.0.0.1:5173",
 		"http://localhost:3000",  # React dev server
 		"http://localhost:8081",  # Expo Metro
@@ -34,18 +45,12 @@ app.add_middleware(
 	allow_headers=["*"]
 )
 
-# Add CopilotKit integration with Gemini
-try:
-	from copilotkit.integrations.fastapi import add_fastapi_endpoint
-	from backend.agents.price_copilot import copilot_kit
-	
-	add_fastapi_endpoint(app, copilot_kit, "/copilotkit")
-	print("✅ CopilotKit endpoint added at /copilotkit with Google Gemini")
-except Exception as e:
-	print(f"⚠️ Failed to initialize CopilotKit: {e}")
-	print("💡 Make sure GOOGLE_API_KEY is set and copilotkit is installed")
 
-DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "ecommerce_price_dataset.csv"))
+
+add_fastapi_endpoint(app, copilot_kit, "/copilotkit")
+
+
+DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "data", "ecommerce_price_dataset.csv"))
 
 
 def build_site_search_url(site: str, product_name: str) -> str:
@@ -165,21 +170,6 @@ def track(product_id: str, current_user: models.User = Depends(get_current_user)
 	return tracked
 
 
-# ML/Forecast utilities
-try:
-	from ml.forecast_enhanced import forecast_for_product as forecast_enhanced
-except Exception:
-	forecast_enhanced = None
-
-try:
-	from ml.forecast import forecast_for_product as forecast_baseline
-except Exception:
-	forecast_baseline = None
-
-try:
-	from ml.forecast_holidays import forecast_for_product as forecast_holidays
-except Exception:
-	forecast_holidays = None
 
 
 @app.get("/forecast/{product_id}", response_model=schemas.ForecastResponse)
@@ -223,7 +213,6 @@ def list_my_tracked(current_user: models.User = Depends(get_current_user), db: S
 def compare_retailers(product_id: str, date_str: str = None):
 	"""Compare prices across all retailers for a specific product"""
 	try:
-		from ml.forecast_enhanced import get_retailer_comparison
 		result = get_retailer_comparison(product_id, date_str)
 		if "error" in result:
 			raise HTTPException(status_code=404, detail=result["error"])
@@ -238,10 +227,8 @@ def compare_retailers(product_id: str, date_str: str = None):
 def train_model(product_id: str, model: str = Query("holidays", enum=["holidays"])):
 	if model != "holidays":
 		raise HTTPException(status_code=400, detail="Unsupported model")
-	try:
-		from ml.forecast_holidays import train_and_export
-	except Exception:
-		raise HTTPException(status_code=500, detail="Training utility not available")
+
+
 	path = train_and_export(product_id)
 	if path is None:
 		raise HTTPException(status_code=404, detail="Product not found or no data")
@@ -250,10 +237,6 @@ def train_model(product_id: str, model: str = Query("holidays", enum=["holidays"
 
 @app.get("/forecast/{product_id}/saved", response_model=schemas.ForecastResponse)
 def forecast_saved(product_id: str):
-	try:
-		from ml.forecast_holidays import load_and_forecast
-	except Exception:
-		raise HTTPException(status_code=500, detail="Load utility not available")
 	forecast = load_and_forecast(product_id)
 	if forecast is None:
 		raise HTTPException(status_code=404, detail="Saved model not found. Train first.")

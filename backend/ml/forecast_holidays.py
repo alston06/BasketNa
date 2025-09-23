@@ -1,16 +1,17 @@
 import os
 from dataclasses import dataclass
 from datetime import date, timedelta
-from typing import List, Optional, Tuple
+from typing import List, Optional
 
 import matplotlib
+
 matplotlib.use('Agg')
+import holidays
+import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import Ridge
-import holidays
-import joblib
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_PATH = os.path.join(PROJECT_ROOT, "data", "sample_prices.csv")

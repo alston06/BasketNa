@@ -1,9 +1,10 @@
 import os
 from dataclasses import dataclass
 from datetime import date, timedelta
-from typing import List, Optional, Tuple
+from typing import Optional, Tuple
 
 import matplotlib
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
@@ -11,6 +12,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+print("PROJECT_ROOT:", PROJECT_ROOT)
 # Try new dataset first, fallback to old one
 NEW_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "ecommerce_price_dataset.csv")
 OLD_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "sample_prices.csv")

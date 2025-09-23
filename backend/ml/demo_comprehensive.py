@@ -3,11 +3,13 @@ E-commerce Price Tracking ML Model - Demo Script
 Demonstrates all features of the enhanced forecasting system
 """
 
-import os
-import sys
-sys.path.append(os.path.dirname(__file__))
 
-from forecast_enhanced import forecast_for_product, get_retailer_comparison, get_available_products
+from forecast_enhanced import (
+    forecast_for_product,
+    get_available_products,
+    get_retailer_comparison,
+)
+
 
 def demo_header():
     print("="*80)
@@ -73,13 +75,13 @@ def demo_forecast_analysis():
         print(f"📊 Data Points: {result['data_points']} days")
         
         if result['great_deal']:
-            print(f"🔥 GREAT DEAL DETECTED!")
+            print("🔥 GREAT DEAL DETECTED!")
             print(f"💡 Reason: {result['great_deal_reason'][:100]}...")
         else:
             print("💰 No special deal detected")
         
         # Show 3-day forecast
-        print(f"📅 Next 3 Days Forecast:")
+        print("📅 Next 3 Days Forecast:")
         for i, fp in enumerate(result['forecast'][:3]):
             print(f"  {fp['date']}: ₹{fp['price']:7,.0f} (±₹{(fp['upper']-fp['lower'])/2:,.0f})")
 
@@ -117,7 +119,7 @@ def demo_retailer_specific_forecast():
     product_id = "P001"
     retailers = ["Amazon.in", "Flipkart", "RelianceDigital", "Croma"]
     
-    print(f"🔍 COMPARING iPhone 16 FORECASTS ACROSS RETAILERS")
+    print("🔍 COMPARING iPhone 16 FORECASTS ACROSS RETAILERS")
     print("-" * 60)
     
     retailer_results = []
@@ -139,7 +141,7 @@ def demo_retailer_specific_forecast():
     # Sort by current price
     retailer_results.sort(key=lambda x: x['current_price'])
     
-    print(f"📊 Current Prices & 3-Day Forecasts:")
+    print("📊 Current Prices & 3-Day Forecasts:")
     for rr in retailer_results:
         deal_icon = "🔥" if rr['is_deal'] else "  "
         print(f"{deal_icon} {rr['retailer']:18} Current: ₹{rr['current_price']:8,.0f} → 3-day: ₹{rr['forecast_3d']:8,.0f}")
@@ -169,7 +171,7 @@ def demo_ml_insights():
     print("  • Automated visualization generation")
     
     # Show a specific example
-    print(f"\n🎯 Example Analysis:")
+    print("\n🎯 Example Analysis:")
     result = forecast_for_product("P001", "Amazon.in", horizon_days=1)
     if "error" not in result:
         print(f"  Product: {result['product_name']}")
@@ -177,9 +179,9 @@ def demo_ml_insights():
         print(f"  Current Price: ₹{result['current_price']:,.2f}")
         print(f"  Training Data: {result['data_points']} days")
         if result['great_deal']:
-            print(f"  🔥 Deal Status: GREAT DEAL DETECTED")
+            print("  🔥 Deal Status: GREAT DEAL DETECTED")
         else:
-            print(f"  💰 Deal Status: No special deal")
+            print("  💰 Deal Status: No special deal")
 
 def main():
     demo_header()
