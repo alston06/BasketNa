@@ -5,6 +5,7 @@ from config import settings
 from pydantic_ai import Agent, Tool
 from pydantic_ai.models.google import GoogleModel
 from pydantic_ai.providers.google import GoogleProvider
+from transformers import pipeline
 
 from .price_tools import (
     calculate_drop_timeline_tool,
@@ -12,6 +13,8 @@ from .price_tools import (
     predict_price_tool,
     scrape_price_tool,
 )
+
+sentiment_analyzer = pipeline("sentiment-analysis")
 
 # New innovative tool implementations
 # For demonstration, using generated fake data that mimics real scenarios.
@@ -75,7 +78,7 @@ def find_coupons(product_name: str) -> list[str]:
 
 def summarize_reviews(product_name: str, site: str = "all") -> str:
     """
-    Summarize user reviews for the product across sites using AI analysis.
+    Summarize user reviews for the product across sites using web scraping and basic sentiment analysis.
     
     Args:
         product_name: Name or URL of the product.
@@ -84,8 +87,116 @@ def summarize_reviews(product_name: str, site: str = "all") -> str:
     Returns:
         A concise summary of reviews, including sentiment and key pros/cons.
     """
-    # Fake summary; in real: Scrape reviews from sites and use NLP (e.g., NLTK or HuggingFace transformers for sentiment)
-    # Assume libraries are available or import them.
+    import re
+
+    import requests
+    from bs4 import BeautifulSoup
+    
+    def clean_text(text):
+        return re.sub(r'\s+', ' ', text).strip()
+    
+    from urllib.parse import quote
+    def get_amazon_url(product_name):
+        # This is a basic search URL for Amazon India
+        return f"https://www.amazon.in/s?k={quote(product_name)}"
+    def get_flipkart_url(product_name):
+        return f"https://www.flipkart.com/search?q={quote(product_name)}"
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    reviews = []
+    ratings = []
+    pros = set()
+    cons = set()
+    try:
+        # Try Amazon first
+        if site in ("all", "amazon"):
+            search_url = get_amazon_url(product_name)
+            resp = requests.get(search_url, headers=headers, timeout=10)
+            soup = BeautifulSoup(resp.text, 'html.parser')
+            # Find first product link
+            link = soup.select_one('a.a-link-normal.s-no-outline')
+            href = link.get('href') if link else None
+            if href and isinstance(href, str):
+                product_url = "https://www.amazon.in" + href
+                prod_resp = requests.get(product_url, headers=headers, timeout=10)
+                prod_soup = BeautifulSoup(prod_resp.text, 'html.parser')
+                # Get average rating
+                rating_tag = prod_soup.select_one('span[data-asin][class*="averageStarRating"]') or prod_soup.select_one('span.a-icon-alt')
+                if rating_tag:
+                    rating_text = rating_tag.get_text()
+                    match = re.search(r"([0-9.]+) out of 5", rating_text)
+                    if match:
+                        ratings.append(float(match.group(1)))
+                # Get review snippets
+                review_tags = prod_soup.select('span[data-hook="review-body"]')
+                for tag in review_tags[:10]:
+                    text = clean_text(tag.get_text())
+                    reviews.append(text)
+        # Try Flipkart if needed
+        if (not reviews or site == "flipkart") and site in ("all", "flipkart"):
+            search_url = get_flipkart_url(product_name)
+            resp = requests.get(search_url, headers=headers, timeout=10)
+            soup = BeautifulSoup(resp.text, 'html.parser')
+            link = soup.select_one('a._1fQZEK') or soup.select_one('a.s1Q9rs')
+            href = link.get('href') if link else None
+            if href and isinstance(href, str):
+                product_url = "https://www.flipkart.com" + href
+                prod_resp = requests.get(product_url, headers=headers, timeout=10)
+                prod_soup = BeautifulSoup(prod_resp.text, 'html.parser')
+                # Get average rating
+                rating_tag = prod_soup.select_one('div._3LWZlK')
+                if rating_tag:
+                    try:
+                        ratings.append(float(rating_tag.get_text()))
+                    except Exception:
+                        pass
+                # Get review snippets
+                review_tags = prod_soup.select('div.t-ZTKy')
+                for tag in review_tags[:10]:
+                    text = clean_text(tag.get_text())
+                    reviews.append(text)
+
+        # Use HuggingFace transformers for sentiment analysis
+
+        sentiment_results = []
+        for review in reviews:
+            try:
+                sentiment_results.append(sentiment_analyzer(review[:512])[0])
+            except Exception:
+                continue
+        pos_count = sum(1 for r in sentiment_results if r['label'].lower().startswith('pos'))
+        neg_count = sum(1 for r in sentiment_results if r['label'].lower().startswith('neg'))
+        total_reviews = len(sentiment_results)
+        avg_rating = round(sum(ratings) / len(ratings), 2) if ratings else None
+        sentiment = 0
+        if total_reviews > 0:
+            sentiment = int(100 * pos_count / (pos_count + neg_count + 1))
+        # Extract key pros/cons using most common positive/negative words in positive/negative reviews
+        from collections import Counter
+        pros_words = []
+        cons_words = []
+        for i, review in enumerate(reviews):
+            if i < len(sentiment_results):
+                label = sentiment_results[i]['label'].lower()
+                words = [w for w in re.findall(r'\w+', review.lower()) if len(w) > 3]
+                if label.startswith('pos'):
+                    pros_words.extend(words)
+                elif label.startswith('neg'):
+                    cons_words.extend(words)
+        pros_common = [w for w, _ in Counter(pros_words).most_common(3)]
+        cons_common = [w for w, _ in Counter(cons_words).most_common(3)]
+        if total_reviews > 0:
+            summary = f"Overall rating: {avg_rating if avg_rating else 'N/A'}/5 stars based on {total_reviews} reviews. Positive sentiment ({sentiment}%). "
+            if pros_common:
+                summary += f"Key pros: {', '.join(pros_common)}. "
+            if cons_common:
+                summary += f"Key cons: {', '.join(cons_common)}. "
+            return summary.strip()
+    except Exception as exc:
+        print("⚠️ Error fetching or parsing reviews, returning fake data., ", exc)
+    # Fallback to fake data if scraping fails
     stars = round(random.uniform(3.5, 5.0), 1)
     pros = ["Durable", "Good battery life", "Value for money"]
     cons = ["Expensive", "Slow charging", "Average camera"]
@@ -110,7 +221,10 @@ def check_stock_availability(product_name: str, site: str = "all") -> dict:
         availability[s] = status
     return availability
 
-def suggest_alternatives(product_name: str, budget: float = None) -> list[dict]:
+from typing import Optional
+
+
+def suggest_alternatives(product_name: str, budget: Optional[float] = None) -> list[dict]:
     """
     Suggest cheaper or better alternative products based on AI recommendations.
     
@@ -131,7 +245,7 @@ def suggest_alternatives(product_name: str, budget: float = None) -> list[dict]:
         alternatives.append({"name": alt_name, "price": alt_price, "site": alt_site})
     return alternatives
 
-def estimate_total_cost(product_name: str, site: str, address: str = None) -> dict:
+def estimate_total_cost(product_name: str, site: str, address: 'Optional[str]' = None) -> dict:
     """
     Estimate total cost including shipping, taxes, and any fees.
     
