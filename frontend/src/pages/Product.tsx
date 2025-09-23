@@ -116,6 +116,7 @@ export default function Product() {
 							<h2 className="mb-0">{data.product_name}</h2>
 							<div className="d-flex gap-2">
 								<button
+									type="button"
 									className="btn btn-outline-primary d-none d-md-flex align-items-center gap-2"
 									onClick={() => setShowCopilot(!showCopilot)}
 								>
