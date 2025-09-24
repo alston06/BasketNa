@@ -209,6 +209,32 @@ export default function Results() {
 										>
 											🤖 Smart Analysis & 30-Day Forecast
 										</Link>
+										<div className="row g-2">
+											<div className="col-6">
+												<button 
+													className="btn btn-outline-primary w-100 btn-sm"
+													onClick={() => {
+														// Could open a modal with coupons or navigate to a quick view
+														alert(`🎫 Looking for coupons for ${item.product_name}...`);
+													}}
+													style={{ borderRadius: '8px' }}
+												>
+													🎫 Coupons
+												</button>
+											</div>
+											<div className="col-6">
+												<button 
+													className="btn btn-outline-info w-100 btn-sm"
+													onClick={() => {
+														// Could open a modal with reviews or navigate to a quick view
+														alert(`📝 Analyzing reviews for ${item.product_name}...`);
+													}}
+													style={{ borderRadius: '8px' }}
+												>
+													📝 Reviews
+												</button>
+											</div>
+										</div>
 										<a 
 											href={item.url} 
 											target="_blank" 

@@ -14,6 +14,7 @@ import { Line } from "react-chartjs-2";
 import { useParams, useSearchParams } from "react-router-dom";
 import { Products } from "../api/client";
 import { useTrackingActions } from "../hooks/useCopilotActions";
+import AIAnalysisWidget from "../components/AIAnalysisWidget";
 
 ChartJS.register(
 	CategoryScale,
@@ -438,6 +439,12 @@ export default function EnhancedProduct() {
 								</div>
 							</div>
 						)}
+
+						{/* AI-Powered Analysis */}
+						<AIAnalysisWidget 
+							productName={enhancedForecast.product_name} 
+							className="mb-4"
+						/>
 
 						{/* Forecast Details Table */}
 						<div className="card">

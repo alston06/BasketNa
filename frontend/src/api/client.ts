@@ -45,4 +45,12 @@ export const Products = {
 	}).then(r => r.data),
 }
 
+// AI Agent Tools endpoints
+export const AITools = {
+	getCoupons: (productName: string) => api.get(`/ai-tools/coupons/${encodeURIComponent(productName)}`).then(r => r.data),
+	getReviews: (productName: string, site: 'all' | 'amazon' | 'flipkart' = 'all') => api.get(`/ai-tools/reviews/${encodeURIComponent(productName)}`, { params: { site } }).then(r => r.data),
+	getComprehensiveAnalysis: (productName: string) => api.get(`/ai-tools/comprehensive/${encodeURIComponent(productName)}`).then(r => r.data),
+	checkHealth: () => api.get('/ai-tools/health').then(r => r.data),
+}
+
 export default api 

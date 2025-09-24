@@ -273,6 +273,15 @@ def forecast_saved(product_id: str):
 	}
 
 
+# ========== AI AGENT TOOLS INTEGRATION ==========
+
+try:
+    from agents.tools.tool_integration import tools_integration
+    TOOLS_AVAILABLE = True
+except ImportError:
+    print("⚠️ AI agent tools not available - some endpoints will be disabled")
+    TOOLS_AVAILABLE = False
+
 # ========== NEW RECOMMENDATION ENDPOINTS ==========
 
 from recommendation_engine import PriceRecommendationEngine
@@ -657,3 +666,65 @@ def get_trending_recommendations(
 		
 	except Exception as e:
 		raise HTTPException(status_code=500, detail=f"Error getting trending recommendations: {str(e)}") 
+
+
+# ========== AI AGENT TOOLS ENDPOINTS ==========
+
+@app.get("/ai-tools/coupons/{product_name}")
+async def get_product_coupons(product_name: str):
+	"""Get available coupons and deals for a specific product using AI agent tools"""
+	if not TOOLS_AVAILABLE:
+		raise HTTPException(status_code=503, detail="AI agent tools are not available")
+	
+	try:
+		result = await tools_integration.get_product_coupons(product_name)
+		return {
+			"status": "success",
+			"coupon_data": result
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error fetching coupons: {str(e)}")
+
+@app.get("/ai-tools/reviews/{product_name}")
+async def get_product_reviews_summary(product_name: str, site: str = Query("all", enum=["all", "amazon", "flipkart"])):
+	"""Get AI-powered review summary and sentiment analysis for a product"""
+	if not TOOLS_AVAILABLE:
+		raise HTTPException(status_code=503, detail="AI agent tools are not available")
+	
+	try:
+		result = await tools_integration.get_product_reviews_summary(product_name, site)
+		return {
+			"status": "success",
+			"review_analysis": result
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error analyzing reviews: {str(e)}")
+
+@app.get("/ai-tools/comprehensive/{product_name}")
+async def get_comprehensive_product_analysis(product_name: str):
+	"""Get comprehensive product analysis including coupons, reviews, and insights"""
+	if not TOOLS_AVAILABLE:
+		raise HTTPException(status_code=503, detail="AI agent tools are not available")
+	
+	try:
+		result = await tools_integration.get_comprehensive_product_info(product_name)
+		return {
+			"status": "success",
+			"comprehensive_analysis": result
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error performing comprehensive analysis: {str(e)}")
+
+@app.get("/ai-tools/health")
+async def check_ai_tools_health():
+	"""Check the health and availability of AI agent tools"""
+	return {
+		"status": "healthy" if TOOLS_AVAILABLE else "unavailable",
+		"tools_available": TOOLS_AVAILABLE,
+		"available_endpoints": [
+			"/ai-tools/coupons/{product_name}",
+			"/ai-tools/reviews/{product_name}",
+			"/ai-tools/comprehensive/{product_name}"
+		] if TOOLS_AVAILABLE else [],
+		"message": "AI agent tools are ready for use" if TOOLS_AVAILABLE else "AI agent tools require additional setup"
+	}

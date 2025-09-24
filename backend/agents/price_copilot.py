@@ -71,10 +71,10 @@ price_agent = Agent(
         Tool(predict_price_tool),
         Tool(calculate_drop_timeline_tool),
         Tool(compare_all_sites_tool),
-        # New innovative tools added here
+        # Enhanced tools with full functionality
         Tool(fetch_historical_prices, takes_ctx=False),
-        Tool(find_coupons, takes_ctx=False),
-        Tool(summarize_reviews, takes_ctx=False),
+        Tool(find_coupons, takes_ctx=False),  # Enhanced with structured coupon data
+        Tool(summarize_reviews, takes_ctx=False),  # Enhanced with sentiment analysis
         Tool(check_item_availability_across_sites, takes_ctx=False),
         Tool(suggest_alternatives, takes_ctx=False),
         Tool(estimate_total_cost, takes_ctx=False),
