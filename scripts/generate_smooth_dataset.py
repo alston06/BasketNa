@@ -38,9 +38,9 @@ def generate_smooth_ecommerce_dataset():
         "Croma": {"discount_factor": 0.96, "variation": 0.02}  # 4% avg discount, 2% variation
     }
     
-    # Generate historical data (last 60 days) + forecast (next 10 days)
-    start_date = datetime.now() - timedelta(days=60)
-    end_date = datetime.now() + timedelta(days=10)
+    # Generate historical data (last 90 days) + forecast (next 30 days)
+    start_date = datetime.now() - timedelta(days=90)
+    end_date = datetime.now() + timedelta(days=30)
     date_range = pd.date_range(start=start_date, end=end_date, freq='D')
     
     data = []
@@ -49,20 +49,46 @@ def generate_smooth_ecommerce_dataset():
     for product in products:
         base_price = product["base_price"]
         
-        # Create a smooth trend for the entire period (using sine wave for gradual changes)
-        trend_factor = np.sin(np.linspace(0, 2*np.pi, len(date_range))) * 0.05  # ±5% seasonal variation
+        # Create a more complex trend with multiple components
+        # Long-term seasonal trend
+        seasonal_trend = np.sin(np.linspace(0, 2*np.pi, len(date_range))) * 0.04
+        # Market volatility trend
+        volatility_trend = np.sin(np.linspace(0, 4*np.pi, len(date_range))) * 0.02
+        # Random walk component for more realistic price movements
+        random_walk = np.cumsum(np.random.normal(0, 0.005, len(date_range)))
+        random_walk = random_walk - random_walk[0]  # Start at zero
+        
+        # Combine trends
+        combined_trend = seasonal_trend + volatility_trend + random_walk
         
         for i, date in enumerate(date_range):
-            # Apply gradual seasonal trend
-            seasonal_price = base_price * (1 + trend_factor[i])
+            # Apply combined trend
+            seasonal_price = base_price * (1 + combined_trend[i])
             
             for retailer, config in retailers.items():
                 # Apply retailer-specific pricing with minimal daily variation
                 retailer_base = seasonal_price * config["discount_factor"]
                 
-                # Very small daily variation (±1-2%)
-                daily_variation = random.uniform(-config["variation"], config["variation"])
+                # Different variation for forecast vs historical
+                is_forecast = date > datetime.now()
+                if is_forecast:
+                    # Slightly more variation in forecast to show uncertainty
+                    daily_variation = random.uniform(-config["variation"] * 1.2, config["variation"] * 1.2)
+                else:
+                    # Small daily variation for historical data
+                    daily_variation = random.uniform(-config["variation"], config["variation"])
+                
                 final_price = retailer_base * (1 + daily_variation)
+                
+                # Add market events and promotions
+                if not is_forecast:
+                    # Weekend discounts (more realistic for historical)
+                    if date.weekday() in [5, 6]:  # Weekend
+                        final_price *= random.uniform(0.97, 0.99)
+                    
+                    # Month-end sales
+                    if date.day >= 28:
+                        final_price *= random.uniform(0.95, 0.98)
                 
                 # Add small random walk component for smooth transitions
                 if i > 0:
@@ -70,8 +96,9 @@ def generate_smooth_ecommerce_dataset():
                     prev_entries = [d for d in data if d["product_name"] == product["name"] and d["retailer"] == retailer]
                     if prev_entries:
                         prev_price = prev_entries[-1]["price_inr"]
-                        # Limit price change to ±2% from previous day
-                        max_change = prev_price * 0.02
+                        # Limit price change based on historical vs forecast
+                        max_change_pct = 0.015 if not is_forecast else 0.025  # Less change for historical
+                        max_change = prev_price * max_change_pct
                         price_change = random.uniform(-max_change, max_change)
                         final_price = prev_price + price_change
                 
@@ -101,7 +128,7 @@ def generate_smooth_ecommerce_dataset():
     
     # Save forecast data separately
     forecast_df = df[df['is_forecast'] == True].drop(['category', 'is_forecast'], axis=1)
-    forecast_file = "../backend/data/price_forecast_10_days.csv"
+    forecast_file = "../backend/data/price_forecast_30_days.csv"
     forecast_df.to_csv(forecast_file, index=False)
     
     print(f"\n✅ Smooth dataset generated successfully!")
@@ -123,14 +150,33 @@ def generate_smooth_ecommerce_dataset():
             print(f"  • {product_name}: {stability_pct:.1f}% price variation")
     
     # Show 10-day forecast summary
-    print(f"\n🔮 10-Day Price Forecast Preview:")
+    print(f"\n🔮 30-Day Price Forecast Preview:")
     forecast_summary = forecast_df.groupby(['product_name', 'retailer'])['price_inr'].agg(['min', 'max', 'mean']).round(2)
     print("Top deals expected (lowest average prices):")
     
-    # Show top 5 best deals in forecast
-    best_deals = forecast_df.groupby(['product_name', 'retailer'])['price_inr'].mean().sort_values().head(5)
+    # Show top 10 best deals in forecast
+    best_deals = forecast_df.groupby(['product_name', 'retailer'])['price_inr'].mean().sort_values().head(10)
     for (product, retailer), avg_price in best_deals.items():
         print(f"  • {product} at {retailer}: ₹{avg_price:,.2f}")
+    
+    print(f"\n📈 Price Movement Analysis (30-day forecast):")
+    # Show products with biggest expected price changes
+    current_prices = historical_df[historical_df['date'] == historical_df['date'].max()].groupby('product_name')['price_inr'].mean()
+    forecast_avg_prices = forecast_df.groupby('product_name')['price_inr'].mean()
+    
+    price_changes = {}
+    for product in current_prices.index:
+        if product in forecast_avg_prices.index:
+            current = current_prices[product]
+            forecast = forecast_avg_prices[product]
+            change_pct = ((forecast - current) / current) * 100
+            price_changes[product] = change_pct
+    
+    # Show biggest expected changes
+    sorted_changes = sorted(price_changes.items(), key=lambda x: abs(x[1]), reverse=True)[:5]
+    for product, change_pct in sorted_changes:
+        direction = "📈 increase" if change_pct > 0 else "📉 decrease"
+        print(f"  • {product}: {direction} of {abs(change_pct):.1f}%")
     
     return df
 

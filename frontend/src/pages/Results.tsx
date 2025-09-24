@@ -31,6 +31,27 @@ export default function Results() {
 			.finally(() => setIsLoading(false))
 	}, [q])
 
+	useEffect(() => {
+		// Add CSS animations
+		const style = document.createElement('style');
+		style.textContent = `
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		`;
+		document.head.appendChild(style);
+		return () => {
+			document.head.removeChild(style);
+		};
+	}, [])
+
 	if (!q) return (
 		<div className="container mt-5">
 			<div className="alert alert-warning">
@@ -127,13 +148,25 @@ export default function Results() {
 					{data.items.map((item, index) => (
 						<div key={`${item.product_id}-${item.site}`} className="col-lg-6 col-xl-4 mb-4">
 							<div 
-								className={`card h-100 border-0 shadow-sm product-card ${
+								className={`card h-100 border-0 shadow-sm ${
 									data.best_price && item.site === data.best_price.site && item.product_id === data.best_price.product_id 
-										? 'best-price' 
+										? 'border-success' 
 										: ''
 								}`}
 								style={{
-									animation: `fadeInUp 0.6s ease-out ${0.1 * index}s both`
+									animation: `fadeInUp 0.6s ease-out ${0.1 * index}s both`,
+									transition: 'all 0.3s ease',
+									background: data.best_price && item.site === data.best_price.site && item.product_id === data.best_price.product_id 
+										? 'linear-gradient(135deg, rgba(40, 167, 69, 0.05), rgba(32, 201, 151, 0.05))' 
+										: undefined
+								}}
+								onMouseEnter={(e) => {
+									e.currentTarget.style.transform = 'translateY(-5px)';
+									e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.15)';
+								}}
+								onMouseLeave={(e) => {
+									e.currentTarget.style.transform = 'translateY(0)';
+									e.currentTarget.style.boxShadow = '';
 								}}
 							>
 								<div className="card-body p-4">
@@ -152,7 +185,7 @@ export default function Results() {
 									{/* Product Info */}
 									<h5 className="card-title mb-3">
 										<Link 
-											to={`/product/${item.product_id}`}
+											to={`/enhanced-product/${item.product_id}?name=${encodeURIComponent(item.product_name)}`}
 											className="text-decoration-none text-dark"
 										>
 											{item.product_name}
@@ -170,11 +203,11 @@ export default function Results() {
 									{/* Actions */}
 									<div className="d-grid gap-2">
 										<Link 
-											to={`/product/${item.product_id}`}
-											className="btn btn-outline-primary"
+											to={`/enhanced-product/${item.product_id}?name=${encodeURIComponent(item.product_name)}`}
+											className="btn btn-success btn-lg"
 											style={{ borderRadius: '10px' }}
 										>
-											📊 View Details
+											🤖 Smart Analysis & 30-Day Forecast
 										</Link>
 										<a 
 											href={item.url} 
@@ -197,37 +230,7 @@ export default function Results() {
 				</div>
 			)}
 
-			<style jsx>{`
-				@keyframes fadeInUp {
-					from {
-						opacity: 0;
-						transform: translateY(30px);
-					}
-					to {
-						opacity: 1;
-						transform: translateY(0);
-					}
-				}
 
-				.product-card {
-					transition: all 0.3s ease;
-					cursor: pointer;
-				}
-
-				.product-card:hover {
-					transform: translateY(-5px);
-					box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
-				}
-
-				.best-price {
-					border: 2px solid #28a745 !important;
-					background: linear-gradient(135deg, rgba(40, 167, 69, 0.05), rgba(32, 201, 151, 0.05)) !important;
-				}
-
-				.card-title a:hover {
-					color: #667eea !important;
-				}
-			`}</style>
 		</div>
 	)
 }

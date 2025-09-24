@@ -5,9 +5,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
+import EnhancedProduct from './pages/EnhancedProduct';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
-import Product from './pages/Product';
 import Results from './pages/Results';
 
 const router = createBrowserRouter([
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <Home /> },
 			{ path: 'results', element: <Results /> },
-			{ path: 'product/:productId', element: <Product /> },
+			{ path: 'product/:productId', element: <EnhancedProduct /> },
+			{ path: 'enhanced-product/:productId', element: <EnhancedProduct /> },
 			{ path: 'dashboard', element: <Dashboard /> },
 		],
 	},

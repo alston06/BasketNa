@@ -283,7 +283,7 @@ def get_best_deals(top_n: int = Query(10, ge=1, le=50)):
 		raise HTTPException(status_code=500, detail=f"Error fetching best deals: {str(e)}")
 
 @app.get("/recommendations/buy-wait")
-def get_buy_wait_recommendations(days_ahead: int = Query(10, ge=1, le=30)):
+def get_buy_wait_recommendations(days_ahead: int = Query(30, ge=1, le=30)):
 	"""Get buy now vs wait recommendations based on price forecasts"""
 	try:
 		recommendations = recommendation_engine.get_buy_recommendations(days_ahead)
@@ -296,20 +296,56 @@ def get_buy_wait_recommendations(days_ahead: int = Query(10, ge=1, le=30)):
 	except Exception as e:
 		raise HTTPException(status_code=500, detail=f"Error generating recommendations: {str(e)}")
 
-@app.get("/forecast/10-day")
-def get_10_day_forecast(product_name: str = Query(None)):
-	"""Get 10-day price forecast for all products or specific product"""
+@app.get("/forecast/30-day")
+def get_30_day_forecast(product_name: str = Query(None)):
+	"""Get 30-day price forecast for all products or specific product"""
 	try:
-		forecast = recommendation_engine.get_10_day_forecast(product_name)
+		forecast = recommendation_engine.get_30_day_forecast(product_name)
 		return {
 			"status": "success",
 			"product_filter": product_name,
-			"forecast_days": 10,
+			"forecast_days": 30,
 			"count": len(forecast),
 			"forecast": forecast
 		}
 	except Exception as e:
 		raise HTTPException(status_code=500, detail=f"Error fetching forecast: {str(e)}")
+
+@app.get("/forecast/enhanced/{product_name}")
+def get_enhanced_forecast(product_name: str, retailer: str = Query(None), days: int = Query(30, ge=1, le=30)):
+	"""Get enhanced price forecast with market insights and confidence intervals"""
+	try:
+		from enhanced_forecast import EnhancedPriceForecast
+		forecaster = EnhancedPriceForecast()
+		result = forecaster.generate_enhanced_forecast(product_name, retailer, days)
+		
+		if "error" in result:
+			raise HTTPException(status_code=404, detail=result["error"])
+			
+		return {
+			"status": "success",
+			"enhanced_forecast": result
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error generating enhanced forecast: {str(e)}")
+
+@app.get("/analysis/competitive/{product_name}")
+def get_competitive_analysis(product_name: str):
+	"""Get competitive analysis across all retailers for a product"""
+	try:
+		from enhanced_forecast import EnhancedPriceForecast
+		forecaster = EnhancedPriceForecast()
+		result = forecaster.get_competitive_analysis(product_name)
+		
+		if "error" in result:
+			raise HTTPException(status_code=404, detail=result["error"])
+			
+		return {
+			"status": "success",
+			"competitive_analysis": result
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error generating competitive analysis: {str(e)}")
 
 @app.get("/analysis/price-trend/{product_name}")
 def get_price_trend_analysis(product_name: str, days_back: int = Query(30, ge=7, le=90)):

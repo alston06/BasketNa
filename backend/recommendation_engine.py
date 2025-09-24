@@ -10,7 +10,7 @@ class PriceRecommendationEngine:
         self.backend_dir = os.path.dirname(os.path.abspath(__file__))
         self.data_dir = os.path.join(self.backend_dir, "data")
         self.historical_data_path = os.path.join(self.data_dir, "ecommerce_price_dataset_corrected.csv")
-        self.forecast_data_path = os.path.join(self.data_dir, "price_forecast_10_days.csv")
+        self.forecast_data_path = os.path.join(self.data_dir, "price_forecast_30_days.csv")
         
     def load_data(self) -> tuple[pd.DataFrame, pd.DataFrame]:
         """Load both historical and forecast data"""
@@ -59,8 +59,8 @@ class PriceRecommendationEngine:
         best_deals.sort(key=lambda x: x['savings_amount'], reverse=True)
         return best_deals[:top_n]
     
-    def get_10_day_forecast(self, product_name: Optional[str] = None) -> List[Dict]:
-        """Get 10-day price forecast for specific product or all products"""
+    def get_30_day_forecast(self, product_name: Optional[str] = None) -> List[Dict]:
+        """Get 30-day price forecast for specific product or all products"""
         _, forecast_df = self.load_data()
         
         if product_name:
@@ -91,7 +91,7 @@ class PriceRecommendationEngine:
         
         return sorted(daily_forecasts, key=lambda x: (x['date'], x['product_name']))
     
-    def get_buy_recommendations(self, days_ahead: int = 10) -> List[Dict]:
+    def get_buy_recommendations(self, days_ahead: int = 30) -> List[Dict]:
         """Get buy/wait recommendations based on price trends"""
         historical_df, forecast_df = self.load_data()
         
