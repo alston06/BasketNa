@@ -24,24 +24,8 @@ def test_endpoints():
     
     print()
     
-    # Test 2: Get buy/wait recommendations
-    print("2️⃣ Testing Buy/Wait Recommendations:")
-    try:
-        response = requests.get(f"{BASE_URL}/recommendations/buy-wait?days_ahead=30")
-        if response.status_code == 200:
-            data = response.json()
-            print(f"   ✅ Success! Found {data['count']} recommendations")
-            for rec in data['recommendations'][:3]:
-                print(f"      • {rec['product_name']}: {rec['recommendation']} - {rec['reason']}")
-        else:
-            print(f"   ❌ Error: {response.status_code} - {response.text}")
-    except Exception as e:
-        print(f"   ❌ Request failed: {e}")
-    
-    print()
-    
-    # Test 3: Get 30-day forecast
-    print("3️⃣ Testing 30-Day Forecast (iPhone 16):")
+    # Test 2: Get 30-day forecast
+    print("2️⃣ Testing 30-Day Forecast (iPhone 16):")
     try:
         response = requests.get(f"{BASE_URL}/forecast/30-day?product_name=iPhone 16")
         if response.status_code == 200:
@@ -57,8 +41,8 @@ def test_endpoints():
     
     print()
     
-    # Test 3.1: Enhanced forecast
-    print("3️⃣➕ Testing Enhanced Forecast (iPhone 16):")
+    # Test 3: Enhanced forecast
+    print("3️⃣ Testing Enhanced Forecast (iPhone 16):")
     try:
         response = requests.get(f"{BASE_URL}/forecast/enhanced/iPhone 16?days=30")
         if response.status_code == 200:

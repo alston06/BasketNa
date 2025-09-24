@@ -24,7 +24,6 @@ export const Products = {
 	// New enhanced API endpoints
 	availableProducts: () => api.get('/products/available').then(r => r.data),
 	bestDeals: (topN = 10) => api.get('/recommendations/best-deals', { params: { top_n: topN } }).then(r => r.data),
-	buyWaitRecommendations: (daysAhead = 30) => api.get('/recommendations/buy-wait', { params: { days_ahead: daysAhead } }).then(r => r.data),
 	forecast30Day: (productName?: string) => api.get('/forecast/30-day', { params: productName ? { product_name: productName } : {} }).then(r => r.data),
 	enhancedForecast: (productName: string, retailer?: string, days = 30) => api.get(`/forecast/enhanced/${encodeURIComponent(productName)}`, { 
 		params: { ...(retailer && { retailer }), days } 
@@ -33,6 +32,17 @@ export const Products = {
 		params: { days_back: daysBack } 
 	}).then(r => r.data),
 	competitiveAnalysis: (productName: string) => api.get(`/analysis/competitive/${encodeURIComponent(productName)}`).then(r => r.data),
+	
+	// New personalized recommendation endpoints with website links
+	personalizedRecommendations: (limit = 10) => api.get('/recommendations/personalized', { params: { limit } }).then(r => r.data),
+	sessionRecommendations: (sessionId: string, limit = 10) => api.get('/recommendations/session', { params: { session_id: sessionId, limit } }).then(r => r.data),
+	categoryRecommendations: (category: string, limit = 5, excludeProducts: string[] = []) => api.get(`/recommendations/category/${encodeURIComponent(category)}`, { 
+		params: { limit, exclude_products: excludeProducts } 
+	}).then(r => r.data),
+	trendingRecommendations: (limit = 10) => api.get('/recommendations/trending', { params: { limit } }).then(r => r.data),
+	recordProductView: (productId: string, sessionId?: string) => api.post(`/activity/view/${productId}`, {}, { 
+		params: sessionId ? { session_id: sessionId } : {} 
+	}).then(r => r.data),
 }
 
 export default api 

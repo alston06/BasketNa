@@ -1,5 +1,5 @@
 from datetime import datetime, date
-from typing import List, Optional
+from typing import List, Optional, Dict
 from pydantic import BaseModel, EmailStr
 
 
@@ -84,3 +84,45 @@ class ProductSummary(BaseModel):
 class RecommendationResponse(BaseModel):
 	source: str
 	items: List[ProductSummary]
+
+
+class PersonalizedRecommendation(BaseModel):
+	product_id: str
+	product_name: str
+	category: str
+	current_price: float
+	best_retailer: str
+	description: str
+	score: float
+	reasons: List[str]
+	rating: float
+	trending_score: float
+	price_trend: str
+	potential_savings: float
+	website_url: str
+	all_retailer_links: Dict[str, str]
+
+
+class PersonalizedRecommendationResponse(BaseModel):
+	status: str
+	user_id: Optional[int] = None
+	session_id: Optional[str] = None
+	personalization_score: float
+	total_recommendations: int
+	generated_at: str
+	recommendations: List[PersonalizedRecommendation]
+
+
+class CategoryRecommendationResponse(BaseModel):
+	status: str
+	category: str
+	total_found: int
+	total_recommendations: int
+	recommendations: List[dict]
+
+
+class TrendingRecommendationResponse(BaseModel):
+	status: str
+	total_trending: int
+	total_recommendations: int
+	trending_recommendations: List[dict]

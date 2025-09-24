@@ -91,59 +91,7 @@ class PriceRecommendationEngine:
         
         return sorted(daily_forecasts, key=lambda x: (x['date'], x['product_name']))
     
-    def get_buy_recommendations(self, days_ahead: int = 30) -> List[Dict]:
-        """Get buy/wait recommendations based on price trends"""
-        historical_df, forecast_df = self.load_data()
-        
-        recommendations = []
-        
-        # Get current prices (latest historical data)
-        latest_historical = historical_df['date'].max()
-        current_data = historical_df[historical_df['date'] == latest_historical]
-        
-        for product in current_data['product_name'].unique():
-            # Current best price
-            current_product_data = current_data[current_data['product_name'] == product]
-            current_best = current_product_data.loc[current_product_data['price_inr'].idxmin()]
-            
-            # Forecast best prices for next N days
-            forecast_product_data = forecast_df[forecast_df['product_name'] == product]
-            
-            if not forecast_product_data.empty:
-                # Find minimum predicted price in forecast period
-                future_best = forecast_product_data.loc[forecast_product_data['price_inr'].idxmin()]
-                
-                # Calculate potential savings
-                potential_savings = current_best['price_inr'] - future_best['price_inr']
-                savings_pct = (potential_savings / current_best['price_inr']) * 100
-                
-                # Determine recommendation
-                if potential_savings > 1000 and savings_pct > 2:  # Wait if significant savings expected
-                    recommendation = "WAIT"
-                    reason = f"Price expected to drop by ₹{potential_savings:,.0f} ({savings_pct:.1f}%) on {future_best['date'].strftime('%Y-%m-%d')}"
-                elif savings_pct < -1:  # Buy now if prices expected to rise
-                    recommendation = "BUY_NOW"
-                    reason = f"Price may increase by {abs(savings_pct):.1f}% soon"
-                else:  # Stable pricing
-                    recommendation = "NEUTRAL"
-                    reason = "Price expected to remain stable"
-                
-                recommendations.append({
-                    'product_name': product,
-                    'current_best_price': round(current_best['price_inr'], 2),
-                    'current_best_retailer': current_best['retailer'],
-                    'predicted_best_price': round(future_best['price_inr'], 2),
-                    'predicted_best_retailer': future_best['retailer'],
-                    'predicted_best_date': future_best['date'].strftime('%Y-%m-%d'),
-                    'potential_savings': round(potential_savings, 2),
-                    'savings_percentage': round(savings_pct, 1),
-                    'recommendation': recommendation,
-                    'reason': reason
-                })
-        
-        # Sort by potential savings (highest first)
-        recommendations.sort(key=lambda x: x['potential_savings'], reverse=True)
-        return recommendations
+
     
     def get_price_trend_analysis(self, product_name: str, days_back: int = 30) -> Dict:
         """Analyze price trends for a specific product"""

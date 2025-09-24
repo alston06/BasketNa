@@ -6,7 +6,7 @@ import crud
 import models
 import pandas as pd
 import schemas
-from agents.price_copilot import copilot_app
+# from agents.price_copilot import copilot_app  # Commented out due to missing pydantic_ai dependency
 from auth import (
 	create_access_token,
 	get_current_user,
@@ -14,6 +14,17 @@ from auth import (
 	get_password_hash,
 	verify_password,
 )
+
+# Optional authentication dependency - commented out for now
+# async def get_current_user_optional(db: Session = Depends(get_db)):
+# 	"""Get current user if authenticated, otherwise return None"""
+# 	try:
+# 		from fastapi import Request
+# 		# This would need to be implemented properly with request context
+# 		# For now, we'll handle authentication in the endpoint
+# 		return None
+# 	except:
+# 		return None
 from db import Base, engine
 from fastapi import Depends, FastAPI, HTTPException, Query, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -44,7 +55,7 @@ app.add_middleware(
 	allow_headers=["*"]
 )
 
-app.mount("/copilotkit_remote", copilot_app)
+# app.mount("/copilotkit_remote", copilot_app)  # Commented out due to missing pydantic_ai dependency
 
 
 
@@ -265,9 +276,11 @@ def forecast_saved(product_id: str):
 # ========== NEW RECOMMENDATION ENDPOINTS ==========
 
 from recommendation_engine import PriceRecommendationEngine
+from personalized_recommendations import PersonalizedRecommendationEngine
 
-# Initialize recommendation engine
+# Initialize recommendation engines
 recommendation_engine = PriceRecommendationEngine()
+personalized_engine = PersonalizedRecommendationEngine()
 
 @app.get("/recommendations/best-deals")
 def get_best_deals(top_n: int = Query(10, ge=1, le=50)):
@@ -281,20 +294,6 @@ def get_best_deals(top_n: int = Query(10, ge=1, le=50)):
 		}
 	except Exception as e:
 		raise HTTPException(status_code=500, detail=f"Error fetching best deals: {str(e)}")
-
-@app.get("/recommendations/buy-wait")
-def get_buy_wait_recommendations(days_ahead: int = Query(30, ge=1, le=30)):
-	"""Get buy now vs wait recommendations based on price forecasts"""
-	try:
-		recommendations = recommendation_engine.get_buy_recommendations(days_ahead)
-		return {
-			"status": "success",
-			"forecast_days": days_ahead,
-			"count": len(recommendations),
-			"recommendations": recommendations
-		}
-	except Exception as e:
-		raise HTTPException(status_code=500, detail=f"Error generating recommendations: {str(e)}")
 
 @app.get("/forecast/30-day")
 def get_30_day_forecast(product_name: str = Query(None)):
@@ -373,4 +372,288 @@ def get_available_products():
 			"products": sorted(products)
 		}
 	except Exception as e:
-		raise HTTPException(status_code=500, detail=f"Error fetching products: {str(e)}") 
+		raise HTTPException(status_code=500, detail=f"Error fetching products: {str(e)}")
+
+# ========== PERSONALIZED RECOMMENDATION ENDPOINTS ==========
+
+@app.get("/recommendations/personalized")
+def get_personalized_recommendations(
+	limit: int = Query(10, ge=1, le=20),
+	current_user: models.User = Depends(get_current_user),
+	db: Session = Depends(get_db)
+):
+	"""Get personalized product recommendations for authenticated user"""
+	try:
+		recommendation_set = personalized_engine.generate_product_recommendations(
+			db=db, 
+			user_id=current_user.id, 
+			limit=limit
+		)
+		
+		# Convert to response format
+		recommendations = []
+		for rec in recommendation_set.recommendations:
+			recommendations.append({
+				"product_id": rec.product_id,
+				"product_name": rec.product_name,
+				"category": rec.category,
+				"current_price": rec.current_price,
+				"best_retailer": rec.best_retailer,
+				"description": rec.description,
+				"score": round(rec.score, 3),
+				"reasons": rec.reasons,
+				"rating": rec.rating,
+				"trending_score": round(rec.trending_score, 3),
+				"price_trend": rec.price_trend,
+				"potential_savings": rec.potential_savings,
+				"website_url": rec.website_url,
+				"all_retailer_links": rec.all_retailer_links
+			})
+		
+		return {
+			"status": "success",
+			"user_id": current_user.id,
+			"personalization_score": round(recommendation_set.personalization_score, 3),
+			"total_recommendations": recommendation_set.total_count,
+			"generated_at": recommendation_set.generated_at.isoformat(),
+			"recommendations": recommendations
+		}
+		
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error generating personalized recommendations: {str(e)}")
+
+@app.get("/recommendations/session")
+def get_session_recommendations(
+	session_id: str = Query(..., description="Session ID for anonymous users"),
+	limit: int = Query(10, ge=1, le=20),
+	db: Session = Depends(get_db)
+):
+	"""Get personalized product recommendations for anonymous users based on session activity"""
+	try:
+		recommendation_set = personalized_engine.generate_product_recommendations(
+			db=db,
+			session_id=session_id,
+			limit=limit
+		)
+		
+		# Convert to response format
+		recommendations = []
+		for rec in recommendation_set.recommendations:
+			recommendations.append({
+				"product_id": rec.product_id,
+				"product_name": rec.product_name,
+				"category": rec.category,
+				"current_price": rec.current_price,
+				"best_retailer": rec.best_retailer,
+				"description": rec.description,
+				"score": round(rec.score, 3),
+				"reasons": rec.reasons,
+				"rating": rec.rating,
+				"trending_score": round(rec.trending_score, 3),
+				"price_trend": rec.price_trend,
+				"potential_savings": rec.potential_savings,
+				"website_url": rec.website_url,
+				"all_retailer_links": rec.all_retailer_links
+			})
+		
+		return {
+			"status": "success",
+			"session_id": session_id,
+			"personalization_score": round(recommendation_set.personalization_score, 3),
+			"total_recommendations": recommendation_set.total_count,
+			"generated_at": recommendation_set.generated_at.isoformat(),
+			"recommendations": recommendations
+		}
+		
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error generating session recommendations: {str(e)}")
+
+@app.post("/activity/view/{product_id}")
+def record_product_view(
+	product_id: str,
+	session_id: str = Query(None, description="Session ID for anonymous users"),
+	db: Session = Depends(get_db)
+):
+	"""Record a product view for recommendation personalization"""
+	try:
+		# For now, we'll only support session-based tracking for simplicity
+		# In a full implementation, you'd extract user_id from JWT token if present
+		user_id = None  # Would be extracted from Authorization header if present
+		
+		# Ensure the product exists in our database
+		df = load_data()
+		product_match = df[df["product_id"] == product_id]
+		if product_match.empty:
+			raise HTTPException(status_code=404, detail="Product not found")
+		
+		product_name = product_match.iloc[0]["product_name"]
+		crud.ensure_product(db, product_id, str(product_name))
+		
+		# Record the view (requires either user_id or session_id)
+		if not user_id and not session_id:
+			raise HTTPException(status_code=400, detail="Either user authentication or session_id is required")
+		
+		view = crud.record_product_view(db, product_id, user_id, session_id)
+		
+		return {
+			"status": "success",
+			"message": "Product view recorded successfully",
+			"view_id": view.id,
+			"product_id": product_id,
+			"user_id": user_id,
+			"session_id": session_id
+		}
+		
+	except HTTPException:
+		raise
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error recording product view: {str(e)}")
+
+@app.get("/recommendations/category/{category}")
+def get_category_recommendations(
+	category: str,
+	limit: int = Query(5, ge=1, le=10),
+	exclude_products: List[str] = Query([], description="Product IDs to exclude")
+):
+	"""Get recommendations within a specific category"""
+	try:
+		df = load_data()
+		
+		# Get products in the specified category
+		category_products = []
+		for product_name, prod_category in personalized_engine.product_categories.items():
+			if prod_category.lower() == category.lower():
+				product_data = df[df['product_name'] == product_name]
+				if not product_data.empty:
+					# Get latest price
+					latest_data = product_data[product_data['date'] == product_data['date'].max()]
+					best_price_row = latest_data.loc[latest_data['price_inr'].idxmin()]
+					
+					# Calculate scores
+					rating = personalized_engine.product_ratings.get(product_name, 4.0)
+					trending_score = personalized_engine.calculate_trending_score(df, product_name)
+					price_trend, potential_savings = personalized_engine.calculate_price_trend(df, product_name)
+					
+					# Generate product ID
+					name_to_id = {v: k for k, v in {
+						"P001": "iPhone 16", "P002": "Samsung Galaxy S26 Ultra", "P003": "Google Pixel 10 Pro",
+						"P004": "OnePlus 14", "P005": "Dell XPS 15", "P006": "Apple MacBook Air (M4)",
+						"P007": "HP Spectre x360", "P008": "Lenovo Legion 5 Pro", "P009": "Sony WH-1000XM6 Headphones",
+						"P010": "Apple AirPods Pro 3", "P011": "Bose QuietComfort Ultra Earbuds", "P012": "JBL Flip 7 Speaker",
+						"P013": "Apple Watch Series 11", "P014": "Samsung Galaxy Watch 7", "P015": "Samsung 55-inch QLED TV",
+						"P016": "LG C5 65-inch OLED TV", "P017": "Sony PlayStation 5 Pro", "P018": "Canon EOS R7 Camera",
+						"P019": "DJI Mini 5 Pro Drone", "P020": "Logitech MX Master 4 Mouse"
+					}.items()}
+					
+					product_id = name_to_id.get(product_name, "P000")
+					
+					if product_id not in exclude_products:
+						# Generate website links
+						website_url = build_site_search_url(str(best_price_row['retailer']), product_name)
+						all_retailer_links = {}
+						product_retailers = df[df['product_name'] == product_name]['retailer'].unique()
+						for retailer in product_retailers:
+							all_retailer_links[retailer] = build_site_search_url(retailer, product_name)
+						
+						category_products.append({
+							"product_id": product_id,
+							"product_name": product_name,
+							"category": category,
+							"current_price": float(best_price_row['price_inr']),
+							"best_retailer": str(best_price_row['retailer']),
+							"rating": rating,
+							"trending_score": round(trending_score, 3),
+							"price_trend": price_trend,
+							"potential_savings": potential_savings,
+							"score": rating / 5.0 + trending_score * 0.3,
+							"website_url": website_url,
+							"all_retailer_links": all_retailer_links
+						})
+		
+		# Sort by score and return top recommendations
+		category_products.sort(key=lambda x: x['score'], reverse=True)
+		top_recommendations = category_products[:limit]
+		
+		return {
+			"status": "success",
+			"category": category,
+			"total_found": len(category_products),
+			"total_recommendations": len(top_recommendations),
+			"recommendations": top_recommendations
+		}
+		
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error getting category recommendations: {str(e)}")
+
+@app.get("/recommendations/trending")
+def get_trending_recommendations(
+	limit: int = Query(10, ge=1, le=20)
+):
+	"""Get trending product recommendations based on price activity"""
+	try:
+		df = load_data()
+		
+		# Calculate trending scores for all products
+		trending_products = []
+		for product_name in personalized_engine.product_categories.keys():
+			product_data = df[df['product_name'] == product_name]
+			if not product_data.empty:
+				trending_score = personalized_engine.calculate_trending_score(df, product_name)
+				
+				if trending_score > 0.1:  # Only include products with meaningful trending activity
+					# Get current best price
+					latest_data = product_data[product_data['date'] == product_data['date'].max()]
+					best_price_row = latest_data.loc[latest_data['price_inr'].idxmin()]
+					
+					rating = personalized_engine.product_ratings.get(product_name, 4.0)
+					category = personalized_engine.product_categories.get(product_name, "Electronics")
+					price_trend, potential_savings = personalized_engine.calculate_price_trend(df, product_name)
+					
+					# Generate product ID
+					name_to_id = {v: k for k, v in {
+						"P001": "iPhone 16", "P002": "Samsung Galaxy S26 Ultra", "P003": "Google Pixel 10 Pro",
+						"P004": "OnePlus 14", "P005": "Dell XPS 15", "P006": "Apple MacBook Air (M4)",
+						"P007": "HP Spectre x360", "P008": "Lenovo Legion 5 Pro", "P009": "Sony WH-1000XM6 Headphones",
+						"P010": "Apple AirPods Pro 3", "P011": "Bose QuietComfort Ultra Earbuds", "P012": "JBL Flip 7 Speaker",
+						"P013": "Apple Watch Series 11", "P014": "Samsung Galaxy Watch 7", "P015": "Samsung 55-inch QLED TV",
+						"P016": "LG C5 65-inch OLED TV", "P017": "Sony PlayStation 5 Pro", "P018": "Canon EOS R7 Camera",
+						"P019": "DJI Mini 5 Pro Drone", "P020": "Logitech MX Master 4 Mouse"
+					}.items()}
+					
+					product_id = name_to_id.get(product_name, "P000")
+					
+					# Generate website links
+					website_url = build_site_search_url(str(best_price_row['retailer']), product_name)
+					all_retailer_links = {}
+					product_retailers = df[df['product_name'] == product_name]['retailer'].unique()
+					for retailer in product_retailers:
+						all_retailer_links[retailer] = build_site_search_url(retailer, product_name)
+					
+					trending_products.append({
+						"product_id": product_id,
+						"product_name": product_name,
+						"category": category,
+						"current_price": float(best_price_row['price_inr']),
+						"best_retailer": str(best_price_row['retailer']),
+						"rating": rating,
+						"trending_score": round(trending_score, 3),
+						"price_trend": price_trend,
+						"potential_savings": potential_savings,
+						"description": f"Trending {category.lower()} with active price movements",
+						"website_url": website_url,
+						"all_retailer_links": all_retailer_links
+					})
+		
+		# Sort by trending score
+		trending_products.sort(key=lambda x: x['trending_score'], reverse=True)
+		top_trending = trending_products[:limit]
+		
+		return {
+			"status": "success",
+			"total_trending": len(trending_products),
+			"total_recommendations": len(top_trending),
+			"trending_recommendations": top_trending
+		}
+		
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error getting trending recommendations: {str(e)}") 
