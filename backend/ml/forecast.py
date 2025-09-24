@@ -14,7 +14,7 @@ from sklearn.linear_model import LinearRegression
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 print("PROJECT_ROOT:", PROJECT_ROOT)
 # Try new dataset first, fallback to old one
-NEW_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "ecommerce_price_dataset.csv")
+NEW_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "ecommerce_price_dataset_corrected.csv")
 OLD_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "sample_prices.csv")
 DATA_PATH = NEW_DATA_PATH if os.path.exists(NEW_DATA_PATH) else OLD_DATA_PATH
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "forecasts")

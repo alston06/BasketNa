@@ -1,0 +1,801 @@
+date,product_name,retailer,price_inr
+2025-09-25,Apple AirPods Pro 3,Amazon.in,21102.08
+2025-09-25,Apple AirPods Pro 3,Croma,24692.42
+2025-09-25,Apple AirPods Pro 3,Flipkart,23637.27
+2025-09-25,Apple AirPods Pro 3,RelianceDigital,24718.49
+2025-09-25,Apple MacBook Air (M4),Amazon.in,116419.65
+2025-09-25,Apple MacBook Air (M4),Croma,111374.83
+2025-09-25,Apple MacBook Air (M4),Flipkart,116767.44
+2025-09-25,Apple MacBook Air (M4),RelianceDigital,118236.68
+2025-09-25,Apple Watch Series 11,Amazon.in,41601.58
+2025-09-25,Apple Watch Series 11,Croma,36553.37
+2025-09-25,Apple Watch Series 11,Flipkart,44907.44
+2025-09-25,Apple Watch Series 11,RelianceDigital,39378.8
+2025-09-25,Bose QuietComfort Ultra Earbuds,Amazon.in,23040.77
+2025-09-25,Bose QuietComfort Ultra Earbuds,Croma,28546.16
+2025-09-25,Bose QuietComfort Ultra Earbuds,Flipkart,23259.23
+2025-09-25,Bose QuietComfort Ultra Earbuds,RelianceDigital,25540.32
+2025-09-25,Dell XPS 15,Amazon.in,196893.68
+2025-09-25,Dell XPS 15,Croma,197615.19
+2025-09-25,Dell XPS 15,Flipkart,152064.59
+2025-09-25,Dell XPS 15,RelianceDigital,175597.74
+2025-09-25,Fitbit Charge 7,Amazon.in,13010.31
+2025-09-25,Fitbit Charge 7,Croma,16114.36
+2025-09-25,Fitbit Charge 7,Flipkart,14804.9
+2025-09-25,Fitbit Charge 7,RelianceDigital,13751.65
+2025-09-25,Garmin Forerunner 965,Amazon.in,64167.12
+2025-09-25,Garmin Forerunner 965,Croma,52842.21
+2025-09-25,Garmin Forerunner 965,Flipkart,62450.45
+2025-09-25,Garmin Forerunner 965,RelianceDigital,50145.1
+2025-09-25,Google Pixel 10 Pro,Amazon.in,86320.05
+2025-09-25,Google Pixel 10 Pro,Croma,80033.02
+2025-09-25,Google Pixel 10 Pro,Flipkart,83227.48
+2025-09-25,Google Pixel 10 Pro,RelianceDigital,83063.35
+2025-09-25,HP Spectre x360,Amazon.in,132403.96
+2025-09-25,HP Spectre x360,Croma,144993.02
+2025-09-25,HP Spectre x360,Flipkart,132856.83
+2025-09-25,HP Spectre x360,RelianceDigital,166763.92
+2025-09-25,JBL Flip 7 Speaker,Amazon.in,10797.21
+2025-09-25,JBL Flip 7 Speaker,Croma,14293.82
+2025-09-25,JBL Flip 7 Speaker,Flipkart,10472.66
+2025-09-25,JBL Flip 7 Speaker,RelianceDigital,13463.14
+2025-09-25,Lenovo Legion 5 Pro,Amazon.in,103999.2
+2025-09-25,Lenovo Legion 5 Pro,Croma,130059.45
+2025-09-25,Lenovo Legion 5 Pro,Flipkart,135147.86
+2025-09-25,Lenovo Legion 5 Pro,RelianceDigital,132531.34
+2025-09-25,Microsoft Surface Pro 11,Amazon.in,123210.64
+2025-09-25,Microsoft Surface Pro 11,Croma,118320.44
+2025-09-25,Microsoft Surface Pro 11,Flipkart,111339.1
+2025-09-25,Microsoft Surface Pro 11,RelianceDigital,124806.51
+2025-09-25,Nothing Tab (1),Amazon.in,29780.98
+2025-09-25,Nothing Tab (1),Croma,28545.53
+2025-09-25,Nothing Tab (1),Flipkart,34612.81
+2025-09-25,Nothing Tab (1),RelianceDigital,33443.38
+2025-09-25,OnePlus 14,Amazon.in,70325.67
+2025-09-25,OnePlus 14,Croma,62926.84
+2025-09-25,OnePlus 14,Flipkart,61302.37
+2025-09-25,OnePlus 14,RelianceDigital,59305.58
+2025-09-25,Samsung Galaxy S26 Ultra,Amazon.in,116316.91
+2025-09-25,Samsung Galaxy S26 Ultra,Croma,119817.33
+2025-09-25,Samsung Galaxy S26 Ultra,Flipkart,125684.04
+2025-09-25,Samsung Galaxy S26 Ultra,RelianceDigital,113817.9
+2025-09-25,Samsung Galaxy Tab S10 Ultra,Amazon.in,82482.28
+2025-09-25,Samsung Galaxy Tab S10 Ultra,Croma,86036.31
+2025-09-25,Samsung Galaxy Tab S10 Ultra,Flipkart,80254.13
+2025-09-25,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92638.39
+2025-09-25,Samsung Galaxy Watch 8,Amazon.in,26554.88
+2025-09-25,Samsung Galaxy Watch 8,Croma,30829.35
+2025-09-25,Samsung Galaxy Watch 8,Flipkart,26796.37
+2025-09-25,Samsung Galaxy Watch 8,RelianceDigital,26268.34
+2025-09-25,Sony WH-1000XM6 Headphones,Amazon.in,33007.53
+2025-09-25,Sony WH-1000XM6 Headphones,Croma,34014.64
+2025-09-25,Sony WH-1000XM6 Headphones,Flipkart,31523.07
+2025-09-25,Sony WH-1000XM6 Headphones,RelianceDigital,36612.88
+2025-09-25,iPad Pro 13-inch (M4),Amazon.in,111393.53
+2025-09-25,iPad Pro 13-inch (M4),Croma,104073.65
+2025-09-25,iPad Pro 13-inch (M4),Flipkart,92866.18
+2025-09-25,iPad Pro 13-inch (M4),RelianceDigital,104251.72
+2025-09-25,iPhone 16,Amazon.in,80868.94
+2025-09-25,iPhone 16,Croma,77420.68
+2025-09-25,iPhone 16,Flipkart,64595.18
+2025-09-25,iPhone 16,RelianceDigital,87978.17
+2025-09-26,Apple AirPods Pro 3,Amazon.in,21249.35
+2025-09-26,Apple AirPods Pro 3,Croma,25182.64
+2025-09-26,Apple AirPods Pro 3,Flipkart,23931.42
+2025-09-26,Apple AirPods Pro 3,RelianceDigital,24929.15
+2025-09-26,Apple MacBook Air (M4),Amazon.in,114817.98
+2025-09-26,Apple MacBook Air (M4),Croma,109523.09
+2025-09-26,Apple MacBook Air (M4),Flipkart,115636.0
+2025-09-26,Apple MacBook Air (M4),RelianceDigital,119871.54
+2025-09-26,Apple Watch Series 11,Amazon.in,42082.08
+2025-09-26,Apple Watch Series 11,Croma,37155.01
+2025-09-26,Apple Watch Series 11,Flipkart,44209.29
+2025-09-26,Apple Watch Series 11,RelianceDigital,39977.98
+2025-09-26,Bose QuietComfort Ultra Earbuds,Amazon.in,22920.01
+2025-09-26,Bose QuietComfort Ultra Earbuds,Croma,29072.58
+2025-09-26,Bose QuietComfort Ultra Earbuds,Flipkart,23207.48
+2025-09-26,Bose QuietComfort Ultra Earbuds,RelianceDigital,25158.02
+2025-09-26,Dell XPS 15,Amazon.in,197622.03
+2025-09-26,Dell XPS 15,Croma,199109.06
+2025-09-26,Dell XPS 15,Flipkart,152174.11
+2025-09-26,Dell XPS 15,RelianceDigital,176491.8
+2025-09-26,Fitbit Charge 7,Amazon.in,12983.96
+2025-09-26,Fitbit Charge 7,Croma,16057.74
+2025-09-26,Fitbit Charge 7,Flipkart,15042.81
+2025-09-26,Fitbit Charge 7,RelianceDigital,13717.89
+2025-09-26,Garmin Forerunner 965,Amazon.in,63882.72
+2025-09-26,Garmin Forerunner 965,Croma,52849.4
+2025-09-26,Garmin Forerunner 965,Flipkart,62991.88
+2025-09-26,Garmin Forerunner 965,RelianceDigital,49327.07
+2025-09-26,Google Pixel 10 Pro,Amazon.in,86280.03
+2025-09-26,Google Pixel 10 Pro,Croma,78559.56
+2025-09-26,Google Pixel 10 Pro,Flipkart,81734.15
+2025-09-26,Google Pixel 10 Pro,RelianceDigital,84681.31
+2025-09-26,HP Spectre x360,Amazon.in,130461.02
+2025-09-26,HP Spectre x360,Croma,145723.16
+2025-09-26,HP Spectre x360,Flipkart,133733.41
+2025-09-26,HP Spectre x360,RelianceDigital,165783.49
+2025-09-26,JBL Flip 7 Speaker,Amazon.in,10811.65
+2025-09-26,JBL Flip 7 Speaker,Croma,14539.02
+2025-09-26,JBL Flip 7 Speaker,Flipkart,10441.02
+2025-09-26,JBL Flip 7 Speaker,RelianceDigital,13373.73
+2025-09-26,Lenovo Legion 5 Pro,Amazon.in,105029.03
+2025-09-26,Lenovo Legion 5 Pro,Croma,128041.36
+2025-09-26,Lenovo Legion 5 Pro,Flipkart,134813.57
+2025-09-26,Lenovo Legion 5 Pro,RelianceDigital,130452.93
+2025-09-26,Microsoft Surface Pro 11,Amazon.in,120918.39
+2025-09-26,Microsoft Surface Pro 11,Croma,117144.21
+2025-09-26,Microsoft Surface Pro 11,Flipkart,109956.06
+2025-09-26,Microsoft Surface Pro 11,RelianceDigital,123130.75
+2025-09-26,Nothing Tab (1),Amazon.in,29919.55
+2025-09-26,Nothing Tab (1),Croma,28765.51
+2025-09-26,Nothing Tab (1),Flipkart,35298.04
+2025-09-26,Nothing Tab (1),RelianceDigital,33861.83
+2025-09-26,OnePlus 14,Amazon.in,69193.35
+2025-09-26,OnePlus 14,Croma,62700.01
+2025-09-26,OnePlus 14,Flipkart,61751.1
+2025-09-26,OnePlus 14,RelianceDigital,60096.87
+2025-09-26,Samsung Galaxy S26 Ultra,Amazon.in,115649.07
+2025-09-26,Samsung Galaxy S26 Ultra,Croma,119078.06
+2025-09-26,Samsung Galaxy S26 Ultra,Flipkart,123209.61
+2025-09-26,Samsung Galaxy S26 Ultra,RelianceDigital,112714.04
+2025-09-26,Samsung Galaxy Tab S10 Ultra,Amazon.in,83206.65
+2025-09-26,Samsung Galaxy Tab S10 Ultra,Croma,87124.48
+2025-09-26,Samsung Galaxy Tab S10 Ultra,Flipkart,80299.77
+2025-09-26,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92948.61
+2025-09-26,Samsung Galaxy Watch 8,Amazon.in,26182.48
+2025-09-26,Samsung Galaxy Watch 8,Croma,30803.44
+2025-09-26,Samsung Galaxy Watch 8,Flipkart,26965.01
+2025-09-26,Samsung Galaxy Watch 8,RelianceDigital,26733.56
+2025-09-26,Sony WH-1000XM6 Headphones,Amazon.in,33064.04
+2025-09-26,Sony WH-1000XM6 Headphones,Croma,34391.45
+2025-09-26,Sony WH-1000XM6 Headphones,Flipkart,31587.74
+2025-09-26,Sony WH-1000XM6 Headphones,RelianceDigital,36312.1
+2025-09-26,iPad Pro 13-inch (M4),Amazon.in,113243.0
+2025-09-26,iPad Pro 13-inch (M4),Croma,105807.56
+2025-09-26,iPad Pro 13-inch (M4),Flipkart,91220.39
+2025-09-26,iPad Pro 13-inch (M4),RelianceDigital,102946.73
+2025-09-26,iPhone 16,Amazon.in,80442.21
+2025-09-26,iPhone 16,Croma,78473.97
+2025-09-26,iPhone 16,Flipkart,64614.94
+2025-09-26,iPhone 16,RelianceDigital,89021.39
+2025-09-27,Apple AirPods Pro 3,Amazon.in,20959.43
+2025-09-27,Apple AirPods Pro 3,Croma,25284.77
+2025-09-27,Apple AirPods Pro 3,Flipkart,24120.92
+2025-09-27,Apple AirPods Pro 3,RelianceDigital,24821.14
+2025-09-27,Apple MacBook Air (M4),Amazon.in,115761.48
+2025-09-27,Apple MacBook Air (M4),Croma,109196.07
+2025-09-27,Apple MacBook Air (M4),Flipkart,114492.21
+2025-09-27,Apple MacBook Air (M4),RelianceDigital,120228.82
+2025-09-27,Apple Watch Series 11,Amazon.in,41274.73
+2025-09-27,Apple Watch Series 11,Croma,37177.04
+2025-09-27,Apple Watch Series 11,Flipkart,44834.77
+2025-09-27,Apple Watch Series 11,RelianceDigital,39928.44
+2025-09-27,Bose QuietComfort Ultra Earbuds,Amazon.in,23286.51
+2025-09-27,Bose QuietComfort Ultra Earbuds,Croma,28875.43
+2025-09-27,Bose QuietComfort Ultra Earbuds,Flipkart,23608.8
+2025-09-27,Bose QuietComfort Ultra Earbuds,RelianceDigital,25130.22
+2025-09-27,Dell XPS 15,Amazon.in,201566.05
+2025-09-27,Dell XPS 15,Croma,196885.4
+2025-09-27,Dell XPS 15,Flipkart,151999.2
+2025-09-27,Dell XPS 15,RelianceDigital,173183.79
+2025-09-27,Fitbit Charge 7,Amazon.in,13202.06
+2025-09-27,Fitbit Charge 7,Croma,16072.35
+2025-09-27,Fitbit Charge 7,Flipkart,14814.41
+2025-09-27,Fitbit Charge 7,RelianceDigital,13757.05
+2025-09-27,Garmin Forerunner 965,Amazon.in,64888.56
+2025-09-27,Garmin Forerunner 965,Croma,52541.96
+2025-09-27,Garmin Forerunner 965,Flipkart,63459.14
+2025-09-27,Garmin Forerunner 965,RelianceDigital,50077.75
+2025-09-27,Google Pixel 10 Pro,Amazon.in,87643.98
+2025-09-27,Google Pixel 10 Pro,Croma,80031.57
+2025-09-27,Google Pixel 10 Pro,Flipkart,82963.9
+2025-09-27,Google Pixel 10 Pro,RelianceDigital,84786.3
+2025-09-27,HP Spectre x360,Amazon.in,132804.54
+2025-09-27,HP Spectre x360,Croma,144278.89
+2025-09-27,HP Spectre x360,Flipkart,131068.42
+2025-09-27,HP Spectre x360,RelianceDigital,163220.85
+2025-09-27,JBL Flip 7 Speaker,Amazon.in,10928.83
+2025-09-27,JBL Flip 7 Speaker,Croma,14581.71
+2025-09-27,JBL Flip 7 Speaker,Flipkart,10434.12
+2025-09-27,JBL Flip 7 Speaker,RelianceDigital,13223.62
+2025-09-27,Lenovo Legion 5 Pro,Amazon.in,104860.45
+2025-09-27,Lenovo Legion 5 Pro,Croma,126413.93
+2025-09-27,Lenovo Legion 5 Pro,Flipkart,132998.7
+2025-09-27,Lenovo Legion 5 Pro,RelianceDigital,130753.93
+2025-09-27,Microsoft Surface Pro 11,Amazon.in,123135.17
+2025-09-27,Microsoft Surface Pro 11,Croma,115775.3
+2025-09-27,Microsoft Surface Pro 11,Flipkart,111085.0
+2025-09-27,Microsoft Surface Pro 11,RelianceDigital,121510.53
+2025-09-27,Nothing Tab (1),Amazon.in,30011.43
+2025-09-27,Nothing Tab (1),Croma,28705.7
+2025-09-27,Nothing Tab (1),Flipkart,34858.65
+2025-09-27,Nothing Tab (1),RelianceDigital,33863.34
+2025-09-27,OnePlus 14,Amazon.in,68719.64
+2025-09-27,OnePlus 14,Croma,62154.41
+2025-09-27,OnePlus 14,Flipkart,62582.22
+2025-09-27,OnePlus 14,RelianceDigital,60548.57
+2025-09-27,Samsung Galaxy S26 Ultra,Amazon.in,115600.79
+2025-09-27,Samsung Galaxy S26 Ultra,Croma,117742.59
+2025-09-27,Samsung Galaxy S26 Ultra,Flipkart,123907.81
+2025-09-27,Samsung Galaxy S26 Ultra,RelianceDigital,114192.21
+2025-09-27,Samsung Galaxy Tab S10 Ultra,Amazon.in,82282.26
+2025-09-27,Samsung Galaxy Tab S10 Ultra,Croma,87676.58
+2025-09-27,Samsung Galaxy Tab S10 Ultra,Flipkart,79709.53
+2025-09-27,Samsung Galaxy Tab S10 Ultra,RelianceDigital,94135.71
+2025-09-27,Samsung Galaxy Watch 8,Amazon.in,26286.9
+2025-09-27,Samsung Galaxy Watch 8,Croma,30420.18
+2025-09-27,Samsung Galaxy Watch 8,Flipkart,26824.53
+2025-09-27,Samsung Galaxy Watch 8,RelianceDigital,26317.92
+2025-09-27,Sony WH-1000XM6 Headphones,Amazon.in,33689.09
+2025-09-27,Sony WH-1000XM6 Headphones,Croma,33789.38
+2025-09-27,Sony WH-1000XM6 Headphones,Flipkart,31341.28
+2025-09-27,Sony WH-1000XM6 Headphones,RelianceDigital,36257.64
+2025-09-27,iPad Pro 13-inch (M4),Amazon.in,113474.22
+2025-09-27,iPad Pro 13-inch (M4),Croma,105402.96
+2025-09-27,iPad Pro 13-inch (M4),Flipkart,89511.79
+2025-09-27,iPad Pro 13-inch (M4),RelianceDigital,102226.37
+2025-09-27,iPhone 16,Amazon.in,79387.19
+2025-09-27,iPhone 16,Croma,78371.55
+2025-09-27,iPhone 16,Flipkart,64316.65
+2025-09-27,iPhone 16,RelianceDigital,89710.67
+2025-09-28,Apple AirPods Pro 3,Amazon.in,20969.67
+2025-09-28,Apple AirPods Pro 3,Croma,25318.53
+2025-09-28,Apple AirPods Pro 3,Flipkart,24462.31
+2025-09-28,Apple AirPods Pro 3,RelianceDigital,24721.95
+2025-09-28,Apple MacBook Air (M4),Amazon.in,115917.83
+2025-09-28,Apple MacBook Air (M4),Croma,111078.85
+2025-09-28,Apple MacBook Air (M4),Flipkart,116722.33
+2025-09-28,Apple MacBook Air (M4),RelianceDigital,120538.96
+2025-09-28,Apple Watch Series 11,Amazon.in,41644.76
+2025-09-28,Apple Watch Series 11,Croma,37298.47
+2025-09-28,Apple Watch Series 11,Flipkart,45353.78
+2025-09-28,Apple Watch Series 11,RelianceDigital,39956.55
+2025-09-28,Bose QuietComfort Ultra Earbuds,Amazon.in,23492.54
+2025-09-28,Bose QuietComfort Ultra Earbuds,Croma,28520.86
+2025-09-28,Bose QuietComfort Ultra Earbuds,Flipkart,23639.03
+2025-09-28,Bose QuietComfort Ultra Earbuds,RelianceDigital,24699.29
+2025-09-28,Dell XPS 15,Amazon.in,198006.12
+2025-09-28,Dell XPS 15,Croma,195497.44
+2025-09-28,Dell XPS 15,Flipkart,151999.2
+2025-09-28,Dell XPS 15,RelianceDigital,170051.38
+2025-09-28,Fitbit Charge 7,Amazon.in,13067.55
+2025-09-28,Fitbit Charge 7,Croma,15923.82
+2025-09-28,Fitbit Charge 7,Flipkart,14671.27
+2025-09-28,Fitbit Charge 7,RelianceDigital,13998.92
+2025-09-28,Garmin Forerunner 965,Amazon.in,65687.37
+2025-09-28,Garmin Forerunner 965,Croma,52556.14
+2025-09-28,Garmin Forerunner 965,Flipkart,63822.48
+2025-09-28,Garmin Forerunner 965,RelianceDigital,49385.1
+2025-09-28,Google Pixel 10 Pro,Amazon.in,88838.34
+2025-09-28,Google Pixel 10 Pro,Croma,80633.28
+2025-09-28,Google Pixel 10 Pro,Flipkart,83083.84
+2025-09-28,Google Pixel 10 Pro,RelianceDigital,83142.12
+2025-09-28,HP Spectre x360,Amazon.in,133581.23
+2025-09-28,HP Spectre x360,Croma,141861.31
+2025-09-28,HP Spectre x360,Flipkart,133556.84
+2025-09-28,HP Spectre x360,RelianceDigital,161023.57
+2025-09-28,JBL Flip 7 Speaker,Amazon.in,10727.06
+2025-09-28,JBL Flip 7 Speaker,Croma,14581.68
+2025-09-28,JBL Flip 7 Speaker,Flipkart,10392.0
+2025-09-28,JBL Flip 7 Speaker,RelianceDigital,13159.43
+2025-09-28,Lenovo Legion 5 Pro,Amazon.in,105335.61
+2025-09-28,Lenovo Legion 5 Pro,Croma,125531.5
+2025-09-28,Lenovo Legion 5 Pro,Flipkart,135301.81
+2025-09-28,Lenovo Legion 5 Pro,RelianceDigital,132781.85
+2025-09-28,Microsoft Surface Pro 11,Amazon.in,125271.36
+2025-09-28,Microsoft Surface Pro 11,Croma,113939.15
+2025-09-28,Microsoft Surface Pro 11,Flipkart,109279.71
+2025-09-28,Microsoft Surface Pro 11,RelianceDigital,122697.65
+2025-09-28,Nothing Tab (1),Amazon.in,29706.66
+2025-09-28,Nothing Tab (1),Croma,28615.4
+2025-09-28,Nothing Tab (1),Flipkart,35161.03
+2025-09-28,Nothing Tab (1),RelianceDigital,34194.14
+2025-09-28,OnePlus 14,Amazon.in,69025.48
+2025-09-28,OnePlus 14,Croma,61602.86
+2025-09-28,OnePlus 14,Flipkart,63333.31
+2025-09-28,OnePlus 14,RelianceDigital,61180.33
+2025-09-28,Samsung Galaxy S26 Ultra,Amazon.in,116040.11
+2025-09-28,Samsung Galaxy S26 Ultra,Croma,116738.74
+2025-09-28,Samsung Galaxy S26 Ultra,Flipkart,123598.62
+2025-09-28,Samsung Galaxy S26 Ultra,RelianceDigital,114224.81
+2025-09-28,Samsung Galaxy Tab S10 Ultra,Amazon.in,81053.68
+2025-09-28,Samsung Galaxy Tab S10 Ultra,Croma,86425.72
+2025-09-28,Samsung Galaxy Tab S10 Ultra,Flipkart,78523.25
+2025-09-28,Samsung Galaxy Tab S10 Ultra,RelianceDigital,93149.15
+2025-09-28,Samsung Galaxy Watch 8,Amazon.in,26225.02
+2025-09-28,Samsung Galaxy Watch 8,Croma,30510.69
+2025-09-28,Samsung Galaxy Watch 8,Flipkart,26459.84
+2025-09-28,Samsung Galaxy Watch 8,RelianceDigital,26085.14
+2025-09-28,Sony WH-1000XM6 Headphones,Amazon.in,33726.15
+2025-09-28,Sony WH-1000XM6 Headphones,Croma,34439.02
+2025-09-28,Sony WH-1000XM6 Headphones,Flipkart,30944.53
+2025-09-28,Sony WH-1000XM6 Headphones,RelianceDigital,36052.92
+2025-09-28,iPad Pro 13-inch (M4),Amazon.in,114190.47
+2025-09-28,iPad Pro 13-inch (M4),Croma,104844.93
+2025-09-28,iPad Pro 13-inch (M4),Flipkart,88497.0
+2025-09-28,iPad Pro 13-inch (M4),RelianceDigital,100981.83
+2025-09-28,iPhone 16,Amazon.in,78899.41
+2025-09-28,iPhone 16,Croma,79563.34
+2025-09-28,iPhone 16,Flipkart,63999.2
+2025-09-28,iPhone 16,RelianceDigital,91356.97
+2025-09-29,Apple AirPods Pro 3,Amazon.in,21251.92
+2025-09-29,Apple AirPods Pro 3,Croma,25578.86
+2025-09-29,Apple AirPods Pro 3,Flipkart,24427.32
+2025-09-29,Apple AirPods Pro 3,RelianceDigital,24531.18
+2025-09-29,Apple MacBook Air (M4),Amazon.in,113806.55
+2025-09-29,Apple MacBook Air (M4),Croma,111319.25
+2025-09-29,Apple MacBook Air (M4),Flipkart,114408.9
+2025-09-29,Apple MacBook Air (M4),RelianceDigital,122704.33
+2025-09-29,Apple Watch Series 11,Amazon.in,41306.2
+2025-09-29,Apple Watch Series 11,Croma,37946.05
+2025-09-29,Apple Watch Series 11,Flipkart,45090.51
+2025-09-29,Apple Watch Series 11,RelianceDigital,39905.36
+2025-09-29,Bose QuietComfort Ultra Earbuds,Amazon.in,23596.52
+2025-09-29,Bose QuietComfort Ultra Earbuds,Croma,27995.38
+2025-09-29,Bose QuietComfort Ultra Earbuds,Flipkart,23323.49
+2025-09-29,Bose QuietComfort Ultra Earbuds,RelianceDigital,25086.95
+2025-09-29,Dell XPS 15,Amazon.in,199094.58
+2025-09-29,Dell XPS 15,Croma,193206.28
+2025-09-29,Dell XPS 15,Flipkart,152584.11
+2025-09-29,Dell XPS 15,RelianceDigital,168715.03
+2025-09-29,Fitbit Charge 7,Amazon.in,13176.37
+2025-09-29,Fitbit Charge 7,Croma,15668.2
+2025-09-29,Fitbit Charge 7,Flipkart,14487.06
+2025-09-29,Fitbit Charge 7,RelianceDigital,14253.28
+2025-09-29,Garmin Forerunner 965,Amazon.in,64937.92
+2025-09-29,Garmin Forerunner 965,Croma,51530.35
+2025-09-29,Garmin Forerunner 965,Flipkart,64709.08
+2025-09-29,Garmin Forerunner 965,RelianceDigital,48827.39
+2025-09-29,Google Pixel 10 Pro,Amazon.in,89622.63
+2025-09-29,Google Pixel 10 Pro,Croma,81079.94
+2025-09-29,Google Pixel 10 Pro,Flipkart,82881.09
+2025-09-29,Google Pixel 10 Pro,RelianceDigital,83545.52
+2025-09-29,HP Spectre x360,Amazon.in,131353.52
+2025-09-29,HP Spectre x360,Croma,140973.66
+2025-09-29,HP Spectre x360,Flipkart,132780.04
+2025-09-29,HP Spectre x360,RelianceDigital,159921.17
+2025-09-29,JBL Flip 7 Speaker,Amazon.in,10574.95
+2025-09-29,JBL Flip 7 Speaker,Croma,14367.26
+2025-09-29,JBL Flip 7 Speaker,Flipkart,10392.0
+2025-09-29,JBL Flip 7 Speaker,RelianceDigital,12901.59
+2025-09-29,Lenovo Legion 5 Pro,Amazon.in,106308.72
+2025-09-29,Lenovo Legion 5 Pro,Croma,127660.02
+2025-09-29,Lenovo Legion 5 Pro,Flipkart,135944.38
+2025-09-29,Lenovo Legion 5 Pro,RelianceDigital,132894.13
+2025-09-29,Microsoft Surface Pro 11,Amazon.in,123440.04
+2025-09-29,Microsoft Surface Pro 11,Croma,114748.27
+2025-09-29,Microsoft Surface Pro 11,Flipkart,109561.67
+2025-09-29,Microsoft Surface Pro 11,RelianceDigital,124422.18
+2025-09-29,Nothing Tab (1),Amazon.in,30163.71
+2025-09-29,Nothing Tab (1),Croma,28515.24
+2025-09-29,Nothing Tab (1),Flipkart,35657.9
+2025-09-29,Nothing Tab (1),RelianceDigital,33578.89
+2025-09-29,OnePlus 14,Amazon.in,69332.09
+2025-09-29,OnePlus 14,Croma,62535.94
+2025-09-29,OnePlus 14,Flipkart,63631.23
+2025-09-29,OnePlus 14,RelianceDigital,60039.33
+2025-09-29,Samsung Galaxy S26 Ultra,Amazon.in,117377.01
+2025-09-29,Samsung Galaxy S26 Ultra,Croma,116243.82
+2025-09-29,Samsung Galaxy S26 Ultra,Flipkart,121749.6
+2025-09-29,Samsung Galaxy S26 Ultra,RelianceDigital,113652.58
+2025-09-29,Samsung Galaxy Tab S10 Ultra,Amazon.in,82297.03
+2025-09-29,Samsung Galaxy Tab S10 Ultra,Croma,84981.84
+2025-09-29,Samsung Galaxy Tab S10 Ultra,Flipkart,79094.6
+2025-09-29,Samsung Galaxy Tab S10 Ultra,RelianceDigital,94084.29
+2025-09-29,Samsung Galaxy Watch 8,Amazon.in,25758.12
+2025-09-29,Samsung Galaxy Watch 8,Croma,30979.09
+2025-09-29,Samsung Galaxy Watch 8,Flipkart,26945.64
+2025-09-29,Samsung Galaxy Watch 8,RelianceDigital,25716.48
+2025-09-29,Sony WH-1000XM6 Headphones,Amazon.in,34112.84
+2025-09-29,Sony WH-1000XM6 Headphones,Croma,33938.17
+2025-09-29,Sony WH-1000XM6 Headphones,Flipkart,30961.04
+2025-09-29,Sony WH-1000XM6 Headphones,RelianceDigital,36663.76
+2025-09-29,iPad Pro 13-inch (M4),Amazon.in,113871.74
+2025-09-29,iPad Pro 13-inch (M4),Croma,105822.79
+2025-09-29,iPad Pro 13-inch (M4),Flipkart,87999.2
+2025-09-29,iPad Pro 13-inch (M4),RelianceDigital,100202.39
+2025-09-29,iPhone 16,Amazon.in,77614.26
+2025-09-29,iPhone 16,Croma,79570.83
+2025-09-29,iPhone 16,Flipkart,63999.2
+2025-09-29,iPhone 16,RelianceDigital,91026.94
+2025-09-30,Apple AirPods Pro 3,Amazon.in,21339.18
+2025-09-30,Apple AirPods Pro 3,Croma,25686.79
+2025-09-30,Apple AirPods Pro 3,Flipkart,24039.08
+2025-09-30,Apple AirPods Pro 3,RelianceDigital,24106.1
+2025-09-30,Apple MacBook Air (M4),Amazon.in,114639.38
+2025-09-30,Apple MacBook Air (M4),Croma,112653.9
+2025-09-30,Apple MacBook Air (M4),Flipkart,112698.2
+2025-09-30,Apple MacBook Air (M4),RelianceDigital,120559.27
+2025-09-30,Apple Watch Series 11,Amazon.in,41684.36
+2025-09-30,Apple Watch Series 11,Croma,37851.14
+2025-09-30,Apple Watch Series 11,Flipkart,44528.74
+2025-09-30,Apple Watch Series 11,RelianceDigital,39346.21
+2025-09-30,Bose QuietComfort Ultra Earbuds,Amazon.in,23129.12
+2025-09-30,Bose QuietComfort Ultra Earbuds,Croma,28464.13
+2025-09-30,Bose QuietComfort Ultra Earbuds,Flipkart,22906.85
+2025-09-30,Bose QuietComfort Ultra Earbuds,RelianceDigital,25026.28
+2025-09-30,Dell XPS 15,Amazon.in,201889.67
+2025-09-30,Dell XPS 15,Croma,190152.09
+2025-09-30,Dell XPS 15,Flipkart,151999.2
+2025-09-30,Dell XPS 15,RelianceDigital,166352.32
+2025-09-30,Fitbit Charge 7,Amazon.in,13220.01
+2025-09-30,Fitbit Charge 7,Croma,15390.44
+2025-09-30,Fitbit Charge 7,Flipkart,14566.24
+2025-09-30,Fitbit Charge 7,RelianceDigital,14079.31
+2025-09-30,Garmin Forerunner 965,Amazon.in,64935.43
+2025-09-30,Garmin Forerunner 965,Croma,51358.31
+2025-09-30,Garmin Forerunner 965,Flipkart,63550.44
+2025-09-30,Garmin Forerunner 965,RelianceDigital,48997.03
+2025-09-30,Google Pixel 10 Pro,Amazon.in,89698.43
+2025-09-30,Google Pixel 10 Pro,Croma,82231.39
+2025-09-30,Google Pixel 10 Pro,Flipkart,82332.63
+2025-09-30,Google Pixel 10 Pro,RelianceDigital,82727.36
+2025-09-30,HP Spectre x360,Amazon.in,133455.87
+2025-09-30,HP Spectre x360,Croma,142685.03
+2025-09-30,HP Spectre x360,Flipkart,130901.57
+2025-09-30,HP Spectre x360,RelianceDigital,162485.84
+2025-09-30,JBL Flip 7 Speaker,Amazon.in,10749.12
+2025-09-30,JBL Flip 7 Speaker,Croma,14442.62
+2025-09-30,JBL Flip 7 Speaker,Flipkart,10456.77
+2025-09-30,JBL Flip 7 Speaker,RelianceDigital,13129.26
+2025-09-30,Lenovo Legion 5 Pro,Amazon.in,106936.03
+2025-09-30,Lenovo Legion 5 Pro,Croma,129290.74
+2025-09-30,Lenovo Legion 5 Pro,Flipkart,138321.45
+2025-09-30,Lenovo Legion 5 Pro,RelianceDigital,132044.44
+2025-09-30,Microsoft Surface Pro 11,Amazon.in,125159.03
+2025-09-30,Microsoft Surface Pro 11,Croma,116758.24
+2025-09-30,Microsoft Surface Pro 11,Flipkart,109063.34
+2025-09-30,Microsoft Surface Pro 11,RelianceDigital,122336.47
+2025-09-30,Nothing Tab (1),Amazon.in,30222.52
+2025-09-30,Nothing Tab (1),Croma,28536.04
+2025-09-30,Nothing Tab (1),Flipkart,36223.52
+2025-09-30,Nothing Tab (1),RelianceDigital,33482.2
+2025-09-30,OnePlus 14,Amazon.in,68143.28
+2025-09-30,OnePlus 14,Croma,61686.12
+2025-09-30,OnePlus 14,Flipkart,64551.16
+2025-09-30,OnePlus 14,RelianceDigital,59663.07
+2025-09-30,Samsung Galaxy S26 Ultra,Amazon.in,115818.43
+2025-09-30,Samsung Galaxy S26 Ultra,Croma,118277.0
+2025-09-30,Samsung Galaxy S26 Ultra,Flipkart,123164.04
+2025-09-30,Samsung Galaxy S26 Ultra,RelianceDigital,115273.28
+2025-09-30,Samsung Galaxy Tab S10 Ultra,Amazon.in,80790.89
+2025-09-30,Samsung Galaxy Tab S10 Ultra,Croma,85798.97
+2025-09-30,Samsung Galaxy Tab S10 Ultra,Flipkart,80202.97
+2025-09-30,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92577.74
+2025-09-30,Samsung Galaxy Watch 8,Amazon.in,25721.76
+2025-09-30,Samsung Galaxy Watch 8,Croma,30370.38
+2025-09-30,Samsung Galaxy Watch 8,Flipkart,26554.53
+2025-09-30,Samsung Galaxy Watch 8,RelianceDigital,25706.92
+2025-09-30,Sony WH-1000XM6 Headphones,Amazon.in,34779.97
+2025-09-30,Sony WH-1000XM6 Headphones,Croma,33863.91
+2025-09-30,Sony WH-1000XM6 Headphones,Flipkart,30560.25
+2025-09-30,Sony WH-1000XM6 Headphones,RelianceDigital,36076.62
+2025-09-30,iPad Pro 13-inch (M4),Amazon.in,116062.36
+2025-09-30,iPad Pro 13-inch (M4),Croma,107007.8
+2025-09-30,iPad Pro 13-inch (M4),Flipkart,89535.84
+2025-09-30,iPad Pro 13-inch (M4),RelianceDigital,100171.47
+2025-09-30,iPhone 16,Amazon.in,76274.27
+2025-09-30,iPhone 16,Croma,80826.3
+2025-09-30,iPhone 16,Flipkart,64473.2
+2025-09-30,iPhone 16,RelianceDigital,89962.24
+2025-10-01,Apple AirPods Pro 3,Amazon.in,21707.31
+2025-10-01,Apple AirPods Pro 3,Croma,25748.12
+2025-10-01,Apple AirPods Pro 3,Flipkart,24420.77
+2025-10-01,Apple AirPods Pro 3,RelianceDigital,24250.35
+2025-10-01,Apple MacBook Air (M4),Amazon.in,114456.25
+2025-10-01,Apple MacBook Air (M4),Croma,113781.23
+2025-10-01,Apple MacBook Air (M4),Flipkart,111628.77
+2025-10-01,Apple MacBook Air (M4),RelianceDigital,118229.28
+2025-10-01,Apple Watch Series 11,Amazon.in,41881.49
+2025-10-01,Apple Watch Series 11,Croma,37486.36
+2025-10-01,Apple Watch Series 11,Flipkart,45273.31
+2025-10-01,Apple Watch Series 11,RelianceDigital,39823.36
+2025-10-01,Bose QuietComfort Ultra Earbuds,Amazon.in,23278.0
+2025-10-01,Bose QuietComfort Ultra Earbuds,Croma,28753.58
+2025-10-01,Bose QuietComfort Ultra Earbuds,Flipkart,23112.42
+2025-10-01,Bose QuietComfort Ultra Earbuds,RelianceDigital,25263.78
+2025-10-01,Dell XPS 15,Amazon.in,198002.15
+2025-10-01,Dell XPS 15,Croma,190534.95
+2025-10-01,Dell XPS 15,Flipkart,154332.81
+2025-10-01,Dell XPS 15,RelianceDigital,164663.96
+2025-10-01,Fitbit Charge 7,Amazon.in,13461.84
+2025-10-01,Fitbit Charge 7,Croma,15650.94
+2025-10-01,Fitbit Charge 7,Flipkart,14383.5
+2025-10-01,Fitbit Charge 7,RelianceDigital,14302.13
+2025-10-01,Garmin Forerunner 965,Amazon.in,65529.72
+2025-10-01,Garmin Forerunner 965,Croma,51656.45
+2025-10-01,Garmin Forerunner 965,Flipkart,63721.86
+2025-10-01,Garmin Forerunner 965,RelianceDigital,48382.38
+2025-10-01,Google Pixel 10 Pro,Amazon.in,88262.22
+2025-10-01,Google Pixel 10 Pro,Croma,81433.82
+2025-10-01,Google Pixel 10 Pro,Flipkart,81423.39
+2025-10-01,Google Pixel 10 Pro,RelianceDigital,83303.34
+2025-10-01,HP Spectre x360,Amazon.in,135675.22
+2025-10-01,HP Spectre x360,Croma,144007.23
+2025-10-01,HP Spectre x360,Flipkart,131432.51
+2025-10-01,HP Spectre x360,RelianceDigital,163602.61
+2025-10-01,JBL Flip 7 Speaker,Amazon.in,10703.62
+2025-10-01,JBL Flip 7 Speaker,Croma,14474.8
+2025-10-01,JBL Flip 7 Speaker,Flipkart,10392.0
+2025-10-01,JBL Flip 7 Speaker,RelianceDigital,13134.39
+2025-10-01,Lenovo Legion 5 Pro,Amazon.in,108209.95
+2025-10-01,Lenovo Legion 5 Pro,Croma,126943.63
+2025-10-01,Lenovo Legion 5 Pro,Flipkart,140527.32
+2025-10-01,Lenovo Legion 5 Pro,RelianceDigital,130736.61
+2025-10-01,Microsoft Surface Pro 11,Amazon.in,125076.34
+2025-10-01,Microsoft Surface Pro 11,Croma,117464.88
+2025-10-01,Microsoft Surface Pro 11,Flipkart,110043.04
+2025-10-01,Microsoft Surface Pro 11,RelianceDigital,120881.58
+2025-10-01,Nothing Tab (1),Amazon.in,29806.79
+2025-10-01,Nothing Tab (1),Croma,28248.58
+2025-10-01,Nothing Tab (1),Flipkart,36871.06
+2025-10-01,Nothing Tab (1),RelianceDigital,33508.45
+2025-10-01,OnePlus 14,Amazon.in,67750.97
+2025-10-01,OnePlus 14,Croma,62754.33
+2025-10-01,OnePlus 14,Flipkart,64744.06
+2025-10-01,OnePlus 14,RelianceDigital,59784.15
+2025-10-01,Samsung Galaxy S26 Ultra,Amazon.in,116495.1
+2025-10-01,Samsung Galaxy S26 Ultra,Croma,116605.69
+2025-10-01,Samsung Galaxy S26 Ultra,Flipkart,124747.5
+2025-10-01,Samsung Galaxy S26 Ultra,RelianceDigital,113130.31
+2025-10-01,Samsung Galaxy Tab S10 Ultra,Amazon.in,82319.1
+2025-10-01,Samsung Galaxy Tab S10 Ultra,Croma,87330.69
+2025-10-01,Samsung Galaxy Tab S10 Ultra,Flipkart,80250.44
+2025-10-01,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92642.17
+2025-10-01,Samsung Galaxy Watch 8,Amazon.in,25431.68
+2025-10-01,Samsung Galaxy Watch 8,Croma,29835.3
+2025-10-01,Samsung Galaxy Watch 8,Flipkart,26291.6
+2025-10-01,Samsung Galaxy Watch 8,RelianceDigital,25534.5
+2025-10-01,Sony WH-1000XM6 Headphones,Amazon.in,34147.12
+2025-10-01,Sony WH-1000XM6 Headphones,Croma,33655.35
+2025-10-01,Sony WH-1000XM6 Headphones,Flipkart,30941.26
+2025-10-01,Sony WH-1000XM6 Headphones,RelianceDigital,36248.47
+2025-10-01,iPad Pro 13-inch (M4),Amazon.in,113837.38
+2025-10-01,iPad Pro 13-inch (M4),Croma,106918.1
+2025-10-01,iPad Pro 13-inch (M4),Flipkart,90329.89
+2025-10-01,iPad Pro 13-inch (M4),RelianceDigital,102130.92
+2025-10-01,iPhone 16,Amazon.in,77056.7
+2025-10-01,iPhone 16,Croma,80967.31
+2025-10-01,iPhone 16,Flipkart,63999.2
+2025-10-01,iPhone 16,RelianceDigital,90619.69
+2025-10-02,Apple AirPods Pro 3,Amazon.in,21821.96
+2025-10-02,Apple AirPods Pro 3,Croma,25697.13
+2025-10-02,Apple AirPods Pro 3,Flipkart,24170.43
+2025-10-02,Apple AirPods Pro 3,RelianceDigital,23871.68
+2025-10-02,Apple MacBook Air (M4),Amazon.in,116412.73
+2025-10-02,Apple MacBook Air (M4),Croma,115261.5
+2025-10-02,Apple MacBook Air (M4),Flipkart,112520.03
+2025-10-02,Apple MacBook Air (M4),RelianceDigital,119724.53
+2025-10-02,Apple Watch Series 11,Amazon.in,42292.41
+2025-10-02,Apple Watch Series 11,Croma,37580.43
+2025-10-02,Apple Watch Series 11,Flipkart,44757.67
+2025-10-02,Apple Watch Series 11,RelianceDigital,39619.36
+2025-10-02,Bose QuietComfort Ultra Earbuds,Amazon.in,23694.99
+2025-10-02,Bose QuietComfort Ultra Earbuds,Croma,28559.95
+2025-10-02,Bose QuietComfort Ultra Earbuds,Flipkart,22843.97
+2025-10-02,Bose QuietComfort Ultra Earbuds,RelianceDigital,25546.65
+2025-10-02,Dell XPS 15,Amazon.in,197229.01
+2025-10-02,Dell XPS 15,Croma,187470.83
+2025-10-02,Dell XPS 15,Flipkart,151999.2
+2025-10-02,Dell XPS 15,RelianceDigital,167556.44
+2025-10-02,Fitbit Charge 7,Amazon.in,13501.35
+2025-10-02,Fitbit Charge 7,Croma,15496.33
+2025-10-02,Fitbit Charge 7,Flipkart,14169.5
+2025-10-02,Fitbit Charge 7,RelianceDigital,14305.6
+2025-10-02,Garmin Forerunner 965,Amazon.in,65125.13
+2025-10-02,Garmin Forerunner 965,Croma,51392.77
+2025-10-02,Garmin Forerunner 965,Flipkart,64513.0
+2025-10-02,Garmin Forerunner 965,RelianceDigital,48061.94
+2025-10-02,Google Pixel 10 Pro,Amazon.in,86901.02
+2025-10-02,Google Pixel 10 Pro,Croma,80159.56
+2025-10-02,Google Pixel 10 Pro,Flipkart,82614.33
+2025-10-02,Google Pixel 10 Pro,RelianceDigital,82027.41
+2025-10-02,HP Spectre x360,Amazon.in,137819.37
+2025-10-02,HP Spectre x360,Croma,141751.17
+2025-10-02,HP Spectre x360,Flipkart,130648.94
+2025-10-02,HP Spectre x360,RelianceDigital,164718.74
+2025-10-02,JBL Flip 7 Speaker,Amazon.in,10730.13
+2025-10-02,JBL Flip 7 Speaker,Croma,14483.36
+2025-10-02,JBL Flip 7 Speaker,Flipkart,10511.83
+2025-10-02,JBL Flip 7 Speaker,RelianceDigital,13266.8
+2025-10-02,Lenovo Legion 5 Pro,Amazon.in,107392.1
+2025-10-02,Lenovo Legion 5 Pro,Croma,126193.53
+2025-10-02,Lenovo Legion 5 Pro,Flipkart,142181.91
+2025-10-02,Lenovo Legion 5 Pro,RelianceDigital,131967.52
+2025-10-02,Microsoft Surface Pro 11,Amazon.in,124517.0
+2025-10-02,Microsoft Surface Pro 11,Croma,118620.93
+2025-10-02,Microsoft Surface Pro 11,Flipkart,111415.12
+2025-10-02,Microsoft Surface Pro 11,RelianceDigital,120416.27
+2025-10-02,Nothing Tab (1),Amazon.in,29353.55
+2025-10-02,Nothing Tab (1),Croma,28742.67
+2025-10-02,Nothing Tab (1),Flipkart,36676.75
+2025-10-02,Nothing Tab (1),RelianceDigital,33159.47
+2025-10-02,OnePlus 14,Amazon.in,66586.41
+2025-10-02,OnePlus 14,Croma,62035.58
+2025-10-02,OnePlus 14,Flipkart,65183.21
+2025-10-02,OnePlus 14,RelianceDigital,59983.1
+2025-10-02,Samsung Galaxy S26 Ultra,Amazon.in,117568.15
+2025-10-02,Samsung Galaxy S26 Ultra,Croma,114297.03
+2025-10-02,Samsung Galaxy S26 Ultra,Flipkart,126025.52
+2025-10-02,Samsung Galaxy S26 Ultra,RelianceDigital,114921.19
+2025-10-02,Samsung Galaxy Tab S10 Ultra,Amazon.in,81426.16
+2025-10-02,Samsung Galaxy Tab S10 Ultra,Croma,88701.53
+2025-10-02,Samsung Galaxy Tab S10 Ultra,Flipkart,79796.39
+2025-10-02,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92913.06
+2025-10-02,Samsung Galaxy Watch 8,Amazon.in,25164.04
+2025-10-02,Samsung Galaxy Watch 8,Croma,29395.62
+2025-10-02,Samsung Galaxy Watch 8,Flipkart,26781.96
+2025-10-02,Samsung Galaxy Watch 8,RelianceDigital,25070.34
+2025-10-02,Sony WH-1000XM6 Headphones,Amazon.in,34058.94
+2025-10-02,Sony WH-1000XM6 Headphones,Croma,34281.85
+2025-10-02,Sony WH-1000XM6 Headphones,Flipkart,30413.0
+2025-10-02,Sony WH-1000XM6 Headphones,RelianceDigital,36112.67
+2025-10-02,iPad Pro 13-inch (M4),Amazon.in,115029.73
+2025-10-02,iPad Pro 13-inch (M4),Croma,107328.92
+2025-10-02,iPad Pro 13-inch (M4),Flipkart,90687.59
+2025-10-02,iPad Pro 13-inch (M4),RelianceDigital,102269.91
+2025-10-02,iPhone 16,Amazon.in,75651.38
+2025-10-02,iPhone 16,Croma,82161.87
+2025-10-02,iPhone 16,Flipkart,64605.32
+2025-10-02,iPhone 16,RelianceDigital,92286.76
+2025-10-03,Apple AirPods Pro 3,Amazon.in,21624.09
+2025-10-03,Apple AirPods Pro 3,Croma,25204.01
+2025-10-03,Apple AirPods Pro 3,Flipkart,24523.78
+2025-10-03,Apple AirPods Pro 3,RelianceDigital,23488.38
+2025-10-03,Apple MacBook Air (M4),Amazon.in,115051.71
+2025-10-03,Apple MacBook Air (M4),Croma,115572.75
+2025-10-03,Apple MacBook Air (M4),Flipkart,110664.41
+2025-10-03,Apple MacBook Air (M4),RelianceDigital,120707.74
+2025-10-03,Apple Watch Series 11,Amazon.in,41695.43
+2025-10-03,Apple Watch Series 11,Croma,36841.43
+2025-10-03,Apple Watch Series 11,Flipkart,44689.24
+2025-10-03,Apple Watch Series 11,RelianceDigital,39229.68
+2025-10-03,Bose QuietComfort Ultra Earbuds,Amazon.in,23704.1
+2025-10-03,Bose QuietComfort Ultra Earbuds,Croma,28237.32
+2025-10-03,Bose QuietComfort Ultra Earbuds,Flipkart,22555.49
+2025-10-03,Bose QuietComfort Ultra Earbuds,RelianceDigital,26008.2
+2025-10-03,Dell XPS 15,Amazon.in,198586.37
+2025-10-03,Dell XPS 15,Croma,185517.18
+2025-10-03,Dell XPS 15,Flipkart,152623.55
+2025-10-03,Dell XPS 15,RelianceDigital,166597.02
+2025-10-03,Fitbit Charge 7,Amazon.in,13614.83
+2025-10-03,Fitbit Charge 7,Croma,15291.27
+2025-10-03,Fitbit Charge 7,Flipkart,14099.27
+2025-10-03,Fitbit Charge 7,RelianceDigital,14343.12
+2025-10-03,Garmin Forerunner 965,Amazon.in,66317.75
+2025-10-03,Garmin Forerunner 965,Croma,50641.37
+2025-10-03,Garmin Forerunner 965,Flipkart,65446.84
+2025-10-03,Garmin Forerunner 965,RelianceDigital,47999.2
+2025-10-03,Google Pixel 10 Pro,Amazon.in,86022.8
+2025-10-03,Google Pixel 10 Pro,Croma,80129.23
+2025-10-03,Google Pixel 10 Pro,Flipkart,81984.49
+2025-10-03,Google Pixel 10 Pro,RelianceDigital,81794.41
+2025-10-03,HP Spectre x360,Amazon.in,140545.68
+2025-10-03,HP Spectre x360,Croma,139893.69
+2025-10-03,HP Spectre x360,Flipkart,129070.11
+2025-10-03,HP Spectre x360,RelianceDigital,163680.11
+2025-10-03,JBL Flip 7 Speaker,Amazon.in,10670.75
+2025-10-03,JBL Flip 7 Speaker,Croma,14698.3
+2025-10-03,JBL Flip 7 Speaker,Flipkart,10670.7
+2025-10-03,JBL Flip 7 Speaker,RelianceDigital,13521.62
+2025-10-03,Lenovo Legion 5 Pro,Amazon.in,107079.58
+2025-10-03,Lenovo Legion 5 Pro,Croma,126634.03
+2025-10-03,Lenovo Legion 5 Pro,Flipkart,143536.6
+2025-10-03,Lenovo Legion 5 Pro,RelianceDigital,129340.46
+2025-10-03,Microsoft Surface Pro 11,Amazon.in,123655.41
+2025-10-03,Microsoft Surface Pro 11,Croma,118438.11
+2025-10-03,Microsoft Surface Pro 11,Flipkart,110779.71
+2025-10-03,Microsoft Surface Pro 11,RelianceDigital,121142.06
+2025-10-03,Nothing Tab (1),Amazon.in,28929.91
+2025-10-03,Nothing Tab (1),Croma,29238.96
+2025-10-03,Nothing Tab (1),Flipkart,37387.82
+2025-10-03,Nothing Tab (1),RelianceDigital,33746.7
+2025-10-03,OnePlus 14,Amazon.in,67673.6
+2025-10-03,OnePlus 14,Croma,62326.57
+2025-10-03,OnePlus 14,Flipkart,64362.24
+2025-10-03,OnePlus 14,RelianceDigital,59120.16
+2025-10-03,Samsung Galaxy S26 Ultra,Amazon.in,118746.71
+2025-10-03,Samsung Galaxy S26 Ultra,Croma,116124.71
+2025-10-03,Samsung Galaxy S26 Ultra,Flipkart,126795.16
+2025-10-03,Samsung Galaxy S26 Ultra,RelianceDigital,114017.85
+2025-10-03,Samsung Galaxy Tab S10 Ultra,Amazon.in,81454.97
+2025-10-03,Samsung Galaxy Tab S10 Ultra,Croma,89718.47
+2025-10-03,Samsung Galaxy Tab S10 Ultra,Flipkart,78343.29
+2025-10-03,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92931.45
+2025-10-03,Samsung Galaxy Watch 8,Amazon.in,25149.16
+2025-10-03,Samsung Galaxy Watch 8,Croma,29587.81
+2025-10-03,Samsung Galaxy Watch 8,Flipkart,26763.41
+2025-10-03,Samsung Galaxy Watch 8,RelianceDigital,25470.13
+2025-10-03,Sony WH-1000XM6 Headphones,Amazon.in,33677.1
+2025-10-03,Sony WH-1000XM6 Headphones,Croma,33648.2
+2025-10-03,Sony WH-1000XM6 Headphones,Flipkart,30735.1
+2025-10-03,Sony WH-1000XM6 Headphones,RelianceDigital,36507.85
+2025-10-03,iPad Pro 13-inch (M4),Amazon.in,115714.0
+2025-10-03,iPad Pro 13-inch (M4),Croma,109137.46
+2025-10-03,iPad Pro 13-inch (M4),Flipkart,89708.44
+2025-10-03,iPad Pro 13-inch (M4),RelianceDigital,103592.3
+2025-10-03,iPhone 16,Amazon.in,74976.38
+2025-10-03,iPhone 16,Croma,82694.17
+2025-10-03,iPhone 16,Flipkart,64176.72
+2025-10-03,iPhone 16,RelianceDigital,91461.9
+2025-10-04,Apple AirPods Pro 3,Amazon.in,21879.07
+2025-10-04,Apple AirPods Pro 3,Croma,24805.41
+2025-10-04,Apple AirPods Pro 3,Flipkart,24734.18
+2025-10-04,Apple AirPods Pro 3,RelianceDigital,23763.85
+2025-10-04,Apple MacBook Air (M4),Amazon.in,114490.65
+2025-10-04,Apple MacBook Air (M4),Croma,114993.54
+2025-10-04,Apple MacBook Air (M4),Flipkart,108947.52
+2025-10-04,Apple MacBook Air (M4),RelianceDigital,121741.69
+2025-10-04,Apple Watch Series 11,Amazon.in,42288.93
+2025-10-04,Apple Watch Series 11,Croma,37215.2
+2025-10-04,Apple Watch Series 11,Flipkart,43994.55
+2025-10-04,Apple Watch Series 11,RelianceDigital,38634.8
+2025-10-04,Bose QuietComfort Ultra Earbuds,Amazon.in,23755.87
+2025-10-04,Bose QuietComfort Ultra Earbuds,Croma,28271.18
+2025-10-04,Bose QuietComfort Ultra Earbuds,Flipkart,22154.13
+2025-10-04,Bose QuietComfort Ultra Earbuds,RelianceDigital,25974.48
+2025-10-04,Dell XPS 15,Amazon.in,194814.89
+2025-10-04,Dell XPS 15,Croma,189187.95
+2025-10-04,Dell XPS 15,Flipkart,151999.2
+2025-10-04,Dell XPS 15,RelianceDigital,165429.79
+2025-10-04,Fitbit Charge 7,Amazon.in,13799.17
+2025-10-04,Fitbit Charge 7,Croma,15097.35
+2025-10-04,Fitbit Charge 7,Flipkart,14157.5
+2025-10-04,Fitbit Charge 7,RelianceDigital,14384.19
+2025-10-04,Garmin Forerunner 965,Amazon.in,65039.88
+2025-10-04,Garmin Forerunner 965,Croma,49949.0
+2025-10-04,Garmin Forerunner 965,Flipkart,66097.28
+2025-10-04,Garmin Forerunner 965,RelianceDigital,48097.2
+2025-10-04,Google Pixel 10 Pro,Amazon.in,85373.63
+2025-10-04,Google Pixel 10 Pro,Croma,80591.33
+2025-10-04,Google Pixel 10 Pro,Flipkart,81395.74
+2025-10-04,Google Pixel 10 Pro,RelianceDigital,80538.24
+2025-10-04,HP Spectre x360,Amazon.in,138981.85
+2025-10-04,HP Spectre x360,Croma,140248.41
+2025-10-04,HP Spectre x360,Flipkart,130567.39
+2025-10-04,HP Spectre x360,RelianceDigital,162973.08
+2025-10-04,JBL Flip 7 Speaker,Amazon.in,10644.36
+2025-10-04,JBL Flip 7 Speaker,Croma,14866.78
+2025-10-04,JBL Flip 7 Speaker,Flipkart,10878.52
+2025-10-04,JBL Flip 7 Speaker,RelianceDigital,13734.48
+2025-10-04,Lenovo Legion 5 Pro,Amazon.in,108919.59
+2025-10-04,Lenovo Legion 5 Pro,Croma,126957.04
+2025-10-04,Lenovo Legion 5 Pro,Flipkart,143060.01
+2025-10-04,Lenovo Legion 5 Pro,RelianceDigital,129963.59
+2025-10-04,Microsoft Surface Pro 11,Amazon.in,125169.07
+2025-10-04,Microsoft Surface Pro 11,Croma,120002.55
+2025-10-04,Microsoft Surface Pro 11,Flipkart,110008.7
+2025-10-04,Microsoft Surface Pro 11,RelianceDigital,121505.07
+2025-10-04,Nothing Tab (1),Amazon.in,28426.43
+2025-10-04,Nothing Tab (1),Croma,29174.2
+2025-10-04,Nothing Tab (1),Flipkart,37194.61
+2025-10-04,Nothing Tab (1),RelianceDigital,33081.55
+2025-10-04,OnePlus 14,Amazon.in,67715.61
+2025-10-04,OnePlus 14,Croma,63456.77
+2025-10-04,OnePlus 14,Flipkart,63279.43
+2025-10-04,OnePlus 14,RelianceDigital,59158.37
+2025-10-04,Samsung Galaxy S26 Ultra,Amazon.in,118018.23
+2025-10-04,Samsung Galaxy S26 Ultra,Croma,117364.88
+2025-10-04,Samsung Galaxy S26 Ultra,Flipkart,128824.45
+2025-10-04,Samsung Galaxy S26 Ultra,RelianceDigital,112316.39
+2025-10-04,Samsung Galaxy Tab S10 Ultra,Amazon.in,80233.75
+2025-10-04,Samsung Galaxy Tab S10 Ultra,Croma,90929.82
+2025-10-04,Samsung Galaxy Tab S10 Ultra,Flipkart,77469.08
+2025-10-04,Samsung Galaxy Tab S10 Ultra,RelianceDigital,92522.81
+2025-10-04,Samsung Galaxy Watch 8,Amazon.in,25553.93
+2025-10-04,Samsung Galaxy Watch 8,Croma,29789.19
+2025-10-04,Samsung Galaxy Watch 8,Flipkart,27080.7
+2025-10-04,Samsung Galaxy Watch 8,RelianceDigital,25929.93
+2025-10-04,Sony WH-1000XM6 Headphones,Amazon.in,33957.45
+2025-10-04,Sony WH-1000XM6 Headphones,Croma,33709.62
+2025-10-04,Sony WH-1000XM6 Headphones,Flipkart,31035.67
+2025-10-04,Sony WH-1000XM6 Headphones,RelianceDigital,36147.46
+2025-10-04,iPad Pro 13-inch (M4),Amazon.in,114219.26
+2025-10-04,iPad Pro 13-inch (M4),Croma,107826.78
+2025-10-04,iPad Pro 13-inch (M4),Flipkart,90052.44
+2025-10-04,iPad Pro 13-inch (M4),RelianceDigital,102428.1
+2025-10-04,iPhone 16,Amazon.in,74693.14
+2025-10-04,iPhone 16,Croma,83107.4
+2025-10-04,iPhone 16,Flipkart,64015.04
+2025-10-04,iPhone 16,RelianceDigital,91382.77

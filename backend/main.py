@@ -48,7 +48,8 @@ app.mount("/copilotkit_remote", copilot_app)
 
 
 
-DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "data", "ecommerce_price_dataset.csv"))
+# Data loading path
+DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "data", "ecommerce_price_dataset_corrected.csv"))
 
 
 def build_site_search_url(site: str, product_name: str) -> str:
@@ -67,7 +68,7 @@ def build_site_search_url(site: str, product_name: str) -> str:
 
 def load_data() -> pd.DataFrame:
 	if not os.path.exists(DATA_PATH):
-		raise HTTPException(status_code=500, detail="E-commerce dataset not found. Please generate data/ecommerce_price_dataset.csv")
+		raise HTTPException(status_code=500, detail="E-commerce dataset not found. Please generate data/ecommerce_price_dataset_corrected.csv")
 	df = pd.read_csv(DATA_PATH)
 	df["date"] = pd.to_datetime(df["date"]).dt.date
 	
@@ -258,4 +259,82 @@ def forecast_saved(product_id: str):
 		"forecast": forecast,
 		"great_deal": great_deal,
 		"great_deal_reason": reason,
-	} 
+	}
+
+
+# ========== NEW RECOMMENDATION ENDPOINTS ==========
+
+from recommendation_engine import PriceRecommendationEngine
+
+# Initialize recommendation engine
+recommendation_engine = PriceRecommendationEngine()
+
+@app.get("/recommendations/best-deals")
+def get_best_deals(top_n: int = Query(10, ge=1, le=50)):
+	"""Get current best deals across all retailers"""
+	try:
+		deals = recommendation_engine.get_current_best_deals(top_n)
+		return {
+			"status": "success",
+			"count": len(deals),
+			"best_deals": deals
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error fetching best deals: {str(e)}")
+
+@app.get("/recommendations/buy-wait")
+def get_buy_wait_recommendations(days_ahead: int = Query(10, ge=1, le=30)):
+	"""Get buy now vs wait recommendations based on price forecasts"""
+	try:
+		recommendations = recommendation_engine.get_buy_recommendations(days_ahead)
+		return {
+			"status": "success",
+			"forecast_days": days_ahead,
+			"count": len(recommendations),
+			"recommendations": recommendations
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error generating recommendations: {str(e)}")
+
+@app.get("/forecast/10-day")
+def get_10_day_forecast(product_name: str = Query(None)):
+	"""Get 10-day price forecast for all products or specific product"""
+	try:
+		forecast = recommendation_engine.get_10_day_forecast(product_name)
+		return {
+			"status": "success",
+			"product_filter": product_name,
+			"forecast_days": 10,
+			"count": len(forecast),
+			"forecast": forecast
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error fetching forecast: {str(e)}")
+
+@app.get("/analysis/price-trend/{product_name}")
+def get_price_trend_analysis(product_name: str, days_back: int = Query(30, ge=7, le=90)):
+	"""Get detailed price trend analysis for a specific product"""
+	try:
+		analysis = recommendation_engine.get_price_trend_analysis(product_name, days_back)
+		if "error" in analysis:
+			raise HTTPException(status_code=404, detail=analysis["error"])
+		return {
+			"status": "success",
+			"analysis": analysis
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error analyzing price trends: {str(e)}")
+
+@app.get("/products/available")
+def get_available_products():
+	"""Get list of all available products in the dataset"""
+	try:
+		df = load_data()
+		products = df['product_name'].unique().tolist()
+		return {
+			"status": "success",
+			"count": len(products),
+			"products": sorted(products)
+		}
+	except Exception as e:
+		raise HTTPException(status_code=500, detail=f"Error fetching products: {str(e)}") 

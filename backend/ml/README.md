@@ -99,7 +99,7 @@ ml/
 └── README.md               # This summary
 
 data/
-├── ecommerce_price_dataset.csv  # 29K records synthetic dataset
+├── ecommerce_price_dataset_corrected.csv  # 29K records synthetic dataset
 └── forecasts/               # Generated forecast visualizations
     ├── P001_all_retailers.png
     ├── P001_Amazon.in.png

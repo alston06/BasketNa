@@ -10,7 +10,7 @@ def analyze_dataset():
     """Analyze the generated e-commerce dataset"""
     
     # Load the dataset
-    df = pd.read_csv("d:/Alston/Python Projects/SOP/BasketNa/data/ecommerce_price_dataset.csv")
+    df = pd.read_csv("../backend/data/ecommerce_price_dataset_corrected.csv")
     
     print("=== E-COMMERCE PRICE DATASET ANALYSIS ===")
     print(f"Total Records: {len(df):,}")
@@ -81,7 +81,7 @@ def analyze_dataset():
     print(f"Data Completeness: {len(df)/expected_records*100:.1f}%")
     
     print(f"\n✅ Dataset generated successfully with realistic price patterns!")
-    print(f"📁 File saved as: ecommerce_price_dataset.csv")
+    print(f"📁 File saved as: ecommerce_price_dataset_corrected.csv")
     print(f"📊 Ready for analysis and machine learning applications!")
 
 if __name__ == "__main__":

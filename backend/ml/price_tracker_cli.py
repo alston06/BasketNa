@@ -152,7 +152,7 @@ def main():
     try:
         products = get_available_products()
         if not products:
-            print("❌ Dataset not found! Please ensure ecommerce_price_dataset.csv exists in the data folder.")
+            print("❌ Dataset not found! Please ensure ecommerce_price_dataset_corrected.csv exists in the data folder.")
             return
         print(f"✅ Dataset loaded successfully! {len(products)} products available.")
     except Exception as e:

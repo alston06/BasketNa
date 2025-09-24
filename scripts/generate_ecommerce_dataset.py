@@ -196,7 +196,7 @@ def main():
     df = pd.DataFrame(data)
     
     # Save to CSV
-    output_file = "d:/Alston/Python Projects/SOP/BasketNa/data/ecommerce_price_dataset.csv"
+    output_file = "../backend/data/ecommerce_price_dataset_corrected.csv"
     df.to_csv(output_file, index=False)
     
     print(f"\nDataset generated successfully!")

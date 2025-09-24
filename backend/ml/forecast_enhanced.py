@@ -21,7 +21,7 @@ from sklearn.ensemble import RandomForestRegressor
 warnings.filterwarnings('ignore')
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DATA_PATH = os.path.join(PROJECT_ROOT, "data", "ecommerce_price_dataset.csv")
+DATA_PATH = os.path.join(PROJECT_ROOT, "data", "ecommerce_price_dataset_corrected.csv")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "forecasts")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -241,7 +241,7 @@ def forecast_for_product(product_id: str, retailer: str = None, horizon_days: in
     try:
         df = load_dataset()
     except FileNotFoundError:
-        return {"error": "Dataset not found. Please ensure ecommerce_price_dataset.csv exists in the data folder."}
+        return {"error": "Dataset not found. Please ensure ecommerce_price_dataset_corrected.csv exists in the data folder."}
     
     # Get product info
     product_df = df[df["product_id"] == product_id]
