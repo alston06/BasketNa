@@ -35,6 +35,7 @@ from ml.forecast_enhanced import get_retailer_comparison
 from ml.forecast_holidays import forecast_for_product as forecast_holidays
 from ml.forecast_holidays import load_and_forecast, train_and_export
 from sqlalchemy.orm import Session
+from agents.price_copilot import copilot_app  # Commented out due to missing pydantic_ai dependency
 
 # Create tables
 Base.metadata.create_all(bind=engine)
@@ -55,7 +56,7 @@ app.add_middleware(
 	allow_headers=["*"]
 )
 
-# app.mount("/copilotkit_remote", copilot_app)  # Commented out due to missing pydantic_ai dependency
+app.mount("/copilotkit_remote", copilot_app)  # Commented out due to missing pydantic_ai dependency
 
 
 
