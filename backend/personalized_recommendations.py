@@ -186,14 +186,23 @@ class PersonalizedRecommendationEngine:
             # Calculate category preferences from views
             df = self.load_price_data()
             for view in patterns['viewed_products']:
-                product_name = df[df['product_name'] == self._get_product_name(view['product_id'])]['product_name'].iloc[0] if not df[df['product_name'] == self._get_product_name(view['product_id'])].empty else None
-                if product_name and product_name in self.product_categories:
-                    category = self.product_categories[product_name]
-                    patterns['category_preferences'][category] = patterns['category_preferences'].get(category, 0) + view['views']
+                try:
+                    product_name = self._get_product_name(view['product_id'])
+                    if product_name and product_name in self.product_categories:
+                        category = self.product_categories[product_name]
+                        patterns['category_preferences'][category] = patterns['category_preferences'].get(category, 0) + view['views']
+                except Exception as e:
+                    logger.warning(f"Could not process view for product {view['product_id']}: {e}")
+                    continue
             
-            # Calculate activity score
+            # Enhanced activity score calculation
             total_views = sum(v['views'] for v in patterns['viewed_products'])
-            patterns['activity_score'] = min(1.0, total_views / 20.0)  # Normalize to 0-1
+            unique_products_viewed = len(patterns['viewed_products'])
+            tracking_engagement = len(patterns['tracked_products']) * 2  # Tracking shows higher engagement
+            
+            # Multi-factor activity score
+            raw_activity = total_views + tracking_engagement + (unique_products_viewed * 0.5)
+            patterns['activity_score'] = min(1.0, raw_activity / 30.0)  # Normalize to 0-1 with higher threshold
             
             logger.info(f"User activity patterns loaded: {len(patterns['viewed_products'])} viewed, {len(patterns['tracked_products'])} tracked")
             
@@ -247,6 +256,46 @@ class PersonalizedRecommendationEngine:
         trending_score = min(1.0, volatility * 10)  # Normalize to 0-1
         
         return trending_score
+    
+    def _calculate_personalization_score(self, user_patterns: Dict, recommendations_count: int) -> float:
+        """Calculate comprehensive personalization score based on multiple factors"""
+        score = 0.0
+        
+        # Factor 1: User activity level (0.0 - 0.4)
+        activity_component = user_patterns['activity_score'] * 0.4
+        score += activity_component
+        
+        # Factor 2: Category diversity and preferences (0.0 - 0.3)
+        num_categories = len(user_patterns['category_preferences'])
+        if num_categories > 0:
+            # More categories = better personalization, but cap at reasonable level
+            category_diversity = min(1.0, num_categories / 4.0)
+            # Higher preference scores = more personalized
+            total_category_engagement = sum(user_patterns['category_preferences'].values())
+            engagement_intensity = min(1.0, total_category_engagement / 50.0)
+            category_component = (category_diversity * 0.2) + (engagement_intensity * 0.1)
+            score += category_component
+        
+        # Factor 3: Tracking behavior (0.0 - 0.2)
+        num_tracked = len(user_patterns['tracked_products'])
+        if num_tracked > 0:
+            tracking_component = min(0.2, num_tracked / 10.0 * 0.2)
+            score += tracking_component
+        
+        # Factor 4: Recommendation quality indicator (0.0 - 0.1)
+        if recommendations_count > 0:
+            # Having recommendations indicates we found personalized matches
+            recommendation_component = min(0.1, recommendations_count / 10.0 * 0.1)
+            score += recommendation_component
+        
+        # Ensure score is between 0.0 and 1.0
+        final_score = max(0.0, min(1.0, score))
+        
+        logger.info(f"Personalization score breakdown: activity={activity_component:.3f}, "
+                   f"categories={num_categories}, tracking={num_tracked}, "
+                   f"recommendations={recommendations_count}, final={final_score:.3f}")
+        
+        return final_score
     
     def calculate_price_trend(self, df: pd.DataFrame, product_name: str) -> Tuple[str, float]:
         """Calculate price trend and potential savings"""
@@ -513,10 +562,8 @@ class PersonalizedRecommendationEngine:
             
             recommendations.append(recommendation)
         
-        # Calculate personalization score
-        personalization_score = min(1.0, user_patterns['activity_score'] + (
-            len(user_patterns['category_preferences']) / 5.0
-        ))
+        # Calculate comprehensive personalization score
+        personalization_score = self._calculate_personalization_score(user_patterns, len(recommendations))
         
         return RecommendationSet(
             user_id=user_id,

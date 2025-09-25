@@ -142,6 +142,106 @@ class PriceRecommendationEngine:
             'forecast_max_price': round(forecast_best_prices.max(), 2) if not forecast_best_prices.empty else None
         }
 
+    def get_buy_recommendations(self, top_n: int = 10) -> List[Dict]:
+        """Generate buy/wait recommendations based on price trends and forecasts"""
+        try:
+            historical_df, forecast_df = self.load_data()
+            
+            recommendations = []
+            products = historical_df['product_name'].unique()
+            
+            for product in products:
+                # Get current price and trend analysis
+                trend_analysis = self.get_price_trend_analysis(product, days_back=14)
+                if 'error' in trend_analysis:
+                    continue
+                
+                # Get current best price
+                latest_date = historical_df['date'].max()
+                current_data = historical_df[
+                    (historical_df['date'] == latest_date) & 
+                    (historical_df['product_name'] == product)
+                ]
+                
+                if current_data.empty:
+                    continue
+                
+                current_best_price = current_data['price_inr'].min()
+                
+                # Determine recommendation based on trend and forecast
+                recommendation = "WAIT"
+                confidence = "Medium"
+                reason = "Price analysis inconclusive"
+                
+                current_trend = trend_analysis['current_trend']
+                volatility_pct = trend_analysis['volatility_percentage']
+                
+                # Check if forecast data is available
+                if trend_analysis['forecast_available']:
+                    forecast_min = trend_analysis['forecast_min_price']
+                    forecast_max = trend_analysis['forecast_max_price']
+                    
+                    if forecast_min and current_best_price > forecast_min * 1.05:  # 5% buffer
+                        recommendation = "WAIT"
+                        confidence = "High"
+                        reason = f"Price likely to drop to ₹{forecast_min:,.0f} (current: ₹{current_best_price:,.0f})"
+                    elif forecast_max and current_best_price < forecast_max * 0.95:  # 5% buffer
+                        recommendation = "BUY"
+                        confidence = "High"
+                        reason = f"Good deal - price may rise to ₹{forecast_max:,.0f}"
+                    else:
+                        recommendation = "BUY" if current_trend == "decreasing" else "WAIT"
+                        confidence = "Medium"
+                        reason = f"Price is {current_trend}, moderate opportunity"
+                else:
+                    # Fallback to trend-based recommendation
+                    if current_trend == "decreasing" and volatility_pct > 5:
+                        recommendation = "WAIT"
+                        confidence = "Medium"
+                        reason = f"Price declining with {volatility_pct:.1f}% volatility - wait for bottom"
+                    elif current_trend == "increasing" and volatility_pct < 3:
+                        recommendation = "BUY"
+                        confidence = "Medium"
+                        reason = "Price stable and rising - buy before further increase"
+                    elif current_trend == "stable" and volatility_pct < 2:
+                        recommendation = "BUY"
+                        confidence = "Low"
+                        reason = "Stable pricing - good time to buy"
+                    else:
+                        recommendation = "WAIT"
+                        confidence = "Low"
+                        reason = f"High volatility ({volatility_pct:.1f}%) - wait for stability"
+                
+                recommendations.append({
+                    'product_name': product,
+                    'recommendation': recommendation,
+                    'confidence': confidence,
+                    'reason': reason,
+                    'current_price': round(current_best_price, 2),
+                    'trend': current_trend,
+                    'volatility_percentage': volatility_pct,
+                    'analysis_date': latest_date.strftime('%Y-%m-%d')
+                })
+            
+            # Sort by confidence and recommendation type
+            priority_order = {'BUY': 3, 'WAIT': 2}
+            confidence_order = {'High': 3, 'Medium': 2, 'Low': 1}
+            
+            recommendations.sort(
+                key=lambda x: (
+                    priority_order.get(x['recommendation'], 1),
+                    confidence_order.get(x['confidence'], 1),
+                    -x['volatility_percentage']  # Higher volatility = more interesting
+                ),
+                reverse=True
+            )
+            
+            return recommendations[:top_n]
+        
+        except Exception as e:
+            print(f"Error generating buy recommendations: {e}")
+            return []
+
 # Example usage and testing
 if __name__ == "__main__":
     engine = PriceRecommendationEngine()
